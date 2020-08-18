@@ -200,6 +200,7 @@ This Repo contains Fullstack mini project using Front end techonologies.
   ### Credit
   
   
-   * **[ Pankaj kapoor sir](https://github.com/pankkap)**
+   * [ Pankaj kapoor](https://github.com/pankkap)
+   * [BETA-LABS](https://www.beta-labs.in/)
   
   
