@@ -26,7 +26,7 @@ This Repo contains Fullstack mini project using Front end techonologies.
   
   ### Overview
   
-  * This project is based onhow an effective travel website will make us feel. It is based on a  travelling  website  with  front-end only  that  will  activate  the travelling bug with  vibrant  imagery.This  website  contains highlights  of  some  important  places  along with  high  quality photography.
+   This project is based on how an effective travel website will make us feel. It is based on a  travelling  website  with  front-end only  that  will  activate  the travelling bug with  vibrant  imagery.This  website  contains highlights  of  some  important  places  along with  high  quality photography.
   
   
   
@@ -36,7 +36,7 @@ This Repo contains Fullstack mini project using Front end techonologies.
   
   ### Motivation
   
-  * People all over the world are fond of travel and tourism.People often find it difficult to search for the best places .To address the issue,we adopt the travelling website which will offer best places among others.
+  People all over the world are fond of travel and tourism.People often find it difficult to search for the best places .To address the issue,we adopt the travelling website which will offer best places among others.
   
   
   
@@ -63,7 +63,7 @@ This Repo contains Fullstack mini project using Front end techonologies.
   ### Objective
   
   
-  * The main objective of the projectis to create a website using  front-end  technologies to  continuously  provide enjoyable quality excursions/trips on time and on budget.It will also develop enthusiastically satisfied customers all of the time. 
+  The main objective of the projectis to create a website using  front-end  technologies to  continuously  provide enjoyable quality excursions/trips on time and on budget.It will also develop enthusiastically satisfied customers all of the time. 
   
   
   
