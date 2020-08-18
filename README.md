@@ -22,9 +22,14 @@ This Repo contains Fullstack mini project using Front end techonologies.
   <br>
   
   
+  
+  
   ### Overview
   
   * This project is based onhow an effective travel website will make us feel. It is based on a  travelling  website  with  front-end only  that  will  activate  the travelling bug with  vibrant  imagery.This  website  contains highlights  of  some  important  places  along with  high  quality photography.
+  
+  
+  
   
   
   
@@ -36,9 +41,22 @@ This Repo contains Fullstack mini project using Front end techonologies.
   
   
   
+  
+  
+  
+  
+  
   ### Demo
   
   _Coming soon_
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -46,6 +64,11 @@ This Repo contains Fullstack mini project using Front end techonologies.
   
   
   * The main objective of the projectis to create a website using  front-end  technologies to  continuously  provide enjoyable quality excursions/trips on time and on budget.It will also develop enthusiastically satisfied customers all of the time. 
+  
+  
+  
+  
+  
   
   
   
@@ -69,6 +92,13 @@ This Repo contains Fullstack mini project using Front end techonologies.
  </table>
    
    
+   
+   
+   
+   
+   
+   
+   
   
   ### To Do
   
@@ -78,11 +108,26 @@ This Repo contains Fullstack mini project using Front end techonologies.
    
   
   
+  
+  
+  
+  
+  
+  
+  
+  
   ### Installation
   
   
    _Coming Soon_
    
+  
+  
+  
+  
+  
+  
+  
   
   #### Run
   
@@ -91,12 +136,28 @@ This Repo contains Fullstack mini project using Front end techonologies.
    
   
   
+  
+  
+  
+  
+  
+  
+  
+  
   ### Bug feature request
   
   
    _Coming Soon_
    
    
+  
+  
+  
+  
+  
+  
+  
+  
   
   ### Team
   
@@ -113,12 +174,28 @@ This Repo contains Fullstack mini project using Front end techonologies.
    
   
   
+  
+  
+  
+  
+  
+  
+  
   ### License
   
   * Apache-2.0 License copyright &copy; 2020 Sarvesh Kumar Sharma
     
    
    
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   ### Credit
   
