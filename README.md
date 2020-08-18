@@ -123,6 +123,6 @@ This Repo contains Fullstack mini project using Front end techonologies.
   ### Credit
   
   
-   * Pankaj kappor.
+   * **[ Pankaj kapoor sir](https://github.com/pankkap)**
   
   
