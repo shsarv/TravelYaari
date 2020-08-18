@@ -91,6 +91,8 @@ This Repo contains Fullstack mini project using Front end techonologies.
    <table>
   <tr>
     <td align="center"><a href="https://github.com/shsarv"><img src="https://avatars2.githubusercontent.com/u/55739302?s=400&u=1e7714cb1cbe3437a527a877486c94611f0e7ab0&v=4" width="100px;" alt=""/><br /><sub><b>Sarvesh Kumar Sharma</b></sub></a></td>
+   <td align="center"><a href="https://github.com/sachi42"><img src="https://avatars1.githubusercontent.com/u/61285008?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Sachi Tripathi</b></sub></a></td>
+   <td align="center"><a href="https://github.com/satyamjha1710"><img src="https://avatars1.githubusercontent.com/u/61418608?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Satyam Kumar jha</b></sub></a></td>
    
    <tr>
     <table>
