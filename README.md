@@ -53,12 +53,20 @@ This Repo contains Fullstack mini project using Front end techonologies.
   
   The technologies that we have used in making this project are :
   
-  <a href="https://en.wikipedia.org/wiki/HTML"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/html.jpg" width="100px;" alt=""/><br /><sub><b>HTML5</b></sub></a>
-  <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/css.jpg" width="100px;" alt=""/><br /><sub><b>CSS3</b></sub></a>
-  <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/boot.jpg" width="100px;" alt=""/><br /><sub><b>CSS3</b></sub></a>
-  <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/js.jpg" width="100px;" alt=""/><br /><sub><b>CSS3</b></sub></a>
-   <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/vs.jpg" width="100px;" alt=""/><br /><sub><b>CSS3</b></sub></a>
-  
+   <table>
+  <tr>
+    <td align="center">
+  <a href="https://en.wikipedia.org/wiki/HTML"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/html.jpg" width="100px;" alt=""/><br /><sub><b>HTML5</b></sub></a></td>
+   <td align="center">
+  <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/css.jpg" width="100px;" alt=""/><br /><sub><b>CSS3</b></sub></a></td>
+    <td align="center">
+  <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/boot.jpg" width="100px;" alt=""/><br /><sub><b>CSS3</b></sub></a></td>
+   <td align="center">
+  <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/js.jpg" width="100px;" alt=""/><br /><sub><b>CSS3</b></sub></a></td>
+      <td align="center">
+   <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/vs.jpg" width="100px;" alt=""/><br /><sub><b>CSS3</b></sub></a></td>
+ </tr>
+ </table>
    
    
   
