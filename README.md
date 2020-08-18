@@ -5,7 +5,7 @@ This Repo contains Fullstack mini project using Front end techonologies.
   * [Overview](#overview)
   * [Motivation](#motivation)
   * [Demo](#demo)
-  * [Learning Objective](#Learning-Objective)
+  * [Objective](#Objective)
   * [Technical Aspect](#technical-aspect)
   * [Technologies Used](#technologies-used)
   * [To Do](#to-do)
@@ -72,7 +72,7 @@ This Repo contains Fullstack mini project using Front end techonologies.
   
   
   
-  ### Techonologies Used
+  ### Technologies Used
   
   * The technologies that we have used in making this project are :
   
