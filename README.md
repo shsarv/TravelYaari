@@ -1,4 +1,4 @@
-# Green-Escape-venture
+# Travel-Yaari
 This Repo contains Fullstack mini project using Front end techonologies.
 
 ### Table of Content
