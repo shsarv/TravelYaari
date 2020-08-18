@@ -12,7 +12,7 @@ This Repo contains Fullstack mini project using Front end techonologies.
   * [Installation](#installation)
   * [Run](#run)
   * [Bug / Feature Request](#bug-feature-request)
-  * [Team](#team)
+  * [Team members](#team)
   * [License](#license)
   * [Credits](#credits)
   
@@ -88,7 +88,12 @@ This Repo contains Fullstack mini project using Front end techonologies.
   ### Team
   
   
-   _Coming Soon_
+   <table>
+  <tr>
+    <td align="center"><a href="https://github.com/shsarv"><img src="https://avatars2.githubusercontent.com/u/55739302?s=400&u=1e7714cb1cbe3437a527a877486c94611f0e7ab0&v=4" width="100px;" alt=""/><br /><sub><b>Sarvesh Kumar Sharma</b></sub></a></td>
+   
+   <tr>
+    <table>
    
    
   
