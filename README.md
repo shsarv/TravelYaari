@@ -1,5 +1,5 @@
 # Travel-Yaari
-This Repo contains Fullstack mini project using Front end techonologies.
+This Repo contains Fullstack mini project using Front end technologies.
 
 ### Table of Content
   * [Overview](#overview)
