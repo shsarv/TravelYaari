@@ -1,72 +1,154 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-    <title>Signup</title>
-    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="../inp/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../inp/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <script src="../js/jquery-3.5.1.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="../css/index.css" type="text/css">
-    <style>
-        .row-style {
-            margin-top: 75px;
-        }
-    </style>
+    <title>TravelYaari</title>
 </head>
 
-<body>
-    <div class="header navbar navbar-inverse navbar-fixed-top">
-        <div class="inner-header visible-sm visible-lg">
-            <div class="logo"><a href="index.html">TravelYaari</a></div>
-            <div class="header-link glyphicon glyphicon-user"><a href="signup.html">Sign Up</a></div>
-            <div class="header-link glyphicon glyphicon-log-in"><a href="login.html">Login</a></div>
-        </div>
+<body class="scrollspy">
+    <a name="home"></a>
+    <div class="navbar-fixed">
+        <nav class="green">
+            <div class="container">
+                <a href="#home" class="brand-logo">TravelYaari</a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="html/sign.html">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
+    <!-- we put the sideNav li elements outside the div because its fixed div and we wont be able to access these links -->
+    <ul class="side-nav" id="mobile-nav">
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#search">Search</a>
+        </li>
+        <li>
+            <a href="#popular">Popular Places</a>
+        </li>
+        <li>
+            <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+        <li>
+            <a href="#gallery">Signup</a>
+        </li>
+        <li>
+            <a href="#contact">Sign in</a>
+        </li>
+        <li>
+            <a href="#">Travelville 2018</a>
+        </li>
 
-    <div id="banner-image">
-        <div class="container visible-lg visible-xs ">
-            <div class="row row-style">
-                <div class="col-xs-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h1 align="left">Signup</h1>
-                        </div>
-                        <div class="panel-body">
-                            <form class="form-inline" target="_self" action="login.html">
-                                <div class="form-group">
-                                    <input type="text" placeholder="Name" class="form-control"><br><br>
-                                    <input type="text" placeholder="email" class="form-control"><br><br>
-                                    <input type="password" placeholder="Password" class="form-control"><br><br>
-                                    <input type="text" placeholder="Contact" class="form-control"><br><br>
-                                    <input type="text" placeholder="City" class="form-control"><br><br>
-                                    <input type="text" placeholder="Address" class="form-control"><br><br>
-                                    <input type="submit" class="btn btn-primary" value="Submit">&nbsp;&nbsp;
-                                    <input type="reset" class="btn btn-primary" value="Reset">
+
+    </ul>
+
+    <!-- Section: Slider -->
+    <section class="slider">
+        <div class="center-block">
+            <div class="container">
+
+                <div class="center-block">
+
+                    <div class="col s12 m4">
+                        <div class="card-panel grey lighten-2 white-text">
+                            <form id="form" class="form">
+                                <h3>signup</h3>
+                                <div class="form-control">
+                                    <label for="username">Username</label>
+                                    <input type="text" id="username" placeholder="Enter Username">
+                                    <small>Error message</small>
                                 </div>
+                                <div class="form-control">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" placeholder="Enter Email">
+                                    <small>Error message</small>
+                                </div>
+                                <div class="form-control">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" placeholder="Enter Password">
+                                    <small>Error message</small>
+                                </div>
+                                <div class="form-control">
+                                    <label for="password2">Confirm Password</label>
+                                    <input type="password" id="password2" placeholder="Enter Password Again">
+                                    <small>Error message</small>
+                                </div>
+                                <button type="submit">Submit</button>
                             </form>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <div class="container visible-lg visible-xs">
-            <center>
-                <p>
-                    Copyright © TravelYaari. All Rights Reserved
-                </p>
-            </center>
-        </div>
+    <!-- Section: Search -->
+
+
+
+
+    <!-- Footer section -->
+    <footer class="section teal darken-2 white-text center">
+        <p class="flow-text">TravelYaari &copy; 2020</p>
     </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../inp/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // INIT SIDENAV
+            $(".button-collapse").sideNav();
+
+            //INIT SLIDER
+            $(".slider").slider({
+                indicators: false,
+                height: 500,
+                transition: 500,
+                interval: 6000
+            });
+
+            //AUTOCOMPLETE
+            $(".autocomplete").autocomplete({
+                data: {
+                    "Aruba": null,
+                    "Cancun Mexico": null,
+                    "Hawaii": null,
+                    "Florida": null,
+                    "California": null,
+                    "Jamaica": null,
+                    "Europe": null,
+                    "The Bahamas": null
+                }
+            });
+
+            //INIT SCROLLSPY
+            $(".scrollspy").scrollSpy();
+
+        });
+    </script>
 </body>
 
 </html>
