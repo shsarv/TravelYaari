@@ -6,7 +6,8 @@
 
     <link type="text/css" rel="stylesheet" href="../inp/css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="../inp/css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/signup.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelYaari</title>
 </head>
@@ -22,11 +23,26 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a href="../index.html">Home</a>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#search">Search</a>
+                    </li>
+                    <li>
+                        <a href="#popular">Popular</a>
+                    </li>
+                    <li>
+                        <a href="html/places.html">Places</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">Gallery</a>
                     </li>
                     <li>
                         <a href="html/sign.html">Sign in</a>
                     </li>
+                    <!-- <li>
+                        <a href="#gallery">Signup</a>
+                    </li> -->
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
@@ -63,86 +79,71 @@
 
 
     </ul>
-
-    <!-- Section: Slider -->
-    <section class="slider">
-        <div class="center-block">
-            <div class="container">
-
-                <div class="center-block">
-
-                    <div class="col s12 m4">
-                        <div class="card-panel grey lighten-2 white-text">
-                            <form id="form" class="form">
-                                <h3>signup</h3>
-                                <div class="form-control">
-                                    <label for="username">Username</label>
-                                    <input type="text" id="username" placeholder="Enter Username">
-                                    <small>Error message</small>
-                                </div>
-                                <div class="form-control">
-                                    <label for="email">Email</label>
-                                    <input type="text" id="email" placeholder="Enter Email">
-                                    <small>Error message</small>
-                                </div>
-                                <div class="form-control">
-                                    <label for="password">Password</label>
-                                    <input type="password" id="password" placeholder="Enter Password">
-                                    <small>Error message</small>
-                                </div>
-                                <div class="form-control">
-                                    <label for="password2">Confirm Password</label>
-                                    <input type="password" id="password2" placeholder="Enter Password Again">
-                                    <small>Error message</small>
-                                </div>
-                                <button type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
+    <div class="main-container">
+        <div class="container1">
+            <form id="form" class="form">
+                <h5>Register With Us!</h5>
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username">
+                    <small>Error message</small>
                 </div>
-            </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter Email">
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" placeholder="Enter Password Again">
+                    <small>Error message</small>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-    </section>
 
-    <!-- Section: Search -->
-
-
-
+    </div>
 
     <!-- Footer section -->
-    <footer class="section teal darken-2 white-text center">
+    <footer class="section green darken-2 white-text center">
         <p class="flow-text">TravelYaari &copy; 2020</p>
     </footer>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../inp/js/materialize.min.js"></script>
+    <script src="../js/signup.js"></script>
     <script>
         $(document).ready(function() {
             // INIT SIDENAV
             $(".button-collapse").sideNav();
 
-            //INIT SLIDER
-            $(".slider").slider({
-                indicators: false,
-                height: 500,
-                transition: 500,
-                interval: 6000
-            });
+            // //INIT SLIDER
+            // $(".slider").slider({
+            //     indicators: false,
+            //     height: 500,
+            //     transition: 500,
+            //     interval: 6000
+            // });
 
-            //AUTOCOMPLETE
-            $(".autocomplete").autocomplete({
-                data: {
-                    "Aruba": null,
-                    "Cancun Mexico": null,
-                    "Hawaii": null,
-                    "Florida": null,
-                    "California": null,
-                    "Jamaica": null,
-                    "Europe": null,
-                    "The Bahamas": null
-                }
-            });
+            // //AUTOCOMPLETE
+            // $(".autocomplete").autocomplete({
+            //     data: {
+            //         "Aruba": null,
+            //         "Cancun Mexico": null,
+            //         "Hawaii": null,
+            //         "Florida": null,
+            //         "California": null,
+            //         "Jamaica": null,
+            //         "Europe": null,
+            //         "The Bahamas": null
+            //     }
+            // });
 
             //INIT SCROLLSPY
             $(".scrollspy").scrollSpy();
