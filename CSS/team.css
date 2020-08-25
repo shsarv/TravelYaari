@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(../images/team/bg.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.heading {
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.heading::after {
+    content: '';
+    width: 5px;
+    height: 55px;
+    background-color: #fff;
+    position: absolute;
+    animation: blinking 1s 3s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        background-color: #fff
+    }
+    50% {
+        background-color: transparent
+    }
+    100% {
+        background-color: #fff
+    }
+}
+
+.cards-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    width: 280px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform .5s;
+}
+
+@keyframes cardAnim {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.card:nth-child(1) {
+    animation: cardAnim 2s 3s backwards;
+}
+
+.card:nth-child(2) {
+    animation: cardAnim 2s 3.5s backwards;
+}
+
+.card:nth-child(3) {
+    animation: cardAnim 2s 4s backwards;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.image-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -110px;
+    z-index: 10;
+    border: 10px solid #eee;
+}
+
+.card h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    color: #555;
+    margin: 10px;
+}
+
+.job {
+    font-family: 'Montserrat', sans-serif;
+    color: #777;
+    font-weight: 300;
+}
+
+.about-me {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    width: 90%;
+    margin: 15px 0;
+    font-style: italic;
+    color: #444;
+    text-align: center;
+}
+
+.card button {
+    width: 120px;
+    padding: 7px;
+    margin: 10px 0;
+    background-color: tomato;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #eee;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+}
+
+.card:hover button {
+    animation: buttonRotation 2s 1s linear;
+}
+
+@keyframes buttonRotation {
+    0% {
+        transform: scale(1) rotateZ(0)
+    }
+    5% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    10% {
+        transform: scale(1.2) rotateZ(-5deg)
+    }
+    15% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    20% {
+        transform: scale(1.2) rotateZ(-5deg)
+    }
+    25% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    30% {
+        transform: scale(1.2) rotateZ(-5deg)
+    }
+    35% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    40% {
+        transform: scale(1.2) rotateZ(-5deg)
+    }
+    45% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    50% {
+        transform: scale(1.2) rotateZ(-5deg)
+    }
+    55% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    60% {
+        transform: scale(1.2) rotateZ(-5deg)
+    }
+    65% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    70% {
+        transform: scale(1.2) rotateZ(-5deg)
+    }
+    75% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    80% {
+        transform: scale(1.2) rotateZ(-5deg)
+    }
+    85% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    90% {
+        transform: scale(1.2) rotateZ(-5deg)
+    }
+    95% {
+        transform: scale(1.2) rotateZ(5deg)
+    }
+    100% {
+        transform: scale(1) rotateZ(0)
+    }
+}
+
+.social-icons {
+    width: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 20px 0;
+    border-top: 1px solid #999;
+    padding-top: 20px;
+}
+
+.social-icons i {
+    font-size: 18px;
+}
+
+.fa-facebook-f {
+    color: #3b5999;
+}
+
+.fa-youtube {
+    color: #cd201f;
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+
+.fa-google-plus-g {
+    color: #dd4b39;
+}
+
+@media(max-width: 1300px) {
+    .heading {
+        font-size: 65px;
+        width: 80%;
+    }
+    .cards-wrapper {
+        width: 100%;
+        top: 32%;
+    }
+    .image-top {
+        height: 200px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .container {
+        height: 100%;
+    }
+    .heading {
+        width: 90%;
+    }
+    .cards-wrapper {
+        flex-wrap: wrap;
+        padding: 300px 0 200px 0;
+    }
+    .card {
+        margin: 0 30px 50px 30px;
+    }
+}
+
+@media(max-width: 700px) {
+    .heading {
+        font-size: 50px;
+    }
+    .heading::after {
+        height: 40px;
+    }
+}
+
+@media(max-width: 450px) {
+    .heading {
+        font-size: 40px;
+    }
+    .heading::after {
+        height: 33px;
+    }
+    .cards-wrapper {
+        padding: 250px 0 150px 0;
+    }
+}
