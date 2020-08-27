@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/nav1.css">
+    <link rel="stylesheet" href="../CSS/signup.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+</head>
+
+<body>
+    <div id="navigation"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#navigation').load("nav1.html");
+
+        });
+    </script>
+    <div class="container" id="signup-container-shadow">
+        <div class="row display-flex">
+            <div class="col-xs-12 col-sm-6" id="signup-intro-form">
+                <!-- <div class="signup-container1"> -->
+                <form id="signup-form" class="signup-form">
+                    <h2 style="font-size:30px;font-weight: 600;color: honeydew;">Register With Us!</h2>
+                    <div class="signup-form-control">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter Username">
+                        <small>Error message</small>
+                    </div>
+                    <div class="signup-form-control">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter Email">
+                        <small>Error message</small>
+                    </div>
+                    <div class="signup-form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password">
+                        <small>Error message</small>
+                    </div>
+                    <div class="signup-form-control">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Enter Password Again">
+                        <small>Error message</small>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-6" id="signup-intro">
+                <h2>
+                    Welcome toTravelYaari
+                </h2>
+                <p style="text-align: center;">We Are Happy to see you here. We are working to provide the best services to you.</p>
+                <img class="img-responsive img-rounded" src="../Images/signup/bg2.jpeg" alt="signup image">
+
+            </div>
+        </div>
+    </div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("footer.html");
+
+        });
+    </script>
+    <script src="../JS/signup.js "></script>
+</body>
+
+</html>
