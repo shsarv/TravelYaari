@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="../CSS/nav1.css">-->
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navigation"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#navigation').load("nav1.html");
+
+        });
+    </script>
+    <div class="container" id="banner1">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Contact Us for booking</h3>
+                        <i class="fa fa-envelope" aria-hidden="true" style="font-size:50px"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed facilis? Esse porro, rem sapiente quaerat aspernatur perspiciatis! Qui, quam!</p>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>
+                                <h4>Location</h4>
+                            </li>
+                            <li>Travelville Agency</li>
+                            <li>555 Beach Rd, Suite 33</li>
+                            <li>Miami FL, 555 55</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 " id="gray">
+                <h3>Please Fill Out this Form</h3>
+                <form method="POST" action="../index.html">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="Name" required="true" pattern=".{1,}">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Email" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact No.</label>
+                        <input type="text" class="form-control" name="contact" placeholder="Contact" required="true" pattern=".{10}">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <input type="text" class="form-control" name="message" placeholder="message">
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit" value="Submit" name="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="banner2">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <h2><b><u>LIVE SUPPORT</u></b></h2>
+                <h4>24 hours || 7 days a week || 365 days in a year Live Technical Support</h4>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters. There are many variants
+                    of passaages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                    need to be sure there isn't anything embarrassing hidden in the middle of text.
+                </p>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg">Learn More</button>
+            </div>
+            <div class="col-lg-6">
+                <img src="../Resources/desk.png" alt="../Resources/livesupport.jpg" class="img-fluid ">
+            </div>
+        </div>
+    </div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("footer.html");
+
+        });
+    </script>
+
+
+</body>
+
+</html>
