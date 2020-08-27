@@ -1,0 +1,28 @@
+#footer-anchor{
+    color: white ;
+    text-decoration: none;
+}
+#footer-anchor:hover{
+    color: pink;
+}
+#footer-p-up{
+    background-color: #4caf50;
+    color:white;
+    text-align: center;
+}
+#footer-p-down{
+    background-color: #4caf50;
+    color:white;
+}
+#footer-follow{
+    background-color:#4caf50;
+    text-align: center;
+    color: white;
+}
+.footer-logo{
+    color: white;
+}
+.footer-logo:hover{
+    color:yellow;
+/*    background-color: blue;*/
+}
