@@ -79,15 +79,15 @@ This Repo contains Fullstack mini project using Front end technologies.
    <table>
   <tr>
     <td align="center">
-  <a href="https://en.wikipedia.org/wiki/HTML"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/html.jpg" width="80px;" alt=""/><br /><sub><b>HTML5</b></sub></a></td>
+  <a href="https://en.wikipedia.org/wiki/HTML"><img src="resources/html.jpg" width="80px;" height="80px;"  alt=""/><br /><sub><b>HTML5</b></sub></a></td>
    <td align="center">
-  <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/css.jpg" width="80px;" alt=""/><br /><sub><b>CSS3</b></sub></a></td>
+  <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><img src="resources/css.jpg" width="80px;" height="80px;"  alt=""/><br /><sub><b>CSS3</b></sub></a></td>
     <td align="center">
-  <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/boot.jpg" width="80px;" alt=""/><br /><sub><b>Bootstrap</b></sub></a></td>
+  <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"><img src="resources/boot.jpg" width="80px;" height="80px;"  alt=""/><br /><sub><b>Bootstrap</b></sub></a></td>
    <td align="center">
-  <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/js.jpg" width="80px;" alt=""/><br /><sub><b>JAVASCRIPT</b></sub></a></td>
+  <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="resources/js.jpg" width="80px;" height="80px;"  alt=""/><br /><sub><b>JAVASCRIPT</b></sub></a></td>
       <td align="center">
-   <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/vs.jpg" width="80px;" height="100px;" alt=""/><br /><sub><b>VSCODE</b></sub></a></td>
+   <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code"><img src="resources/vs.jpg" width="80px;" height="80px;" alt=""/><br /><sub><b>VSCODE</b></sub></a></td>
  </tr>
  </table>
    
@@ -204,7 +204,7 @@ This Repo contains Fullstack mini project using Front end technologies.
     <td align="center">
   <a href="https://github.com/pankkap"><img src="https://avatars2.githubusercontent.com/u/29678994?s=460&v=4" width="80px;" alt=""/><br /><sub><b>Pankaj Kapoor</b></sub></a></td>
    <td align="center">
-  <a href="https://www.beta-labs.in/"><img src="https://raw.githubusercontent.com/shsarv/TravelYaari/master/resources/beta-labs.jpg" width="80px;" alt=""/><br /><sub><b>BETA-LABS</b></sub></a></td>
+  <a href="https://www.beta-labs.in/"><img src="resources/beta-labs.jpg" width="80px;" alt=""/><br /><sub><b>BETA-LABS</b></sub></a></td>
  </tr>
  </table>
   
