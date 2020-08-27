@@ -3,14 +3,18 @@
     padding: 0;
 }
 
-.container {
+.body {
+    padding-top: 65px;
+}
+
+.team-container {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(../images/team/bg.jpeg) center no-repeat;
     background-size: cover;
 }
 
-.heading {
+.team-heading {
     color: #fff;
     font-size: 70px;
     position: absolute;
@@ -24,7 +28,7 @@
     white-space: pre-wrap;
 }
 
-.heading::after {
+.team-heading::after {
     content: '';
     width: 5px;
     height: 55px;
@@ -45,7 +49,7 @@
     }
 }
 
-.cards-wrapper {
+.team-cards-wrapper {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -55,7 +59,7 @@
     transform: translateX(-50%);
 }
 
-.card {
+.team-card {
     width: 280px;
     background-color: #eee;
     display: flex;
@@ -74,23 +78,23 @@
     }
 }
 
-.card:nth-child(1) {
+.team-card:nth-child(1) {
     animation: cardAnim 2s 3s backwards;
 }
 
-.card:nth-child(2) {
+.team-card:nth-child(2) {
     animation: cardAnim 2s 3.5s backwards;
 }
 
-.card:nth-child(3) {
+.team-card:nth-child(3) {
     animation: cardAnim 2s 4s backwards;
 }
 
-.card:hover {
+.team-card:hover {
     transform: scale(1.1);
 }
 
-.image-top {
+.team-image-top {
     width: 100%;
     height: 220px;
     object-fit: cover;
@@ -98,7 +102,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
 }
 
-.profile-image {
+.team-profile-image {
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -108,20 +112,20 @@
     border: 10px solid #eee;
 }
 
-.card h1 {
+.team-card h1 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 22px;
     color: #555;
     margin: 10px;
 }
 
-.job {
+.team-job {
     font-family: 'Montserrat', sans-serif;
     color: #777;
     font-weight: 300;
 }
 
-.about-me {
+.team-about-me {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
     width: 90%;
@@ -131,7 +135,7 @@
     text-align: center;
 }
 
-.card button {
+.team-card button {
     width: 120px;
     padding: 7px;
     margin: 10px 0;
@@ -144,7 +148,7 @@
     box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
 }
 
-.card:hover button {
+.team-card:hover button {
     animation: buttonRotation 2s 1s linear;
 }
 
@@ -214,7 +218,7 @@
     }
 }
 
-.social-icons {
+.team-social-icons {
     width: 150px;
     list-style: none;
     display: flex;
@@ -224,7 +228,7 @@
     padding-top: 20px;
 }
 
-.social-icons i {
+.team-social-icons i {
     font-size: 18px;
 }
 
@@ -245,52 +249,52 @@
 }
 
 @media(max-width: 1300px) {
-    .heading {
+    .team-heading {
         font-size: 65px;
         width: 80%;
     }
-    .cards-wrapper {
+    .team-cards-wrapper {
         width: 100%;
         top: 32%;
     }
-    .image-top {
+    .team-image-top {
         height: 200px;
     }
 }
 
 @media(max-width: 1000px) {
-    .container {
+    .team-container {
         height: 100%;
     }
-    .heading {
+    .team-heading {
         width: 90%;
     }
-    .cards-wrapper {
+    .team-cards-wrapper {
         flex-wrap: wrap;
         padding: 300px 0 200px 0;
     }
-    .card {
+    .team-card {
         margin: 0 30px 50px 30px;
     }
 }
 
 @media(max-width: 700px) {
-    .heading {
+    .team-heading {
         font-size: 50px;
     }
-    .heading::after {
+    .team-heading::after {
         height: 40px;
     }
 }
 
 @media(max-width: 450px) {
-    .heading {
+    .team-heading {
         font-size: 40px;
     }
-    .heading::after {
+    .team-heading::after {
         height: 33px;
     }
-    .cards-wrapper {
+    .team-cards-wrapper {
         padding: 250px 0 150px 0;
     }
 }
