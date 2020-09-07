@@ -127,6 +127,12 @@ body {
     margin-top: 15px;
     padding: 9px 10px !important;
 }
+.dropdown-menu{
+    background-color: #4caf50 !important;
+}
+.dropdown-menu:active{
+    background-color: #4caf50 !important;
+}
 
 @media (min-width: 768px) {
     .navbar-nav>li>a {
