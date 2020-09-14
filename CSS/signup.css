@@ -152,3 +152,14 @@ h2 {
 #signup-container-shadow {
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
+
+.login {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(176, 248, 117);
+}
+
+.login:hover {
+    text-decoration: underline;
+    color: rgb(243, 75, 33);
+}
