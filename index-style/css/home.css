@@ -1,0 +1,192 @@
+.row {
+    border: 10px;
+    border-color: antiquewhite;
+    background-color: rgb(0, 215, 0, 0.2);
+}
+
+section p {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    size: 25px;
+}
+
+p:first-child::first-letter {
+    font-size: xx-large;
+}
+
+.introduction {
+    font-size: large;
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.introduction #txt {
+    width: 50%;
+    float: left;
+}
+
+.introduction #im {
+    width: 50%;
+    float: right;
+    margin-top: 40px;
+}
+
+p:nth-child(2n+1):hover {
+    background-color: rgb(200, 215, 200, 0.5);
+}
+
+p:nth-child(2n):hover {
+    background-color: rgb(200, 215, 200, 0.6);
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    float: center;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    height: fit-content;
+    padding: 10px;
+    border: 5px;
+    justify-content: center;
+    font-size: medium;
+}
+
+.column:hover {
+    background-color: darkgray;
+}
+
+h3 {
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+
+@media screen and (max-width: 840px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* Sidebar links */
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+
+/* Active/current link */
+
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Links on mouse-over */
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 25%;
+}
+
+section.row {
+    margin-left: 220px;
+}
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 215, 115, 0.9);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
+
+#im:hover .overlay {
+    transform: scale(1);
+}
+
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
