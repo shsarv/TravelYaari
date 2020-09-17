@@ -1,4 +1,4 @@
-.row {
+#matter .row {
     border: 10px;
     border-color: antiquewhite;
     background-color: rgb(0, 215, 0, 0.2);
@@ -12,7 +12,7 @@ section p {
     size: 25px;
 }
 
-p:first-child::first-letter {
+#txt p:first-child::first-letter {
     font-size: xx-large;
 }
 
@@ -34,11 +34,11 @@ p:first-child::first-letter {
     margin-top: 40px;
 }
 
-p:nth-child(2n+1):hover {
+#matter .row p:nth-child(2n+1):hover {
     background-color: rgb(200, 215, 200, 0.5);
 }
 
-p:nth-child(2n):hover {
+#matter .row p:nth-child(2n):hover {
     background-color: rgb(200, 215, 200, 0.6);
 }
 
@@ -70,7 +70,7 @@ h3 {
 
 /* Clear floats after the columns */
 
-.row:after {
+#matter .row:after {
     content: "";
     display: table;
     clear: both;
@@ -130,7 +130,7 @@ div.content {
     height: 25%;
 }
 
-section.row {
+#matter section.row {
     margin-left: 220px;
 }
 
