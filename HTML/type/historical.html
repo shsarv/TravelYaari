@@ -7,74 +7,212 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../CSS/nav1.css">
+    <link rel="stylesheet" href="../../index-style/css/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>historical places in India</title>
+
 </head>
 
 <body>
-    <div class="container">
-        <h2>Please Select the best historical destination you are looking for</h2>
-        <!-- <p>The .thumbnail class can be used to display an image gallery.</p>
-        <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
-        <p>Click on the images to enlarge them.</p> -->
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                        <img src="https://source.unsplash.com/1600x900/?agra fort" alt="Lights" style="width:100%">
-                        <div class="caption">
-                            <h4>Agra Fort, Agra</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                        <img src="https://source.unsplash.com/1600x900/?jaipur fort" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Jaipur Fort, Jaipur</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                        <img src="https://source.unsplash.com/1600x900/?qutub minar" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Qutub Minar, New Delhi</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                        <img src="https://source.unsplash.com/1600x900/?hawa mahal" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Hawa Mahal, Jaipur</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                        <img src="https://source.unsplash.com/1600x900/?red fort" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Red Fort, New Delhi</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                        <img src="https://source.unsplash.com/1600x900/?taj mahal" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Taj Mahal, Agra</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
-                </div>
-            </div>
+    <div id="navigation"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#navigation').load("../nav1.html");
+
+        });
+    </script>
+    <main class="row responsive-img">
+        <div class="sidebar" id="side">
 
         </div>
-    </div>
+        <script>
+            $(document).ready(function() {
+
+                $('#side').load("../sidebar.html");
+
+            });
+        </script>
+        <section id="content">
+            <h2>Please Select the City you are looking for</h2>
+            <!-- <p>The .thumbnail class can be used to display an image gallery.</p>
+        <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+        <p>Click on the images to enlarge them.</p> -->
+            <div class="row responsive-img">
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Agra">
+                        <img src="../../places/Historical/Agra_c/images/india-agra-top-attractions-agra-old-city.jpg" alt="Lights" style="width:100%">
+                        <div class="caption">
+                            <h4>Agra</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Jaipur">
+                        <img src="../../places/Historical/Jaipur_c/images/india-jaipur-top-attractions-amber-fort.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Jaipur</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Delhi">
+                        <img src="../../places/Historical/Delhi/images/india-delhi-rajpath-rashtrapati-bhavan.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Delhi</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Jaisalmer">
+                        <img src="../../places/Historical/Jaisalmer/images/india-in-pictures-beautiful-places-to-photograph-bada-bagh-jaisalmer.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Jaisalmer</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Hampi">
+                        <img src="../../places/Historical/Hampi/images/Hampi-1.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Hampi</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="Jodhpur">
+                    <div class="thumbnail">
+                        <img src="../../places/Historical/Jodhpur/images/india-in-pictures-beautiful-places-to-photograph-mehrangarh-fort.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Jodhpur</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Ayodhya">
+                        <img src="../../places/Historical/Ayodhya/images/Ayodhya.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Ayodhya</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Dwarka">
+                        <img src="../../places/Historical/Dwarka/images/Temple-in-Dwarka.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Dwarka</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="Gwalior">
+                    <div class="thumbnail">
+                        <img src="../../places/Historical/Gwalior/images/Gwalior-Fort.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Gwalior</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Kannauj">
+                        <img src="../../places/Historical/Kannauj/images/Kannauj.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Kannauj</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Kollam">
+                        <img src="../../places/Historical/Kollam/images/Kollam.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Kollam</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Madurai">
+                        <img src="../../places/Historical/Madurai/images/Madurai.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Madurai</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Patna">
+                        <img src="../../places/Historical/Patna/images/Patna.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Patna</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="Puri">
+                    <div class="thumbnail">
+                        <img src="../../places/Historical/Puri/images/Jagannath-Temple-Puri.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Puri</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="Pushkar">
+                    <div class="thumbnail">
+                        <img src="../../places/Historical/Pushkar/images/Pushkar.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Pushkar</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Thanjavur">
+                        <img src="../../places/Historical/Thanjavur/images/Thanjavur.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Thanjavur</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Ujjain">
+                        <img src="../../places/Historical/Ujjain/images/Ujjain.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Ujjain</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Vadodara">
+                        <img src="../../places/Historical/Vadodra/images/Vadodara.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Vadodara</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail" id="Varanasi">
+                        <img src="../../places/Historical/Varanasi_c/images/india-varanasi-best-places-to-visit-ramnagar-fort.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Varanasi_c</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="Vrindawan">
+                    <div class="thumbnail">
+                        <img src="../../places/Historical/Vrindawan/images/Sri-Krishna-Balaram-Mandir-Vrindavan.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <h4>Vrindawan</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("../footer.html");
+
+        });
+    </script>
 
 </body>
 
