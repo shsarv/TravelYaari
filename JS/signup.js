@@ -68,4 +68,5 @@ form.addEventListener("submit", function(e) {
     checkLength(password, 6, 20);
     checkEmail(email);
     checkPassword(password, password2);
+    window.location.assign("HTML\home.html");
 });
