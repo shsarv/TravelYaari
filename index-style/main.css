@@ -22,3 +22,23 @@
 .section-contact h5 {
     margin-bottom: 30px;
 }
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-twitter:hover {
+    color: blue;
+}
+
+.fa-linkedin:hover {
+    color: blue;
+}
+
+.fa-google-plus:hover {
+    color: blue;
+}
+
+.fa-pinterest:hover {
+    color: blue;
+}
