@@ -1,28 +1,53 @@
-#footer-anchor{
-    color: white ;
+#footer-anchor {
+    color: white;
     text-decoration: none;
 }
-#footer-anchor:hover{
+
+#footer-anchor:hover {
     color: pink;
 }
-#footer-p-up{
+
+#footer-p-up {
     background-color: #4caf50;
-    color:white;
+    color: white;
     text-align: center;
 }
-#footer-p-down{
+
+#footer-p-down {
     background-color: #4caf50;
-    color:white;
+    color: white;
 }
-#footer-follow{
-    background-color:#4caf50;
+
+#footer-follow {
+    background-color: #4caf50;
     text-align: center;
     color: white;
 }
-.footer-logo{
+
+.footer-logo {
     color: white;
 }
-.footer-logo:hover{
-    color:yellow;
-/*    background-color: blue;*/
+
+.fa-facebook:hover {
+    color: #3b5999;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-instagram:hover {
+    color: #e4405f;
+}
+
+.fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.fa-pinterest:hover {
+    color: #bd081c;
+}
+
+.fa-google-plus:hover {
+    color: #dd4b39;
 }
