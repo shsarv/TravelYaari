@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../CSS/nav1.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/footer.css">
     <title>hill-stations in India</title>
     <script>
     </script>
@@ -19,27 +20,34 @@
             text-align: justify;
             /* margin: 0;
             padding: 0;
-            box-sizing: border-box; */
+            box-sizing: border-box;
+        } */
+        
+        .col-md-4 {
+            margin-top: 2rem;
+        }
         
         .my-panel {
-            height: 85vh;
-            overflow: auto;
+            /* height: 85vh; */
+            overflow: hidden;
             border: 1px solid rgb(218, 217, 217);
             border-radius: 10px;
             box-shadow: 2px 2px 5px 0px rgba(122, 185, 114, 0.75);
             text-align: justify;
+            text-overflow: ellipsis;
+            padding: 1rem;
         }
         
         .my-panel:hover {
             box-shadow: 4px 3px 5px 0px rgba(86, 148, 83, 0.97);
         }
-        
-        .my-panel p {
+        /* .my-panel p {
             margin: 0.7rem;
-        }
+        } */
         
         h4 {
             color: #4caf50;
+            font-weight: bolder;
         }
         
         .fa-star {
@@ -51,6 +59,68 @@
         
         .checked {
             color: orange;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(119, 216, 119, 0.9);
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transition: .3s ease;
+            border-radius: 10px;
+        }
+        
+        .im:hover .overlay {
+            transform: scale(1);
+        }
+        
+        .text {
+            color: rgb(249, 252, 248);
+            font-size: 15px;
+            position: absolute;
+            top: 11%;
+            left: 10%;
+            transform: translate(-10%, -10%);
+            text-align: justify;
+            margin: 1rem 0 1rem 1rem;
+        }
+        
+        .im {
+            float: right;
+        }
+        
+        .book {
+            color: white;
+        }
+        
+        .book:hover {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .type-destination {
+            text-align: center;
+            padding: 2rem;
+            font-weight: bolder;
+            color: rebeccapurple;
+            font-size: 32px;
+            text-shadow: rgb(83, 218, 228) 2px 2px 1px 2px;
+        }
+        
+        #intro {
+            text-align: justify;
+        }
+        
+        #choose-place {
+            font-size: 24px;
+            color: rgb(74, 236, 109);
+            text-align: center;
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -65,276 +135,517 @@
         });
     </script>
     <div class="container">
-        <h2> Best Hill Stations in India</h2>
+        <h2 class="type-destination"> Best Hill Stations in India</h2>
         <div class="row" id="intro">
-            <div class="col-12">
+            <div class="col-xs-12">
                 India has abundant hill stations spread all over the country that makes for a tranquil and picturesque destination for tourists. Kashmir has some of the most beautiful hill stations in India which include Pahalgam, Gulmarg, Srinagar and Sonmarg. In Himachal
                 Pradesh also tourists can be spoilt for choices which include Shimla, Manali and Dalhousie. Mussoorie and Nainital are among the most popular hill stations in north India. Coorg, Ooty and Kodaikanal are the most popular ones in South India.
-                Matheran, Almora, McLeodganj, Gangtok, and Coonoor among others are the lesser crowded hill station in India.
+                Matheran, Almora, McLeodganj, Gangtok, and Coonoor among others are the lesser crowded hill station in India.<br>
             </div>
         </div>
+        <h6 id="choose-place">Select your Dream Destination.</h6>
         <div class="row">
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
                         <a href="https://youtu.be/nNcNay4Bgic" data-toggle="lightbox" data-gallery="youtubevideos">
-                            <img src=" ../../places/Hill-Stations/LADAKH.jpg ">
+                            <img src=" ../../places/Hill-Stations/LADAKH.jpg " style="width:100% ">
                         </a>
-                        <!-- <img src="../../places/Hill-Stations/LADAKH.jpg " alt="Nature " style="width:100% "> -->
-                        <div class="caption ">
-                            <h4>Leh Ladakh, Jammu & Kashmir</h4>
-                            <p>"India 's Own Moonland"</p>
-                        </div>
-                    </div>
-
-                    <p>Ladakh is a union territory in the Kashmir region of India. Formerly falling in the state of Jammu & Kashmir, Ladakh was administered a union territory on 31st October 2019. Extending from the Siachen Glacier to the main Great Himalayas,
-                        Ladakh is a land like no other. Ladakh is an adventure playground for climbing, jeeps tours, rafting and high-altitude trekking. Note that Leh Ladakh is inaccessible by road outside the summer months. The road passes close altogether
-                        from around October to May, and the only way to reach left is by air.
-                    </p>
-                    <!-- <p>Stunning Gompas (Tibetan Buddhist monasteries), fluttering prayer flags, whitewashed stupas, Ladakh is a riot of intricate murals and red-robed monks. Known as the world's coldest desert, the glaciers, sand dunes and freezing
-                            winds shape the area 's rugged landscape. Dominated by a culture similar to Tibetan culture, the people of Ladakh are friendly and welcoming to tourists. It is said that only in Ladakh can a man sitting in the sun with his feet in the shade suffer
-                    from sunstroke and frostbite at the same time.
-                    </p>
-                    <p>For those of us living in the constant confusion about the difference between these twin locations, Leh-Ladakh, here is something that might help you. Ladakh is divided into two districts: district Leh, and district Kargil. The former
-                    district has a popular town “Leh” and is a great tourist attraction because of its beautiful monasteries, picturesque locations, and interesting markets defining the culture of the place.
-                    </p> -->
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="my-panel">
-                    <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/OOTY.jpg" alt="Lights" style="width:100%">
                         <div class="caption">
-                            <h4>Ooty,Tamil Nadu</h4>
-                            <p>"Queen of the Nilgiris" &emsp;&emsp;<span class="fa fa-star checked"></span>
+                            <h4>Leh Ladakh, Jammu & Kashmir</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">India's Own Moonland</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
                             </p>
                         </div>
-
                     </div>
-                    <p>Nestled amidst Nilgiri hills, Ooty, also known as Udagamandalam, is a hill station in Tamil Nadu which serves as a top-rated tourist destination. Once regarded as the summer headquarters of the East India Company, the Queen of the
-                        hills is a picturesque getaway.</p>
-                    <!-- <p>Dotted with tea gardens, serene waterfalls, winding country lanes, and charming colonial architecture, Ooty is the perfect respite everyone. Popular among couples and honeymooners, Ooty allures its visitors with the panoramic views
-                    of the Nilgiri mountains.</p>
-                    <p>The Nilgiri mountain railway is the steepest track in all of Asia. Remember the hit song 'Chaiyya Chaiyya ' where Shahrukh Khan and Malaika Arora matching steps on top of a train? Remember the breathtaking locales as the train chugged
-                    its way across lush greenery? Yes, that was the Nilgiri Mountain Railways, and the Nilgiri Mountains all along.</p> -->
+                    <p id="description1">
+                        Ladakh is a union territory in the Kashmir region of India. Formerly falling in the state of Jammu & Kashmir, Ladakh was administered a union territory on 31st October 2019. Extending from the Siachen Glacier to the main Great Himalayas, Ladakh is a land
+                        like no other. Ladakh is an adventure playground for climbing, jeeps tours, rafting and high-altitude trekking. Note that Leh Ladakh is inaccessible by road outside the summer months. The road passes close altogether from around
+                        October to May, and the only way to reach left is by air.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Ladakh is a union territory in the Kashmir region of India. Formerly falling in the state of Jammu & Kashmir, Ladakh was administered a union territory on 31st October 2019. Extending from the Siachen Glacier to the main Great
+                                Himalayas, Ladakh is a land like no other. Ladakh is an adventure playground for climbing, jeeps tours, rafting and high-altitude trekking. Note that Leh Ladakh is inaccessible by road outside the summer months. The road
+                                passes close altogether from around October to May, and the only way to reach left is by air.<br><br>Stunning Gompas (Tibetan Buddhist monasteries), fluttering prayer flags, whitewashed stupas, Ladakh is a riot of intricate
+                                murals and red-robed monks. Known as the world's coldest desert, the glaciers, sand dunes and freezing winds shape the area 's rugged landscape. Dominated by a culture similar to Tibetan culture, the people of Ladakh are
+                                friendly and welcoming to tourists. <br><br>It is said that only in Ladakh can a man sitting in the sun with his feet in the shade suffer from sunstroke and frostbite at the same time. For those of us living in the constant
+                                confusion about the difference between these twin locations, Leh-Ladakh, here is something that might help you. Ladakh is divided into two districts: district Leh, and district Kargil. The former district has a popular
+                                town “Leh” and is a great tourist attraction because of its beautiful monasteries, picturesque locations, and interesting markets defining the culture of the place.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/MANALI.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/bw7qHDM2Zec" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/OOTY.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Manali,Himachal Pradesh</h4>
-                            <p>"Lover's Paradise - India 's Honeymoon capital"</p>
-
+                            <h4>Ooty, Tamil Nadu</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Queen of the Nilgiris</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
                         </div>
                     </div>
-                    <p>Nestled in between the snow-capped slopes of the Pir Panjal and the Dhauladhar ranges, Manali is one of the most popular hill stations in the country. With jaw-dropping views, lush green forests, sprawling meadows carpeted with flowers,
-                        gushing blue streams, a perpetual fairy-tale like mist lingering in the air, and a persistent fragrance of pines - Manali has been blessed with extraordinary scenic beauty. From museums to temples, from quaint little hippie villages
-                        to bustling upscale streets, river adventures to trekking trails, Manali has every reason to be the tourist magnet it is, all year round. </p>
-                    <!-- <p>Swaying eucalyptus trees, endearing little eateries, small kitschy local market places, and cafes
-                    which serve delicious local food at unbelievable prices, Old Manali is a serene, tranquil place, whose lingering silence is broken only by the twittering of the birds and the sound of the roaring waters of the Kullu River.With more than 25 lakh visitors every year, Rohtang Pass easily stands out as one of the most famous scenic spots to visit in Manali. Connecting the Lahaul and Kullu valleys, the Rohtang Pass is famous among nature lovers, photographers and
-                    adventure seekers alike. Mountain biking or skiing whilst surrounded by the awe-inspiring glaciers and snow-capped peaks on all sides is an exhilarating experience.
+                    <p id="description2">
+                        Nestled amidst Nilgiri hills, Ooty, also known as Udagamandalam, is a hill station in Tamil Nadu which serves as a top-rated tourist destination. Once regarded as the summer headquarters of the East India Company, the Queen of the hills is a pictures
+                        que getaway. Dotted with tea gardens, serene waterfalls, winding country lanes, and charming colonial architecture, Ooty is the perfect respite everyone. Popular among couples and honeymooners, Ooty allures its visitors with the
+                        panoramic views of the Nilgiri mountains.
                     </p>
-                    <p>Manali is also home to a tiny slice of history, in the form of the Naggar castle. Located among the breathtaking forests in Naggar town, the Naggar Castle is a stunning historical edifice. Once used as the residence of Raja Sidh Singh of Kullu,
-                    the castle is a fine blend of traditional Himalayan and European architecture. With majestic fireplaces, beautifully built staircases, and meticulous wood and stone works, the Naggar Castle is a must-visit when you're in Manali.
-                            </p> -->
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Nestled amidst Nilgiri hills, Ooty, also known as Udagamandalam, is a hill station in Tamil Nadu which serves as a top-rated tourist destination. Once regarded as the summer headquarters of the East India Company, the Queen
+                                of the hills is a picturesque getaway. Dotted with tea gardens, serene waterfalls, winding country lanes, and charming colonial architecture, Ooty is the perfect respite everyone.<br><br> Popular among couples and honeymooners,
+                                Ooty allures its visitors with the panoramic views of the Nilgiri mountains. The Nilgiri mountain railway is the steepest track in all of Asia. Remember the hit song 'Chaiyya Chaiyya ' where Shahrukh Khan and Malaika Arora
+                                matching steps on top of a train? Remember the breathtaking locales as the train chugged its way across lush greenery? Yes, that was the Nilgiri Mountain Railways, and the Nilgiri Mountains all along.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://youtu.be/lpphLVKKgNY" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/MANALI.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Manali, Himachal Pradesh</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">India's Honeymoon capital</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description3">
+                        Nestled in between the snow-capped slopes of the Pir Panjal and the Dhauladhar ranges, Manali is one of the most popular hill stations in the country. With jaw-dropping views, lush green forests, sprawling meadows carpeted with flowers, gushing blue streams,
+                        a perpetual fairy-tale like mist lingering in the air, and a persistent fragrance of pines - Manali has been blessed with extraordinary scenic beauty. From museums to temples, from quaint little hippie villages to bustling upscale
+                        streets, river adventures to trekking trails, Manali has every reason to be the tourist magnet it is, all year round.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Manali is one of the most popular hill stations in the country. With jaw-dropping views, lush green forests, sprawling meadows carpeted with flowers, gushing blue streams, a perpetual fairy-tale like mist lingering in the air, and a persistent fragrance
+                                of pines - Manali has been blessed with extraordinary scenic beauty. <br><br> Swaying eucalyptus trees, endearing little eateries, small kitschy local market places, and cafes which serve
+                                delicious local food at unbelievable prices, Old Manali is a serene, tranquil place, whose lingering silence is broken only by the twittering of the birds and the sound of the roaring waters of the Kullu River.With more
+                                than 25 lakh visitors every year, Rohtang Pass easily stands out as one of the most famous scenic spots to visit in Manali. Connecting the Lahaul and Kullu valleys, the Rohtang Pass is famous among nature lovers, photographers
+                                and adventure seekers alike. <br><br>Mountain biking or skiing whilst surrounded by the awe-inspiring glaciers and snow-capped peaks on all sides is an exhilarating experience. Manali is also home to a tiny slice of history,
+                                in the form of the Naggar castle. Located among the breathtaking forests in Naggar town, the Naggar Castle is a stunning historical edifice. Once used as the residence of Raja Sidh Singh of Kullu, the castle is a fine blend
+                                of traditional Himalayan and European architecture. With majestic fireplaces, beautifully built staircases, and meticulous wood and stone works, the Naggar Castle is a must-visit when you're in Manali.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+
 
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/AULI.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/rmH3FdYL2xY" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/AULI.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
                             <h4>Auli, Uttarakhand</h4>
-                            <p>"The skiing destination of India"</p>
-
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">skiing destination of India</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
                         </div>
                     </div>
-                    <p>Dotted with the apple orchards, old oaks, and pine trees there is no dearth of natural beauty in Auli. Apart from skiing you can also go for numerous treks in the hills of Garhwal Himalayas and enjoy the spellbinding views of the snow-draped
-                        mountains. Auli is a popular hill resort in the Himalayan range dating back to the 8th Century AD. The Garhwal Mandal Vikas Nigam Limited (GMVL) runs a ski resort and a ski rental shop. </p>
-                    <!-- <p>Auli is a popular skiing destination in India because of its glittering slopes and clean environment. Dotted with apple orchards, oaks and deodars, Auli is a popular hill town with numerous ski resorts situated amidst the Himalayan range.
-                    Located at 2800 meters above sea levels, it is home to mountain ranges of Nanda Devi, Mana Parvat and Kamat Kamet. Many religious destinations are also scattered around Auli. It is believed that Shankracharya had blessed Auli with
-                    his visit.</p> -->
+                    <p id="description4">
+                        Dotted with the apple orchards, old oaks, and pine trees there is no dearth of natural beauty in Auli. Apart from skiing you can also go for numerous treks in the hills of Garhwal Himalayas and enjoy the spellbinding views of the snow-draped mountains.it
+                        is a popular hill resort in the Himalayan range dating back to the 8th Century AD. The Garhwal Mandal Vikas Nigam Limited (GMVL) runs a ski resort and a ski rental shop. Auli is a popular skiing destination in India because of
+                        its glittering slopes and clean environment.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Dotted with the apple orchards, old oaks, and pine trees there is no dearth of natural beauty in Auli. Apart from skiing you can also go for numerous treks in the hills of Garhwal Himalayas and enjoy the spellbinding views
+                                of the snow-draped mountains. Auli is a popular hill resort in the Himalayan range dating back to the 8th Century AD. The Garhwal Mandal Vikas Nigam Limited (GMVL) runs a ski resort and a ski rental shop. Auli is a popular
+                                skiing destination in India because of its glittering slopes and clean environment. Dotted with apple orchards, oaks and deodars, Auli is a popular hill town with numerous ski resorts situated amidst the Himalayan range.
+                                Located at 2800 meters above sea levels, it is home to mountain ranges of Nanda Devi, Mana Parvat and Kamat Kamet. Many religious destinations are also scattered around Auli. It is believed that Shankracharya had blessed
+                                Auli with his visit.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/SRINAGAR.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/EfcGGq4IWeo" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/SRINAGAR.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
                             <h4>Srinagar, Jammu & Kashmir</h4>
-                            <p>‘Heaven on Earth</p>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Heaven on Earth</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
                         </div>
                     </div>
-                    <p>Famously known as ‘Heaven on Earth’, Srinagar is located in the union territory of Jammu & Kashmir, on the banks of river Jhelum. As picturesque as the most stunning painting to ever be painted, Srinagar is known for the stationary
-                        houseboats and colourful Shikararas on Dal Lake.</p>
-                    <p>The main draw of Sringara, the gondola-type rowboats - Shikaras are used by the tourists to see attractions like the Floating Vegetable Market, and the Mir Bahris – a lively community of people who live on the lake itself. Known as
-                        the summer capital of Jammu & Kashmir, Srinagar is home to some of the most exquisite Mughal-age gardens in India, with the top attractions being Nishat Bagh, Shalimar Bagh and Chashm-E-Shahi Garden.</p>
-                    <!-- <p>Kashmiri cuisine is famous all over the globe, so when in Srinagar, trying out the local dishes, which are rich in unique fragrant spices, is a must. Srinagar is also famous for the Kashmiri shawls, Kashmiri apples and the dried fruits
-                    (almonds and walnuts) which can be bought from the Lal Chowk Market.</p>
-                <p>Heavy snowfahs of December to February. Communal tensions also lead to frequent curfews in some parts of the city. Make sure to check the situation before visiting.</p> -->
-
+                    <p id="description5">
+                        Famously known as ‘Heaven on Earth’, Srinagar is located in the union territory of Jammu & Kashmir, on the banks of river Jhelum. As picturesque as the most stunning painting to ever be painted, Srinagar is known for the stationary houseboats and colourful
+                        Shikararas on Dal Lake. The main draw of Sringara, the gondola-type rowboats - Shikaras are used by the tourists to see attractions like the Floating Vegetable Market, and the Mir Bahris – a lively community of people who live
+                        on the lake itself.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Famously known as ‘Heaven on Earth’, Srinagar is located in the union territory of Jammu & Kashmir, on the banks of river Jhelum. As picturesque as the most stunning painting to ever be painted, Srinagar is known for the stationary
+                                houseboats and colourful Shikararas on Dal Lake. The main draw of Sringara, the gondola-type rowboats - Shikaras are used by the tourists to see attractions like the Floating Vegetable Market, and the Mir Bahris – a lively
+                                community of people who live on the lake itself. Known as the summer capital of Jammu & Kashmir, Srinagar is home to some of the most exquisite Mughal-age gardens in India, with the top attractions being Nishat Bagh, Shalimar
+                                Bagh and Chashm-E-Shahi Garden. ashmiri cuisine is famous all over the globe, so when in Srinagar, trying out the local dishes, which are rich in unique fragrant spices, is a must. Srinagar is also famous for the Kashmiri
+                                shawls, Kashmiri apples and the dried fruits (almonds and walnuts) which can be bought from the Lal Chowk Market. Heavy snowfahs of December to February. Communal tensions also lead to frequent curfews in some parts of
+                                the city. Make sure to check the situation before visiting.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/shimla.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/-7MNi5FWZMA" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/shimla.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
                             <h4>Shimla, Himachal Pradesh</h4>
-                            <p>"The Hill-Station with Rich Colonial History"</p>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">of Rich Colonial History</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
                         </div>
                     </div>
-                    <p>Shimla is the capital Himachal Pradesh in India and a popular hill-station among Indian families and honeymooners. Situated at the height of 2200m, Shimla was the summer capital of British India. Shimla still retains its old-world
-                        charm with beautiful colonial architecture, pedestrian-friendly Mall Road and the ridge lined up with multiple shops, cafes and restaurants. The weather is pleasant for most of the months with tourists flocking especially during
-                        the summer months. The winters are cold with some days of snow from mid-December till February end.</p>
-                    <!-- <p>Shimla is well connected with many cities and is just 4 hours from the nearby city of Chandigarh. The city has an airport as well; however, there aren't many daily flights from here. The railway station connects Shimla with the plans and
-                    is famous for the Kalka-Shimla train route; a UNESCO listed World Heritage site.</p>
-                <p>Shimla is often covered with nearby towns of Kufri, a hill-station almost always covered by snow and Chail, famous for a huge palace and the highest cricket ground in the world. Tourists also visit the famous Jakhu Temple and engage in
-                    sightseeing at various viewpoints during their trip to Shimla. -->
-                    </p>
-                </div>
 
+                    <p id="description6">
+                        Shimla is the capital Himachal Pradesh in India and a popular hill-station among Indian families and honeymooners. Situated at the height of 2200m, Shimla was the summer capital of British India. Shimla still retains its old-world charm with beautiful
+                        colonial architecture, pedestrian-friendly Mall Road and the ridge lined up with multiple shops, cafes and restaurants. The weather is pleasant for most of the months with tourists flocking especially during the summer months.
+                        The winters are cold with some days of snow from mid-December till February end.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Shimla is the capital Himachal Pradesh in India and a popular hill-station among Indian families and honeymooners. Situated at the height of 2200m, Shimla was the summer capital of British India. Shimla still retains its old-world charm with beautiful
+                                colonial architecture, pedestrian-friendly Mall Road and the ridge lined up with multiple shops, cafes and restaurants. The weather is pleasant for most of the months with tourists flocking especially during the summer
+                                months. The winters are cold with some days of snow from mid-December till February end. Shimla is well connected with many cities and is just 4 hours from the nearby city of Chandigarh. The city has an airport as well;
+                                however, there aren't many daily flights from here. The railway station connects Shimla with the plans and is famous for the Kalka-Shimla train route; a UNESCO listed World Heritage site. Shimla is often covered with nearby
+                                towns of Kufri, a hill-station almost always covered by snow and Chail, famous for a huge palace and the highest cricket ground in the world. Tourists also visit the famous Jakhu Temple and engage in sightseeing at various
+                                viewpoints during their trip to Shimla.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
             </div>
+
+
         </div>
         <div class="row">
-
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/MUSSOORIE.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/Y4DqRI3ctlc" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/MUSSOORIE.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
                             <h4>Mussoorie, Uttarakhand</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Queen of Hill-Stations</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
                         </div>
                     </div>
-                    <p>Mussoorie is one of the most popular hill stations located at a distance of 290 km from Delhi in Dehradun district of Uttarakhand. With a backdrop of Shivalik range of Himalayas and doon valley, Mussoorie, also known as Queen of The
-                        Hills, stands at an altitude of 7000 feet above sea level and has a cool, pleasant climate throughout the year. Once the British summer capital, Mussoorie is a popular getaway for honeymooners and families.</p>
-                    <!-- <p>The fact that it was a popular holiday destination during the British era can be seen from British remnants in the city, such as the archaic architecture of the hotels and churches. One of the most popular tourist attractions in Mussoorie
-                    is The Mall (also known as the Mall Road), which is a slightly steep boulevard with eateries and other shops lining its entire stretch. From the little houses spread around the area to the architecture of even the lamp posts, The Mall
-                    gives off a distinct colonial vibe.</p>
-                <p>Another major highlight of Mussoorie is the Ropeway to Gun Hill. Gun Hill is the second highest peak in Mussoorie, and tourists can avail of the cable car ropeway ride to Gun Hill, which offers an enchanting view of the entire city as
-                    well as the surrounding Himalayan mountains. The adjoining little hill station of Landour, along with Mussoorie, Barlowganj and Jharipani together form the greater Mussoorie. Affording a mind-stirring view of the snow-dusted Himalayas,
-                    Mussoorie beckons trekkers, climbers and adventure sports enthusiasts.
 
-                </p> -->
+                    <p id="description7">
+                        Mussoorie is one of the most popular hill stations located at a distance of 290 km from Delhi in Dehradun district of Uttarakhand. With a backdrop of Shivalik range of Himalayas and doon valley, Mussoorie, also known as Queen of The Hills, stands at an
+                        altitude of 7000 feet above sea level and has a cool, pleasant climate throughout the year. Once the British summer capital, Mussoorie is a popular getaway for honeymooners and families. The fact that it was a popular holiday destination
+                        during the British era can be seen from British.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Mussoorie is one of the most popular hill stations located at a distance of 290 km from Delhi in Dehradun district of Uttarakhand. With a backdrop of Shivalik range of Himalayas and doon valley, Mussoorie, also known as Queen
+                                of The Hills, stands at an altitude of 7000 feet above sea level and has a cool, pleasant climate throughout the year. Once the British summer capital, Mussoorie is a popular getaway for honeymooners and families. The fact
+                                that it was a popular holiday destination during the British era can be seen from British remnants in the city, such as the archaic architecture of the hotels and churches. One of the most popular tourist attractions in
+                                Mussoorie is The Mall (also known as the Mall Road), which is a slightly steep boulevard with eateries and other shops lining its entire stretch. From the little houses spread around the area to the architecture of even
+                                the lamp posts, The Mall gives off a distinct colonial vibe. Another major highlight of Mussoorie is the Ropeway to Gun Hill. Gun Hill is the second highest peak in Mussoorie, and tourists can avail of the cable car ropeway
+                                to Gun Hill, which offers an enchanting view of the entire city as well as the surrounding Himalayan mountains. The adjoining little hill station of Landour, along with Mussoorie, Barlowganj and Jharipani together form
+                                the greater Mussoorie. Affording a mind-stirring view of the snow-dusted Himalayas, Mussoorie beckons trekkers, climbers and adventure sports enthusiasts.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/DARJEELING.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/swAkNpBBT7A" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/DARJEELING.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
                             <h4>Dajeeling, West Bengal</h4>
-                            <p>"Queen of The Himalayas"</p>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Queen of The Himalayas</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
                         </div>
                     </div>
-                    <p>Jaw-dropping locales, mesmerising sunrises, the untouched beauty of the hills, the old-world charm of the past, and the welcoming smiles of the local people all add up to make Darjeeling one of the most beautiful hill stations in Eastern
-                        part of India. Spread over a steep mountain ridge, nestled amidst acres of lush green tea plantations, Darjeeling stands at the height of 2,050 meters above sea level, thus boasting of cool climes all year round. This scenic hill
-                        station is the perfect getaway for a romantic honeymoon and is just around 700 kilometres away from Kolkata.</p>
-                    <!-- <p>There is a reason the city is known as the 'Queen of the Himalayas'. The lush green slopes dotted with women plucking tea leaves is a sight as mesmerising as no other. There are over 86 tea estates in Darjeeling that are responsible for
-                    producing the worldwide famous 'Darjeeling Tea'. Have a cup of locally brewed chai at the tea estate, or get down amidst the plantations to pluck a few tea leaves yourself, you are free to take your pick!</p>
-                <p>A previous summer capital of India under the British Raj, Darjeeling has come off age as one of the most sought after hill stations in India. Famous for its beautiful tea plantations and the quality of Darjeeling tea, Darjeeling is a delight
-                    for all kind of tourists. The toy train established back in 1881, still runs in this part and is also one of the UNESCO World Heritage sites. Beautiful colonial architecture including mansions and churches dot this little beautiful
-                    town. Filled with people from Tibet, Nepal, nearby Indian states and the Gorkhas, Darjeeling is brimming with cultural diversity. The third highest peak in the world and the highest in India, the Kanchenjunga peak is clearly visible
-                    from here.</p> -->
+
+                    <p id="description8">
+                        Jaw dropping locales, mesmerising sunrises, the untouched beauty of the hills, the old-world charm of the past, and the welcoming smiles of the local people all add up to make Darjeeling one of the most beautiful hill stations in Eastern part of India.
+                        Spread over a steep mountain ridge, nestled amidst acres of lush green tea plantations, Darjeeling stands at the height of 2,050 meters above sea level, thus boasting of cool climes all year round. This scenic hill station is the
+                        perfect getaway for a romantic honeymoon and is just around 700 kilometres away from Kolkata.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Jaw-dropping locales, mesmerising sunrises, the untouched beauty of the hills, the old-world charm of the past, and the welcoming smiles of the local people all add up to make Darjeeling one of the most beautiful hill stations
+                                in Eastern part of India. Spread over a steep mountain ridge, nestled amidst acres of lush green tea plantations, Darjeeling stands at the height of 2,050 meters above sea level, thus boasting of cool climes all year round.
+                                This scenic hill station is the perfect getaway for a romantic honeymoon and is just around 700 kilometres away from Kolkata. There is a reason the city is known as the 'Queen of the Himalayas'. The lush green slopes dotted
+                                with women plucking tea leaves is a sight as mesmerising as no other. There are over 86 tea estates in Darjeeling that are responsible for producing the worldwide famous 'Darjeeling Tea'. Have a cup of locally brewed chai
+                                at the tea estate, or get down amidst the plantations to pluck a few tea leaves yourself, you are free to take your pick!. A previous summer capital of India under the British Raj, Darjeeling has come off age as one of
+                                the most sought after hill stations in India. Famous for its beautiful tea plantations and the quality of Darjeeling tea, Darjeeling is a delight for all kind of tourists. The toy train established back in 1881, still runs
+                                in this part and is also one of the UNESCO World Heritage sites. Beautiful colonial architecture including mansions and churches dot this little beautiful town. Filled with people from Tibet, Nepal, nearby Indian states
+                                and the Gorkhas, Darjeeling is brimming with cultural diversity. The third highest peak in the world and the highest in India, the Kanchenjunga peak is clearly visible from here.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/MCLEODGANJ.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/ZdJHD2owhJo" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/MCLEODGANJ.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
                             <h4>McLeodganj, Himachal Pradesh</h4>
-                            <p>"Land of His Holiness the Dalai Lama - Little Lhasa"</p>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Land of His Holinessy</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
                         </div>
                     </div>
-                    <p>Mcleodganj is a hill station near Dharamshala, popular among trekkers. Located in Kangra district, Mcleodganj's culture is a beautiful blend of Tibetan with some British influence.</p>
-                    <p>Also known as Little Lhasa and famous around the world for being home to the Tibetan spiritual leader Dalai Lama, Mcleod Ganj is a beautiful town situated near upper Dharamsala. Nestled amidst majestic hills and lush greenery, this
-                        town is culturally blessed by a prominent Tibetan influence owing to the major settlement of Tibetans here. Mcleodganj has one of the most mesmerising landscapes in the entire state of Himachal Pradesh and attracts a lot of tourists
-                        throughout
+
+                    <p id="description9">
+                        Mcleodganj is a hill station near Dharamshala, popular among trekkers. Located in Kangra district, Mcleodganj's culture is a beautiful blend of Tibetan with some British influence. also known as Little Lhasa and famous around the world for being home
+                        to the Tibetan spiritual leader Dalai Lama, Mcleod Ganj is a beautiful town situated near upper Dharamsala.Nestled amidst majestic hills and lush greenery, this town is culturally blessed by a prominent Tibetan influence owing
+                        to the major settlement of Tibetans here.
                     </p>
-                    <!-- the year. The towns of Dharamsala, Mcleodganj, Bhagsu Nag and Kangra are situated very close to each other and tourists must cover all these destinations while travelling here. Few of the most eminent and religiously significant monasteries
-                    in India are located here, including the Namgyal Monastery and Tsuglagkhang, where the spiritual leader Dalai Lama resides. Tourists must also visit the scenic Dal Lake and Triund, which are apt for quiet picnics. -->
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Mcleodganj is a hill station near Dharamshala, popular among trekkers. Located in Kangra district, Mcleodganj's culture is a beautiful blend of Tibetan with some British influence. also known as Little Lhasa and famous around the world for being home
+                                to the Tibetan spiritual leader Dalai Lama, Mcleod Ganj is a beautiful town situated near upper Dharamsala. Nestled amidst majestic hills and lush greenery, this town is culturally blessed by a prominent Tibetan influence
+                                owing to the major settlement of Tibetans here. Mcleodganj has one of the most mesmerising landscapes in the entire state of Himachal Pradesh and attracts a lot of tourists throughout the year. The towns of Dharamsala,
+                                Mcleodganj, Bhagsu Nag and Kangra are situated very close to each other and tourists must cover all these destinations while travelling here. Few of the most eminent and religiously significant monasteries in India are
+                                located here, including the Namgyal Monastery and Tsuglagkhang, where the spiritual leader Dalai Lama resides. Tourists must also visit the scenic Dal Lake and Triund, which are apt for quiet picnics.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
+
 
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/MUNNAR.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/4WCO8Bk0aes?t=22" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/MUNNAR.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
                             <h4>Munnar, Kerala</h4>
-                            <p>"Tea Gardens, Lakes and Pretty little hill-station"</p>
-                            <p>Munnar is a popular hill-station of Kerala perched at an altitude of 1600 metres in the Western Ghats. Famous for its tea estates, various shades of green, blankets of mist and craggy peaks, Munnar is aptly known as the 'Kashmir
-                                of South India'.</p>
-                            <p>Situated on the banks of three rivers- Madupetti, Nallathanni and Periavaru, Munnar is also blessed with natural view-points apart from the tea-plantations. Munnar is divided into Old Munnar, where the tourist information office
-                                is, and Munnar, where the bus station and most guest houses are located. The Eravikulam National Park, Salim Ali Bird Sanctuary and tea plantations are its major attractions.
-
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Tea Garden of India</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
                             </p>
-
                         </div>
                     </div>
+
+                    <p id="description10">
+                        Munnar is a popular hill-station of Kerala perched at an altitude of 1600 metres in the Western Ghats. Famous for its tea estates, various shades of green, blankets of mist and craggy peaks, Munnar is aptly known as the 'Kashmir of South India'. Situated
+                        on the banks of three rivers- Madupetti, Nallathanni and Periavaru, Munnar is also blessed with natural view-points apart from the tea-plantations. Munnar is divided into Old Munnar, where the tourist information office is, and
+                        Munnar, where the bus station and most guest houses are located.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Munnar is a popular hill-station of Kerala perched at an altitude of 1600 metres in the Western Ghats. Famous for its tea estates, various shades of green, blankets of mist and craggy peaks, Munnar is aptly known as the 'Kashmir
+                                of South India'. Situated on the banks of three rivers- Madupetti, Nallathanni and Periavaru, Munnar is also blessed with natural view-points apart from the tea-plantations. Munnar is divided into Old Munnar, where the
+                                tourist information office is, and Munnar, where the bus station and most guest houses are located. The Eravikulam National Park, Salim Ali Bird Sanctuary and tea plantations are its major attractions. form the greater
+                                Mussoorie. Affording a mind-stirring view of the snow-dusted Himalayas, Mussoorie beckons trekkers, climbers and adventure sports enthusiasts.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/COORG.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/9w4KBrc01To?t=5" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/COORG.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
                             <h4>Coorg, Karnataka</h4>
-                            <p>"The Scotland of India"</p>
-                            <p>Located amidst imposing mountains in Karnataka with a perpetually misty landscape, Coorg is the place to be for all nature lovers. This popular coffee producing hill station is not only popular for its beautiful green hills
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">The Scotland of India</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p id="description11">
+                        Located amidst imposing mountains in Karnataka with a perpetually misty landscape, Coorg is the place to be for all nature lovers. This popular coffee producing hill station is not only popular for its beautiful green hills and the streams cutting right
+                        through them. It also stands as a popular destination because of its culture and people. The Kodavas, a local clan specialising in martial arts, are especially notable for their keen hospitality. Coorg, officially known as Kodagu,is
+                        the most affluent hill station in Karnataka.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Located amidst imposing mountains in Karnataka with a perpetually misty landscape, Coorg is the place to be for all nature lovers. This popular coffee producing hill station is not only popular for its beautiful green hills
                                 and the streams cutting right through them. It also stands as a popular destination because of its culture and people. The Kodavas, a local clan specialising in martial arts, are especially notable for their keen hospitality.
                                 Coorg, officially known as Kodagu, is the most affluent hill station in Karnataka. It is well known for its breathtakingly exotic scenery and lush greenery. Forest covered hills, spice and coffee plantations only add to
                                 the landscape. Madikeri is the region's centre point with all transportation for getting around starting from here. On a visit to Coorg, cover the beautiful towns like Virajpet, Kushalnagar, Gonikoppal, Pollibetta, and
-                                Somwarpet, and experience the beautiful concept of "homestays" to make your experience more memorable!</p>
-                            <p>Coorg, officially known as Kodagu, is the most affluent hill station in Karnataka. It is well known for its breathtakingly exotic scenery and lush greenery. Forest covered hills, spice and coffee plantations only add to the
-                                landscape. Madikeri is the region's centre point with all transportation for getting around starting from here. On a visit to Coorg, cover the beautiful towns like Virajpet, Kushalnagar, Gonikoppal, Pollibetta, and Somwarpet,
-                                and experience the beautiful concept of "homestays" to make your experience more memorable!</p>
-                            <p></p>
+                                Somwarpet, and experience the beautiful concept of "homestays" to make your experience more memorable!
+
+                            </p>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="my-panel">
-
                     <div class="thumbnail">
-                        <img src="../../places/Hill-Stations/KASOL.jpg" alt="Nature" style="width:100%">
+                        <a href="https://youtu.be/CpCVdQA96J8" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Hill-Stations/KASOL.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Kasol, Himachal Pradesh</h4>
-                            <p>Kasol is a quaint little village in Himachal situated along the banks of the river Parvati. Commonly known as the 'Amsterdam of India', Kasol is a tourist attraction that is rapidly gaining fame as a popular hub for trekkers,
-                                backpackers, and nature lovers. Kasol is situated 23 kms from Bhuntar and next to the religious town of Manikaran and is one of the best places in the country just to sit back and chill in the panorama of snow-clad mountains,
-                                pine trees and gurgling river.</p>
-                            <p>Kasol is famous for its trekking trails, which include treks to Kheerganga, Yanker Pass, Sar Pass, and Pin Parbati Pass. To get a real feel of the culture in this region, go on a visit to the village of Malana. Located a few
-                                kilometres away from Kasol, Malana is a tiny hamlet inhabited by people living in self-imposed isolation. The people of Malana claim themselves to be Aryan descendants, as a result of which they avoid interaction with outsiders.
-                                The village has plenty of scenic sights, though, and is often called ‘Little Greece’.
+                            <h4>Kasol, Himachal Pradesh </h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Land of His Holinessy</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
                             </p>
-                            <p>Kasol is inhabited by a huge number of people from Israel, which is discernible from the plenteously available Israeli food, and the street signposts inscribed in Hebrew. Kasol has quite a few streetside cafes which serve delicious
-                                food, and the experience of sitting and enjoying a meal amidst the dark green forests and the awe-inspiring mountains make the meal even more enjoyable.</p>
-                            <p></p>
                         </div>
                     </div>
+
+                    <p id="description12">
+                        Kasol is a quaint little village in Himachal situated along the banks of the river Parvati. Commonly known as the 'Amsterdam of India', Kasol is a tourist attraction that is rapidly gaining fame as a popular hub for trekkers, backpackers,and nature lovers.
+                        Kasol is situated 23 kms from Bhuntar and next to the religious town of Manikaran and is one of the best places in the country just to sit back and chill in the panorama of snow-clad mountains, pine trees and gurgling river.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Kasol is a quaint little village in Himachal situated along the banks of the river Parvati. Commonly known as the 'Amsterdam of India', Kasol is a tourist attraction that is rapidly gaining fame as a popular hub for trekkers, backpackers, and nature lovers.
+                                Kasol is situated 23 kms from Bhuntar and next to the religious town of Manikaran and is one of the best places in the country just to sit back and chill in the panorama of snow-clad mountains, pine trees and gurgling river.
+                                Kasol is famous for its trekking trails, which include treks to Kheerganga, Yanker Pass, Sar Pass, and Pin Parbati Pass. To get a real feel of the culture in this region, go on a visit to the village of Malana. Located
+                                a few kilometres away from Kasol, Malana is a tiny hamlet inhabited by people living in self-imposed isolation. The people of Malana claim themselves to be Aryan descendants, as a result of which they avoid interaction
+                                with outsiders. The village has plenty of scenic sights, though, and is often called ‘Little Greece’. Kasol is inhabited by a huge number of people from Israel, which is discernible from the plenteously available Israeli
+                                food, and the street signposts inscribed in Hebrew. Kasol has quite a few streetside cafes which serve delicious food, and the experience of sitting and enjoying a meal amidst the dark green forests and the awe-inspiring
+                                mountains make the meal even more enjoyable.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-
         </div>
     </div>
+    <div style="margin-bottom: 2rem;"></div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("../footer1.html");
+
+        });
+    </script>
     <script>
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
             event.preventDefault();
             $(this).ekkoLightbox();
         });
+        var myDiv1 = $('#description1');
+        myDiv1.text(myDiv1.text().substring(0, 500) + "......");
+        var myDiv2 = $('#description2');
+        myDiv2.text(myDiv2.text().substring(0, 480) + "......");
+        var myDiv3 = $('#description3');
+        myDiv3.text(myDiv3.text().substring(0, 500) + "......");
+        var myDiv4 = $('#description4');
+        myDiv4.text(myDiv4.text().substring(0, 500) + "......");
+        var myDiv5 = $('#description5');
+        myDiv5.text(myDiv5.text().substring(0, 500) + "......");
+        var myDiv6 = $('#description6');
+        myDiv6.text(myDiv6.text().substring(0, 500) + "......");
+        var myDiv7 = $('#description7');
+        myDiv7.text(myDiv7.text().substring(0, 500) + "......");
+        var myDiv8 = $('#description8');
+        myDiv8.text(myDiv8.text().substring(0, 530) + "......");
+        var myDiv9 = $('#description9');
+        myDiv9.text(myDiv9.text().substring(0, 500) + "......");
+        var myDiv10 = $('#description10');
+        myDiv10.text(myDiv10.text().substring(0, 500) + "......");
+        var myDiv11 = $('#description11');
+        myDiv11.text(myDiv11.text().substring(0, 500) + "......");
+        var myDiv12 = $('#description12');
+        myDiv12.text(myDiv12.text().substring(0, 500) + "......");
+
+        function logout() {
+            alert("you are about to logout. Click OK to continue. ");
+        }
     </script>
 </body>
 
