@@ -138,7 +138,7 @@ body {
 }
 
 .nav-row-design {
-    background-color: #46b950;
+    background-color: rgb(245, 118, 139);
     box-shadow: 2px 2px 5px rgba(61, 61, 61, 0.5), inset 5px 5px 8px rgba(94, 93, 93, 0.5);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -154,7 +154,7 @@ body {
 }
 
 .t:hover {
-    background-color: rgb(46, 141, 46);
+    background-color: rgb(175, 61, 80);
 }
 
 .t a {
