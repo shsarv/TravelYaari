@@ -11,9 +11,6 @@ body {
 .container {
     margin: 1em auto;
     border: 10px;
-    border-style: ridge;
-    border-color: rgb(197, 204, 100);
-    background-color: rgb(232, 238, 200);
 }
 
 #intro {
@@ -25,12 +22,13 @@ body {
     border-collapse: collapse;
 }
 
-h2 {
+h1 {
     display: block;
     font-weight: bolder;
     font-language-override: inherit;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     text-align: center;
+    text-decoration: underline;
 }
 
 .row img {
