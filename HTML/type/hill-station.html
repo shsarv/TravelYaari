@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../CSS/nav1.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/footer.css">
     <title>hill-stations in India</title>
     <script>
     </script>
@@ -101,6 +102,26 @@
             text-decoration: none;
             color: white;
         }
+        
+        .type-destination {
+            text-align: center;
+            padding: 2rem;
+            font-weight: bolder;
+            color: rebeccapurple;
+            font-size: 32px;
+            text-shadow: rgb(83, 218, 228) 2px 2px 1px 2px;
+        }
+        
+        #intro {
+            text-align: justify;
+        }
+        
+        #choose-place {
+            font-size: 24px;
+            color: rgb(74, 236, 109);
+            text-align: center;
+            font-weight: bolder;
+        }
     </style>
 </head>
 
@@ -114,14 +135,15 @@
         });
     </script>
     <div class="container">
-        <h2> Best Hill Stations in India</h2>
+        <h2 class="type-destination"> Best Hill Stations in India</h2>
         <div class="row" id="intro">
-            <div class="col-12">
+            <div class="col-xs-12">
                 India has abundant hill stations spread all over the country that makes for a tranquil and picturesque destination for tourists. Kashmir has some of the most beautiful hill stations in India which include Pahalgam, Gulmarg, Srinagar and Sonmarg. In Himachal
                 Pradesh also tourists can be spoilt for choices which include Shimla, Manali and Dalhousie. Mussoorie and Nainital are among the most popular hill stations in north India. Coorg, Ooty and Kodaikanal are the most popular ones in South India.
-                Matheran, Almora, McLeodganj, Gangtok, and Coonoor among others are the lesser crowded hill station in India.
+                Matheran, Almora, McLeodganj, Gangtok, and Coonoor among others are the lesser crowded hill station in India.<br>
             </div>
         </div>
+        <h6 id="choose-place">Select your Dream Destination.</h6>
         <div class="row">
             <div class="col-md-4">
                 <div class="my-panel">
@@ -582,6 +604,14 @@
             </div>
         </div>
     </div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("../footer1.html");
+
+        });
+    </script>
     <script>
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
             event.preventDefault();
@@ -611,6 +641,10 @@
         myDiv11.text(myDiv11.text().substring(0, 500) + "......");
         var myDiv12 = $('#description12');
         myDiv12.text(myDiv12.text().substring(0, 500) + "......");
+
+        function logout() {
+            alert("you are about to logout. Click OK to continue. ");
+        }
     </script>
 </body>
 
