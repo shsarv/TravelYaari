@@ -139,7 +139,7 @@
     <!-- Section: Popular -->
 
     <section id="popular" class="section section-popular scrollspy">
-        <div class="container">
+        <div class="container" onclick="login()">
             <div class="row">
                 <h4 class="center">
                     <span class="green-text">Popular</span> Places</h4>
@@ -306,6 +306,10 @@
             $(".scrollspy").scrollSpy();
 
         });
+
+        function login() {
+            alert("please signin to view in details.");
+        }
     </script>
 </body>
 
