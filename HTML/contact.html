@@ -22,14 +22,26 @@
 
 <body>
 
-    <div id="navigation"></div>
-    <script>
-        $(document).ready(function() {
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                   
+          </button>
+                <a class="navbar-brand" href="home.html" style="font-weight: bold;font-family: 'Piedra', cursive;">TravelYaari</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="w" href="Gallery.html">Gallery</a></li>
+                    <li><a class="w" href="../index.html" onclick="alert('you are about to logout.click OK to Continue')">Logout <span class="glyphicon glyphicon-log-out"></span></a></li>
+                    <li style="margin: 0.8rem 0.8rem auto 0.3rem; background:#4caf50;"><button class="btn btn-success navbar-btn" onclick="history.back();">Return</button></li>
+                </ul>
 
-            $('#navigation').load("nav0.html");
-
-        });
-    </script>
+            </div>
+        </div>
+    </nav>
     <div class="container" id="banner1">
         <div class="row">
             <div class="col-xs-12 col-sm-6">
