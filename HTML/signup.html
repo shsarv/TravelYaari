@@ -27,7 +27,7 @@
         <div class="row display-flex">
             <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2" id="signup-intro-form">
                 <!-- <div class="signup-container1"> -->
-                <form id="signup-form" class="signup-form" action="home.html">
+                <form id="signup-form" class="signup-form">
                     <h2 style="font-size:30px;font-weight: 600;color: honeydew;">Signup</h2>
                     <div class="signup-form-control">
                         <label for="username">Username</label>
@@ -49,7 +49,7 @@
                         <input type="password" id="password2" placeholder="Enter Password Again">
                         <small>Error message</small>
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" onclick="forme()">Submit</button>
                     <p style="color: rgb(214, 247, 27); margin-top: 1rem;">Already have a Account?
                         <a href="login.html" class="login">Login</a>
                     </p>
@@ -72,6 +72,7 @@
         </div>
     </div>
     <div id="foot"></div>
+    <script src="../JS/signup.js "></script>
     <script>
         $(document).ready(function() {
 
@@ -79,7 +80,7 @@
 
         });
     </script>
-    <script src="../JS/signup.js "></script>
+
 </body>
 
 </html>

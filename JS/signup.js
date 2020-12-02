@@ -3,7 +3,21 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
-var counter = 0
+
+
+function forme() {
+    var c = checkRequired([username, email, password, password2]);
+    var u = checkLength(username, 3, 15);
+    var l = checkLength(password, 6, 20);
+    var e = checkEmail(email);
+    var p = checkPassword(password, password2);
+    if (c && u && l && e && p) {
+        window.location.href = "home.html";
+    } else {
+        alert("please fill right information");
+    }
+}
+
 
 function showError(input, message) {
     const formControl = input.parentElement;
@@ -21,10 +35,11 @@ function checkEmail(input) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(input.value.trim())) {
         showSuccess(input);
-        counter = counter + 1;
+        return true;
     } else {
         showError(input, "Email is not valid");
-        //counter = counter - 1;
+        return false;
+
     }
 }
 
@@ -33,15 +48,21 @@ function getFieldName(input) {
 }
 
 function checkRequired(inputArray) {
+    var checkr = 0
     inputArray.forEach(function(input) {
         if (input.value.trim() === "") {
             showError(input, `${getFieldName(input)} is required`);
-            //counter = counter - 1;
         } else {
             showSuccess(input);
-            counter = counter + 1;
+            checkr = checkr + 1;
+
         }
     });
+    if (checkr == 4) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function checkLength(input, min, max) {
@@ -50,28 +71,29 @@ function checkLength(input, min, max) {
             input,
             `${getFieldName(input)} must be atleast ${min} characters`
         );
-        //counter = counter - 1;
+        return false;
     } else if (input.value.length > max) {
         showError(
             input,
             `${getFieldName(input)} must be less than ${max} characters`
         );
-        //counter = counter - 1;
+        return false;
     } else {
         showSuccess(input);
-        counter = counter + 1;
+        return true;
+
     }
 }
 
 function checkPassword(input1, input2) {
     if (input1.value !== input2.value) {
         showError(input2, "Passwords do not match");
-        //counter = counter - 1;
+        return false;
     } else {
-        counter = counter + 1;
+
+        return true;
     }
 }
-
 form.addEventListener("submit", function(e) {
     e.preventDefault();
     checkRequired([username, email, password, password2]);
@@ -79,13 +101,4 @@ form.addEventListener("submit", function(e) {
     checkLength(password, 6, 20);
     checkEmail(email);
     checkPassword(password, password2);
-    direct();
-
 });
-
-function direct() {
-    // if (counter == 8) {
-    //     window.location.href = "home.html";
-    // }
-    console.log(counter)
-}
