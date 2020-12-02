@@ -13,6 +13,7 @@
         /* color: black; */
         border: none;
         text-align: center;
+        z-index: 1;
     }
     .navbar-collapse.collapsing {
         left: -75%;
@@ -142,7 +143,7 @@ body {
     box-shadow: 2px 2px 5px rgba(61, 61, 61, 0.5), inset 5px 5px 8px rgba(94, 93, 93, 0.5);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 .t {
