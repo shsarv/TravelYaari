@@ -5,10 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../CSS/nav2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <style>
+        .separator {
+            border-right: 3px solid #032525;
+        }
+        
+        .icon-btn-save {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+        .input-group {
+            margin-bottom: 10px;
+        }
+        
+        .btn-save-label {
+            position: relative;
+            left: -12px;
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 3px 0 0 3px;
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+                <a class="navbar-brand" href="home.html" style="font-weight: bold;font-family: 'Piedra', cursive;">TravelYaari</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="w" href="gallery.html">Gallery</a>
+                    </li>
+                    <li><a class="w" href="../index.html">Logout <span class="glyphicon glyphicon-log-out"></span></a></li>
+                    <li><a class="w" href="setting.html">Settings</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle w" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="w" href="contact.html">Contact us</a></li>
+                            <li><a class="w" href="about.html">About us</a></li>
+                            <li><a class="w" href="team.html">Our Team</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="row nav-row-design">
+                <div class="col-xs-4 col-sm-4 col-md-2 t"><a href="../type/beaches.html">Beaches</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2 t"><a href="../type/hill-station.html">Hill-Stations</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2 t"><a href="../type/historical.html">Historical Heritage</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2 t"><a href="../type/parks.html">National Parks</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2 t"><a href="../type/religious.html">Religious Richness</a></div>
+                <div class="col-xs-4 col-sm-4 col-md-2 t"><a href="../type/honeymoon.html">Honeymoon Destinations</a></div>
+            </div>
+        </div>
 
+    </nav>
+    <div class="container bootstrap snippets bootdey" style="margin-top: 60px;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading" style="background-color:  #4caf50; color: white; font-weight: bolder;font-size: 20px;">
+                        <h3 class="panel-title" style="color: white; font-weight: bolder;font-size: 20px;"><span class="glyphicon glyphicon-th"></span> Change password</h3>
+                    </div>
+                    <div class="panel-body" style="background-color:  rgb(181, 236, 236);">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 separator social-login-box"> <br>
+                                <img alt="" class="img-thumbnail" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+                            </div>
+                            <div></div>
+                            <div style="margin-top:80px;" class="col-xs-6 col-sm-6 col-md-6 login-box">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                                        <input class="form-control" type="password" placeholder="Current Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><span class="glyphicon glyphicon-log-in"></span></div>
+                                        <input class="form-control" type="password" placeholder="New Password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer" style="background-color:  rgb(93, 196, 196);">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6"></div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <button class="btn icon-btn-save btn-success" type="submit">
+                                <span class="btn-save-label"><i class="glyphicon glyphicon-floppy-disk"></i></span>Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("footer.html");
+
+        });
+    </script>
+    <script src="../JS/signup.js "></script>
 </body>
 
 </html>
