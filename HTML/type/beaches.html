@@ -4,93 +4,628 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../CSS/nav1.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>beaches in India</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <title>Beaches</title>
+    <script>
+    </script>
+    <style>
+        /* * {
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        
+        .col-md-4 {
+            margin-top: 2rem;
+        }
+        
+        .my-panel {
+            /* height: 85vh; */
+            overflow: hidden;
+            border: 1px solid rgb(218, 217, 217);
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 0px rgba(122, 185, 114, 0.75);
+            text-align: justify;
+            text-overflow: ellipsis;
+            padding: 1rem;
+        }
+        
+        .my-panel:hover {
+            box-shadow: 4px 3px 5px 0px rgba(86, 148, 83, 0.97);
+        }
+        /* .my-panel p {
+            margin: 0.7rem;
+        } */
+        
+        h4 {
+            color: #4caf50;
+            font-weight: bolder;
+        }
+        
+        .fa-star {
+            display: inline-flex;
+            align-items: center;
+            text-align: right;
+            justify-content: center;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(119, 216, 119, 0.9);
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transition: .3s ease;
+            border-radius: 10px;
+        }
+        
+        .im:hover .overlay {
+            transform: scale(1);
+        }
+        
+        .text {
+            color: rgb(249, 252, 248);
+            font-size: 15px;
+            position: absolute;
+            top: 11%;
+            left: 10%;
+            transform: translate(-10%, -10%);
+            text-align: justify;
+            margin: 1rem 0 1rem 1rem;
+        }
+        
+        .im {
+            float: right;
+        }
+        
+        .book {
+            color: white;
+        }
+        
+        .book:hover {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .type-destination {
+            text-align: center;
+            padding: 2rem;
+            font-weight: bolder;
+            color: rebeccapurple;
+            font-size: 32px;
+            text-shadow: rgb(83, 218, 228) 2px 2px 1px 2px;
+        }
+        
+        #intro {
+            text-align: justify;
+        }
+        
+        #choose-place {
+            font-size: 24px;
+            color: rgb(74, 236, 109);
+            text-align: center;
+            font-weight: bolder;
+        }
+        /* #fixing-width {
+            margin: auto rem;
+        } */
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h2>Please Select the best beach destination you are looking for</h2>
-        <!-- <p>The .thumbnail class can be used to display an image gallery.</p>
-        <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
-        <p>Click on the images to enlarge them.</p> -->
+    <div id="navigation"></div>
+    <script>
+        jQuery(document).ready(function($) {
+
+            $('#navigation').load("../nav2.html");
+
+        });
+    </script>
+    <div class="container" id="fixing-width">
+        <h2 class="type-destination">Beaches in India</h2>
+        <div class="row" id="intro">
+            <div class="col-xs-12">
+                <p>India having the longest stretch of coastline exhibits some serene beautiful beaches. Important beaches in and around Mumbai include the Juhu Beach, Manori Beach, Alibaug, Kashid beach, Murud Janjira, Harihareshwar beach, Ganpatipule,
+                    Tarkarli, etc. Famous beaches trending towards the north of Mumbai are Mandvi beach, Daman, Diu, Dumas beach, Somnath, etc. Chennai being the beach town of India exhibits the true beauty of Marina beach. Apart from the Marina Beach,
+                    there are also several beaches including Mahabalipuram, Tranquebar, Kovalam, Poompuhar and Kanyakumari. Pondicherry is well known for its beautiful Beaches and being proximate to both Bangalore and Chennai attracts a lot of tourist
+                    throughout the year. Kerala boasts of several exotic and beautiful beaches including Kovalam, Varkala, Kochi, Alappuzha, Bekal, Kozhikode, etc. whereas, the beaches in Goa are the ones that attract a large number of tourist every year.
+                    Laying behind beautiful and some of the most exotic and surreal beaches Andaman and Nicobar Islands remain unexplored and untouched by tourists.</p>
+            </div>
+        </div>
+        <h6 id="choose-place">Select your Dream Destination.</h6>
         <div class="row">
             <div class="col-md-4">
-                <div class="thumbnail">
-                        <img src="https://source.unsplash.com/1600x900/?beach,green" alt="Lights" style="width:100%">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/beaches/GOA.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Juhu beach, Mumbai</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            <h4>Goa</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Beaches and Crazy Nights</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
                         </div>
+                    </div>
+                    <p id="description1">
+                        Lying on the western coast, Goa is India's smallest state and unlike any other, known for its endless beaches, stellar nightlife, eclectic seafood, world-heritage listed architecture. Spread across just 3,702 km, Goa lies in the Konkan region. It is a
+                        far cry from the hippie haven or a beach getaway, and one of the only few destinations that is open 24x7. The laid-backness (susegad) of Goa attracts as many international tourists as it does Indians, or even more so.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                The Goans are quite friendly towards tourists and celebrate many festivals throughout the year, the most famous being the New Year and Goa Carnival. While the seafood is excellent, Goa has one of the best nightlife in India with trendy bars, beach shacks,
+                                elegant cafes and many clubs and discotheques. Thanks to lower alcohol prices in the state, Goa is also great for younger tourists with relatively tighter pockets.
+                                <br><br> For those of us perpetually confused between North Goa and South Goa, this might help - the state of Goa is divided into North Goa and South Goa. While North Goa is the nightlife hub where all the touristy beaches,
+                                flea markets, and beach shacks are located, South Goa is the land of luxurious resorts and laid-back beach vibes. Having been a Portuguese territory for almost 450 years, the Portuguese architecture is nowhere as prevalent
+                                as in Goa - visit one of the many whitewashed churches, crumbling forts or spectacular churches. The yellow houses with purple doors, ochre coloured mansions and oyester shell windows is what completes the kalieodscope
+                                of Goan architecture.
+                                <br><br> Panjim, the capital city located in the centre overlooks the calm Mandovi River where the famous floating casinos of Goa are docked. The centre is well-connected with an international airport and roads and trains
+                                run from North to South part of Goa. With a coastline stretching for over 100 kilometres, Goa has stunning beaches. While Baga and Calangute are more popular among the Indian family crowd, Anjuna and Arambol draw a lot
+                                of foreign tourists. The beaches in South Goa are relatively lesser explored, but some of them like Agonda and Palolem are more beautiful.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="thumbnail">
-                        <img src="https://source.unsplash.com/1600x900/?beach,grass" alt="Nature" style="width:100%">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/VARKALA.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Gokarna beach, Karnataka</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            <h4>Varkala, Kerala</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Hidden treasure of Kerala</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
                         </div>
-
+                    </div>
+                    <p id="description2">
+                        Varkala is a coastal town in the southern part of Kerala known for the unique 15m high 'Northern Cliff' adjacent to the Arabian Sea. It is popular for its hippie culture, shacks on the cliff serving great seafood and playing global music and the samadhi
+                        of Kerala's saint Sree Narayana Guru. Varkala is also known for Jardana Swami Temple, also known as Dakshin Kashi.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Varkala has some of the best pristine beaches, hills, lakes, forts, lighthouses, natural fisheries and springs - all of this together makes this town a little paradise. You will also find a lot of shops with signboards in Hebrew selling Yoga mats, oxidised
+                                silver jewellery and harem pants made of cotton. Ayurvedic spas, affordable resorts, hostels, clean beaches make it a must-visit city of Kerala.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="thumbnail">
-
-                        <img src="https://source.unsplash.com/1600x900/?beach,lake" alt="Nature" style="width:100%">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/GOKARNA.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Palolem beach, Goa</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                  </div>
-             
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-
-                    <a href="type/parks.html" target="_blank">
-                        <img src="https://source.unsplash.com/1600x900/?sea,beach" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Historical places</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            <h4>Gokarna, Karnataka</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Land of palm trees</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-
-                    <a href="type/parks.html" target="_blank">
-                        <img src="https://source.unsplash.com/1600x900/?water,sea" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Honeymoon</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                    <p id="description3">
+                        With its pristine beaches and breathtaking landscapes, Gokarna is a Hindu pilgrimage town in Karnataka and a newly found hub for beach lovers and hippies. Situated on the coast of Karwar, every year Gokarna welcomes hordes of tourists from around the
+                        world in search of sanctity and relaxation. The out-of-town beaches like Kudle beach and Om Beach are a different contrast to life inside the town.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Palm clad beaches are dotted with foreign tourists in a majority and very few Indians are seen across. Gokarna is not very conventionally touristy. The beaches are meant for a slow, relaxed holiday and everything on the beach goes at the same relaxed
+                                pace. Full of coconut and palm trees, the ocean and clean sands, Gokarna is a 'one of a kind' place in the country.
+                            </p>
                         </div>
-                    </a>
-
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-
-                    <a href="type/parks.html" target="_blank">
-                        <img src="https://source.unsplash.com/1600x900/?beach,water,sea,waves" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Religious</h4>
-                            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
         </div>
-    </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/KOVALAM.jpg" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Kovalam, Kerala</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Beaches and Shopping</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description4">
+                        Earlier a fishing village, Kovalam started attracting tourists in the 1930s and shot to fame in the hippie epoch of 1970s. It still sees the influx of tourists from Israel and Europe. Ayurvedic treatments and massages are one of its most popular indulgences
+                        along with yoga, meditation as well as other cultural activities. Kovalam perhaps comes full circle as it is also a shopping destination given the rich spices, wooden statues and handicrafts that can make popular takeaways.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
 
+                                Kovalam is an idyllic coastal town located around 13 km from Thiruvananthapuram in Kerala. Famous for its three adjacent crescent-shaped shallow water and low tidal beaches, Kovalam is dotted with resorts and ayurvedic massage centres.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail"><br>
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/Minicoy.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Minicoy Island, Lakshadweep</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Lakshadweep Overview</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description5">
+                        The small island encompasses the total area of 4.801 sq. km and is exclusively known for its vibrant coral reefs, quaint white-sand beaches and the freshwater of the infinite ocean. The Minicoy Island is the second-largest island of the Lakshadweep and
+                        is one of the few inhabited islands of the group. It is best known for its luxury beach resorts that are an ideal destination for the travellers seeking tranquillity.<br>
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                One of the 36 small islets of Lakshadweep group of Islands, Minicoy, also known as Maliku in the local language is one of the best-kept secrets of India. It is located amidst the vast expanse of Arabian Sea, just 398 km or 215 nautical miles from the
+                                shores of Cochin.
+                                <br><br>This picturesque destination is a popular tourist spot and has gained immense popularity due to activities like tuna canning, tuna fishing and the presence of pristine palm-fringed beaches. Tourists can enjoy some
+                                of the most memorable moments here during winters and the onset of summer, as the weather here is ideal during those months.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/KANYAKUMARI.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Kanyakumari</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;"> The Land's End</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description6">
+                        Bordered by the three seas - Arabian, Indian and the Bay of Bengal, Kanyakumari is the southernmost tip of Indian Peninsula. A small coastal town in the state of Tamil Nadu, Kanyakumari was earlier known as Cape Comorin. The town is a mountainous terrain
+                        amid three seas, with elevated patches of hills, coconut trees and lined with paddy fields. Kanyakumari is also the only place in India where you can observe the sunrise and sunset at the same beach.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                The town is not only popular for its unique phenomenon but also its beaches, temples, iconic monuments that attract a huge number of tourists throughout the year. The Kanyakumari Temple, Vivekananda Rock Memorial, Statue of the Poet Thiruvalluvar, the
+                                Padmanabhapuram Palace, the Vattakottai Fort, and the Gandhi Memorial are few of the most important sites in Kanyakumari.
+                                <br><br> Waterfalls in Kanyakumari that you should not miss out on include the Thirparappu falls, the Courtallam Falls, and the Olakaruvi falls. Kanyakumari has an authentic South Indian cuisine, with seafood and coconuts
+                                being an integral part of almost all dishes. While Kanyakumari is not a traditional shopping destination, you can buy plenty of souvenirs and curios from the numerous stalls and boutiques dotting the beachfront, with decorative
+                                seashell trinkets being a must-buy.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <br>
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/DIGHA.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Digha, West Bengal</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">A blissful beach town</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description7">
+                        Digha is a one-stop destination for families looking forward to spend a pleasurable weekend. One of the best features of this hamlet is its varied and diverse tourist attraction spots. Known for its magnificent beaches, religious temples and high-tech
+                        research centers and museums, this most popular sea resort of West Bengal has a lot to offer for people of all age groups. Digha's sceneries can also offer you the pleasure experienced in witnessing areas that have minimal human
+                        impact and are relatively untouched. </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Beach town situated on the shores of Bay of Bengal, Digha is a popular tourist destination known for its untouched beaches and scenic views, especially among people in West Bengal.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/Andaman.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Andaman & Nicobar Islands</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Blue seas, virgin islands</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description8">
+                        Replete with picturesque shimmering beaches, lagoons of turquoise blue waters and a bit of history, Andaman & Nicobar Islands is a little slice of paradise tucked around 1,400 km away from the east coast of India. The union territory comprises a total
+                        of 572 islands, only 37 of which are inhabited and a few are open to the tourists.<br> Port Blair, the capital city of Andaman & Nicobar Islands, is the gateway to the archipelago and is connected with various
+                        islands via multiple daily ferries. Havelock and Neil Island are some of the most famous islands among tourists and is known for pearly white sands, palm-lined shores and offer some of the best snorkelling and diving options in
+                        India.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Once known for its Cellular Jail- ‘Kaala Paani’ in Port Blair which primarily imprisoned the freedom fighters who were exiled from the mainland of India during the British Era, the graph of the Andaman and Nicobar islands have lately changed drastically
+                                and it is now known for its flourishing tourism industry which especially attracts honeymooners, families and adventure enthusiasts. You can either laze around on the sandy shores and enjoy the mesmerising sunsets or try
+                                your hand at scuba diving and explore the vibrant coral reefs. Besides, it also has virgin immaculate backwaters for those seeking solitude and ataraxy.
+                                <br><br> Havelock Island is one of the largest and the most popular attraction of all of Andaman & Nicobar Islands. Blessed with pristine beaches and coconut groves, this one offers myriad adventure sports opportunities
+                                to its guests. From snorkelling to parasailing, scuba diving and kayaking etc., there is no dearth of thrilling activities here, for that much-needed adrenaline rush, on an otherwise tranquil leisure vacay. In addition
+                                to this, you can visit the bustling city of Port Blair to get a glimpse of the local lifestyle. Steeped in colonial history and boasting of striking architectural monuments, you can also browse the local markets and savour
+                                the traditional cuisine.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/PURI.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Puri, Odisha</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Rath Yatra and the Beaches</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description9">
+                        Having gained popularity among hippies back in the 1970s due to the legalisation of Bhang, Puri is still a popular destination among backpackers, however, the availability of bhang is now limited. With a plethora of hotels and homestays, the local tourist
+                        like to stay near the New Marine Drive and the backpackers prefer to stay near Chakra Tirtha. The Rath Yatra (chariot festival) which takes place during the month of June-July should not be missed if you are planning to visit during
+                        this time.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Puri in Odisha is one of the four must-visit pilgrimage sites for Hindus because of Jagannath Temple that forms the part of Char Dham in India. Puri is a beach city located on the coast of Bay of Bengal which is one of the favourites among people of West
+                                Bengal for a short trip.
+                                <br><br> Known as the resting place of Lord Shiva, the majestic history and heritage of Puri date back to the 3rd century B. C. Puri, Konark and Bhubaneshwar complete the Golden Triangle of Orissa, with their religious
+                                significance and cultural heritage being the centres of tourism in this state. There are a lot of places near Puri that one must visit, like the Chilika lake, Puri beach, Gundicha Ghar and the very famous Sun temple of
+                                Konark. Puri is soon turning into an industrial hub with major manufacturing companies coming here.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos"><br>
+                            <img src=" ../../places/beaches/butterflybeach.jpg " style="width:100% ">
+                        </a><br>
+                        <div class="caption">
+                            <h4>Butterfly Beach, Goa</h4><br>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Overview</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description10">
+                        A little to the south of Palolem in Cancona region of Goa lies the Butterfly Beach. This beach, also known as Honeymoon Beach, is in the form of a small cove surrounded by dense trees. One of the most secluded and lesser-known beach of Goa, the butterfly
+                        beach is mostly accessible by a boat (ferry) ride from the nearby beaches, which only adds to the charm.
+                    </p>
+                    <div class="im"><br><br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Vehicles do not lead directly to Butterfly Beach and reaching here through land involves a challenging forest hike. However, this also makes for a wonderful opportunity to go trekking through a forest! Interestingly, Butterfly Beach is so named as the
+                                surrounding trees attract a wide variety of butterflies occasionally. It may also be because the beach itself is in the shape of a butterfly! Either way, it is just as pretty as one, especially during sunsets.
+                                <br><br> Enclosed by a thick forest on one side and leading to the open sea on the other, the beach has a unique and picturesque landscape. Butterfly Beach is also one of the few places in Goa to sight the playful dolphins.
+                                Avoid visiting the beach during the monsoon as the boat rides are mostly unavailable during heavy rainfall.
+                            </p>
+                        </div>
+                    </div><br><br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/Rishikonda beach.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Rishikonda beach, Visakhapatnam</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Overview</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description11">
+                        The Rishikonda Beach also known as Rushikonda Beach is a stunning shore located on the coast of the Bay of Bengal in Vishakhapatnam, in the Indian state of Andhra Pradesh. APTDC, which is in charge of this natural beauty, has done a great job in the upkeep
+                        of the beach and ensured that this natural attraction remains unspoilt. The Rishikonda Beach is thus rightly named as the 'Jewel of the East Coast', owing to its essential and intact beauty. The serene golden sands of the beach
+                        are located in the bosom of the Rishikonda hill.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Located in the midst of frothy blue sea and emerald greenery, the scenery that this beach boasts of is indeed mesmerising and breathtaking. This place is a favourite among water sports lovers because of the range of activities that are offered here. If
+                                you are in the mood for an adrenaline rush, you can indulge in the water sports that are offered here.
+                                <br><br> The Rushikonda Beach is one of the few beaches that offers swimming under expert supervision, so do not forget to take a quick dip in the water. However, the beach's natural charms are one of the main reasons for
+                                its immense popularity among local as well as foreign tourists. The Rishikonda Beach is an ideal destination for a peaceful weekend getaway and is located just 8 kilometres away from the port of Vishakhapatnam, making the
+                                place very accessible.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/beaches/Baga beach.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Baga Beach, Goa</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">The Home of Nightlife </span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description12">
+                        One of the most popular beaches in North Goa, Baga Beach is located close to Calangute beach, around 30 Km North of Panjim. Baga is the perfect destination to witness the dazzling nightlife of Goa as signature places such as Britto's, Tito's and Mambos
+                        are located in the vicinity. Being one of the most visited beaches in the North, Baga also offers a vast range of water sports.
+                    </p>
+                    <div class="im">
+                        <br><br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Baga is so named after the 'Baga creek' which flows into the Arabian Sea. It is also famous for its designer stores as well as its street-side markets. While at Baga, grab a sumptuous breakfast at Infantaria - a highly recommended eatery, relax by the
+                                beach all day, and in the evening let the party animal in you come alive. Baga Beach is considered to be the extension of Calangute Beach itself since both of these lies on the same stretch of the shore.
+
+                                <br><br> Lined with an array of tattoo parlours, tarot shops, palmistry shops, spas, sun decks and some legendary shacks, it gives you a chance to live out your perfect beach holiday. If you are not a party person, you
+                                also have the option of starting your mornings with some beach Yoga, having a nutritious breakfast by the sea, and then just spend the day reading quietly on beach recliner. There is something for every kind of traveller
+                                in Baga!
+                            </p>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="margin-bottom: 2rem;"></div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("../footer1.html");
+
+        });
+    </script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        var myDiv1 = $('#description1');
+        myDiv1.text(myDiv1.text().substring(0, 500) + "......");
+        var myDiv2 = $('#description2');
+        myDiv2.text(myDiv2.text().substring(0, 480) + "......");
+        var myDiv3 = $('#description3');
+        myDiv3.text(myDiv3.text().substring(0, 500) + "......");
+        var myDiv4 = $('#description4');
+        myDiv4.text(myDiv4.text().substring(0, 500) + "......");
+        var myDiv5 = $('#description5');
+        myDiv5.text(myDiv5.text().substring(0, 500) + "......");
+        var myDiv6 = $('#description6');
+        myDiv6.text(myDiv6.text().substring(0, 500) + "......");
+        var myDiv7 = $('#description7');
+        myDiv7.text(myDiv7.text().substring(0, 500) + "......");
+        var myDiv8 = $('#description8');
+        myDiv8.text(myDiv8.text().substring(0, 530) + "......");
+        var myDiv9 = $('#description9');
+        myDiv9.text(myDiv9.text().substring(0, 500) + "......");
+        var myDiv10 = $('#description10');
+        myDiv10.text(myDiv10.text().substring(0, 500) + "......");
+        var myDiv11 = $('#description11');
+        myDiv11.text(myDiv11.text().substring(0, 500) + "......");
+        var myDiv12 = $('#description12');
+        myDiv12.text(myDiv12.text().substring(0, 500) + "......");
+
+        function logout() {
+            alert("you are about to logout. Click OK to continue. ");
+        }
+    </script>
 </body>
 
 </html>

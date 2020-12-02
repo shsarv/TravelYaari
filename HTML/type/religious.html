@@ -7,37 +7,44 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../CSS/type.css">
-    <link rel="stylesheet" href="../../CSS/nav2.css">
+    <link rel="stylesheet" href="../../CSS/nav1.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/footer.css">
     <title>religious places in India</title>
     <style>
         /* * {
             text-align: justify;
-            /* margin: 0;
+            margin: 0;
             padding: 0;
-            box-sizing: border-box; */
+            box-sizing: border-box;
+        } */
+        
+        .col-md-4 {
+            margin-top: 2rem;
+        }
         
         .my-panel {
-            height: 85vh;
-            overflow: auto;
+            /* height: 85vh; */
+            overflow: hidden;
             border: 1px solid rgb(218, 217, 217);
             border-radius: 10px;
             box-shadow: 2px 2px 5px 0px rgba(122, 185, 114, 0.75);
             text-align: justify;
+            text-overflow: ellipsis;
+            padding: 1rem;
         }
         
         .my-panel:hover {
             box-shadow: 4px 3px 5px 0px rgba(86, 148, 83, 0.97);
         }
-        
-        .my-panel p {
+        /* .my-panel p {
             margin: 0.7rem;
-        }
+        } */
         
         h4 {
             color: #4caf50;
+            font-weight: bolder;
         }
         
         .fa-star {
@@ -50,6 +57,71 @@
         .checked {
             color: orange;
         }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(119, 216, 119, 0.9);
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transition: .3s ease;
+            border-radius: 10px;
+        }
+        
+        .im:hover .overlay {
+            transform: scale(1);
+        }
+        
+        .text {
+            color: rgb(249, 252, 248);
+            font-size: 15px;
+            position: absolute;
+            top: 11%;
+            left: 10%;
+            transform: translate(-10%, -10%);
+            text-align: justify;
+            margin: 1rem 0 1rem 1rem;
+        }
+        
+        .im {
+            float: right;
+        }
+        
+        .book {
+            color: white;
+        }
+        
+        .book:hover {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .type-destination {
+            text-align: center;
+            padding: 2rem;
+            font-weight: bolder;
+            color: rebeccapurple;
+            font-size: 32px;
+            text-shadow: rgb(83, 218, 228) 2px 2px 1px 2px;
+        }
+        
+        #intro {
+            text-align: justify;
+        }
+        
+        #choose-place {
+            font-size: 24px;
+            color: rgb(74, 236, 109);
+            text-align: center;
+            font-weight: bolder;
+        }
+        /* #fixing-width {
+            margin: auto rem;
+        } */
     </style>
 </head>
 
@@ -62,14 +134,14 @@
 
         });
     </script>
-    <div class="container">
-        <h1>Religious destinations for divine blessings </h1>
+    <div class="container" id="fixing-width">
+        <h2 class="type-destination">Religious destinations for divine blessings </h2>
         <!-- <p>The .thumbnail class can be used to display an image gallery.</p>
         <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
         <p>Click on the images to enlarge them.</p> -->
 
         <div class="row" id="intro">
-            <div class="col-md-12">
+            <div class="col-xs-12">
 
                 <p>India is a spiritual land of different religions. People from all around the world come to visit to find themselves. The monk places and the grave historical stories about Gods, has made the hearts of people living here with faith and
                     positivity. India has a lot of beauty, but on the same note, if you want to get to know the core of India, you must visit the famous religious places spread out in all parts of this country.</p>
@@ -83,294 +155,508 @@
 
 
         </div>
+        <h6 id="choose-place">Select your Dream Destination.</h6>
         <div class="row">
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=p7vw2tDeY5w" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/religious/VAISHNO-DEVI.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
                             <h4>Vaishno Devi</h4>
-                            <img src="../../places/religious/VAISHNO-DEVI.jpg">
-                            <p>Ask any devout individual, and he or she’ll tell you how the love for visiting Vaishno Devi just keeps on increasing. Every year, this place witnesses a plethora of visitors who come from all over the country; some from foreign
-                                countries as well! Nestled in the embrace of the Trikuta Hills, Katra lies within the periphery of Jammu and Kashmir.</p>
-                            <p>Vaishno Mata calls out to her devotees every year and they loyally show up at her abode. Legends have it that Mata Rani Vaishno Devi turned herself into a rock that is worshipped here. Going by belief, she offers mental peace
-                                and strength to her devotees. It is not just the shrine that is worth visiting; this worship place in India gives the yatris an unparalleled experience of trekking up the hill. After visiting the shrine, you can also visit
-                                the Patni Top and the Natha Top to have an amazing time with your family or friends.</p>
-                            <p> It is believed that Mata Vaishno Devi viewed the fight of Lord Rama and Ravana and prayed for the victory of Lord Rama, from this hill.</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <br>
                         </div>
                     </div>
+                    <p id="description1">
+                        Ask any devout individual, and he or she’ll tell you how the love for visiting Vaishno Devi just keeps on increasing.<br> Every year, this place witnesses a plethora of visitors who come from all over the country; some from foreign
+                        countries as well! Nestled in the embrace of the Trikuta Hills, Katra lies within the periphery of Jammu and Kashmir.
+                    </p>
+                    <div class="im">
+                        <br><br><br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Vaishno Mata calls out to her devotees every year and they loyally show up at her abode. Legends have it that Mata Rani Vaishno Devi turned herself into a rock that is worshipped here. Going by belief, she offers mental peace and strength to her devotees.
+                                It is not just the shrine that is worth visiting; this worship place in India gives the yatris an unparalleled experience of trekking up the hill. After visiting the shrine, you can also visit the Patni Top and the Natha
+                                Top to have an amazing time with your family or friends.<br><br> It is believed that Mata Vaishno Devi viewed the fight of Lord Rama and Ravana and prayed for the victory of Lord Rama, from
+                                this hill.
+                            </p>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=8NJQ8aSzEvA" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/religious/AMARNATH.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Amarnath Caves</h4>
-                            <img src="../../places/religious/AMARNATH.jpg">
-                            <p>One of the most important pilgrimage places in India – the Amarnath Caves is said to be a haven for the pilgrims. Situated in the beautiful abode of Jammu and Kashmir, this is the place where Lord Shiva revealed the secret
-                                of life and eternity to Goddess Parvati (well, the legends say so). Though the visit to the cave is permissible only during the holy months of Shravan i.e. July-August, the shrine witnesses millions of visitors every year.
-                                Pilgrims can visit the shrine via two routes – one through Pahalgam and the other through Baltal. The Pahalgam route is a little longer than Baltal but devotees still prefer the former. You have to trek for around 3-5 days
-                                to reach the shrine and the sense of fulfilment is simply splendid! Nowadays, even helicopter services are available but people still prefer trekking (old school, you see).</p>
-                            <p> Amarnath Cave is accessible only during the Sharavan months of July-August. There are two routes available for undertaking the Amarnath Yatra - via Baltal or Pahalgam. The Baltal route, though shorter, has a steeper trekking
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <p id="description2">One of the most important pilgrimage places in India – the Amarnath Caves is said to be a haven for the pilgrims. Situated in the beautiful abode of Jammu and Kashmir, this is the place where Lord Shiva revealed the secret of life
+                        and eternity to Goddess Parvati (well, the legends say so). Though the visit to the cave is permissible only during the holy months of Shravan i.e. July-August, the shrine witnesses millions of visitors every year. Pilgrims can
+                        visit the shrine via two routes – one through Pahalgam and the other through Baltal. The Pahalgam route is a little longer than Baltal but devotees still prefer the former. You have to trek for around 3-5 days to reach the shrine
+                        and the sense of fulfilment is simply splendid! Nowadays, even helicopter services are available but people still prefer trekking (old school, you see).</p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text"> Amarnath Cave is accessible only during the Sharavan months of July-August. There are two routes available for undertaking the Amarnath Yatra - via Baltal or Pahalgam. The Baltal route, though shorter, has a steeper trekking
                                 route. The Pahalgam route is longer but is generally preferred by most of the devotees. It usually takes 3-5 days to reach Amarnath from the base point. Helicopter services are now available by private operators on both
                                 these routes. The devotees need to make advance bookings and get registered to undertake the holy pilgrimage to Amarnath.</p>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=QpyzVINRLFM" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/religious/KEDARNATH.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Kedarnath</h4>
-                            <img src="../../places/religious/KEDARNATH.jpg">
-                            <p>Kedarnath is yet another holy place in India that is visited by one and all. Dedicated to Lord Shiva, this temple is the highest among the 12 Jyotirlingas and is believed to open the doorway to attaining moksha (salvation).
-                                Perched at a height of 3583 metres above the sea level on the Garhwal Himalayan range of Uttarakhand, the Kedarnath Temple is a pivotal part of the Char Dham of India. Despite the ghastly effect of floods in North India
-                                in 2013, it still remains one of the most visited holy places in India.</p>
-                            <p>They say that the connection between God and a devotee is a special one; the almighty listens to your prayers. He is the creator of the universe, guiding everyone to the right path. With these holy places in India, devotees
-                                are sure to strengthen their bond with God!</p>
-                            <p> It is known that it was built by Pandavas and then again revived by the saint Adi Shankaracharya</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
                         </div>
                     </div>
+                    <p id="description3">Kedarnath is yet another holy place in India that is visited by one and all. Dedicated to Lord Shiva, this temple is the highest among the 12 Jyotirlingas and is believed to open the doorway to attaining moksha (salvation). Perched
+                        at a height of 3583 metres above the sea level on the Garhwal Himalayan range of Uttarakhand, the Kedarnath Temple is a pivotal part of the Char Dham of India. Despite the ghastly effect of floods in North India in 2013, it still
+                        remains one of the most visited holy places in India.</p>
+                    <div class="im">
+                        <br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">They say that the connection between God and a devotee is a special one; the almighty listens to your prayers. He is the creator of the universe, guiding everyone to the right path. With these holy places in India, devotees
+                                are sure to strengthen their bond with God!
+                                <br><br> It is known that it was built by Pandavas and then again revived by the saint Adi Shankaracharya</p>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=hs_odhVGEYU" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/religious/tungnath.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Tungnath</h4>
-                            <img src="../../places/religious/tungnath.jpg">
-                            <p>Shiva, Shankara, Shambhu, Maheshwara. No matter what you call him, Lord Shiva has lakhs of followers in the country and outside. And people travel miles and miles and climb the highest mountains to reach his shrines to seek
-                                his powerful blessings.
-                            </p>
-                            <p>And one such temple which draws people towards it, despite a super tough trek is the Tungnath Temple- the highest Shiva temple in the world! Yes! At an altitude of 3680 m (12,073 ft), the Tungnath temple a reference for many
-                                myths and legends and here is everything you need to know about it.</p>
-                            <p>The Tungnath Temple is believed to be 5000 years old and has a connection to the Pandavas of the epic Mahabharata. You will find five temples located in the mountain range of Tungnath, which together are called Panch Kedars.
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <p id="description4">Shiva, Shankara, Shambhu, Maheshwara. No matter what you call him, Lord Shiva has lakhs of followers in the country and outside. And people travel miles and miles and climb the highest mountains to reach his shrines to seek his powerful
+                        blessings. And one such temple which draws people towards it, despite a super tough trek is the Tungnath Temple- the highest Shiva temple in the world! Yes! At an altitude of 3680 m (12,073 ft), the Tungnath temple a reference
+                        for many myths and legends and here is everything you need to know about it.</p>
+                    <div class="im"><br><br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">The Tungnath Temple is believed to be 5000 years old and has a connection to the Pandavas of the epic Mahabharata. You will find five temples located in the mountain range of Tungnath, which together are called Panch Kedars.
                                 Legend has it that these temples were built by the royal Pandavas who wanted to be pardoned by Lord Shiva for the Kurukshetra war where they killed their cousins, the Kauravas. So, the Pandavas went in search of Shiva who
                                 was avoiding them since he was convinced of their guilt. To avoid them, he took the form of a bull and hid at Guptakashi, an underground haven. When he went back to his original form, the body parts from Lord Shiva’s bull-body
                                 rematerialized in five different spots, which are now called Panch Kedar and the Pandavas built five temples to honour their Lord. Each temple is identified with the part of the bull or Shiva’s body that was found there.
-                                Tungnath is identified as the place where the hands also known as ‘bahu’ were seen.</p>
-                            <p>The Panch Kedar temples are mostly accessible by foot, and you’d be surprised to know that the trek to the world’s highest Shiva temple is actually pretty easy. The Trek to Tungnath commences at Chopta and can be reached by
-                                a moderately easy trek of 3.5-5 km. Seeing the Himalayan peaks spread over 180 degrees up from there is nothing less than a visual treat! With the peaks of Panchchuli, Nanda Devi, Nilkanth and Kedarnath keeping you company,
-                                Chopta to Tungnath is a simple trek which is both adventurous and enthralling.</p>
-                            <p>The nearest airport to Tungnath is The Jolly Grant Airport in Dehradun, which is about 260 km away from Chopta. Once you reach Dehradun, you can take a taxi or bus to Chopta. From there begins the trek of nearly 3.5-5 km to
-                                Tungnath. You can also take a train with the nearest railway station being Haridwar which lies at a distance of 225 km from Chopta.</p>
-                            <p>It is a majestic place and Lord Shiva is known to have lived at the point.</p>
+                                Tungnath is identified as the place where the hands also known as ‘bahu’ were seen.
+                                <br><br>The Panch Kedar temples are mostly accessible by foot, and you’d be surprised to know that the trek to the world’s highest Shiva temple is actually pretty easy. The Trek to Tungnath commences at Chopta and can be
+                                reached by a moderately easy trek of 3.5-5 km. Seeing the Himalayan peaks spread over 180 degrees up from there is nothing less than a visual treat! With the peaks of Panchchuli, Nanda Devi, Nilkanth and Kedarnath keeping
+                                you company, Chopta to Tungnath is a simple trek which is both adventurous and enthralling.
+                                <br><br>The nearest airport to Tungnath is The Jolly Grant Airport in Dehradun, which is about 260 km away from Chopta. Once you reach Dehradun, you can take a taxi or bus to Chopta. From there begins the trek of nearly
+                                3.5-5 km to Tungnath. You can also take a train with the nearest railway station being Haridwar which lies at a distance of 225 km from Chopta. It is a majestic place and Lord Shiva is known to have lived at the point.</p>
                         </div>
                     </div>
+                    <br><br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=jA7NhLxv29g" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/religious/Goldentemple.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Golden Temple</h4>
-                            <img src="../../places/religious/Goldentemple.jpg">
-                            <p>‘Wahe guru ji ka khalsa; wahe guru ji ki fateh’</p>
-                            <p>This phrase resonates with every Indian regardless of his/her religious beliefs. One of the best religious places in India, the Golden Temple is where divinity is in the air. As soon as you gaze at this majestic gurudwara,
-                                your head will bow down in respect. It is a beautiful sight especially in the evening and at night when the reflection of the moon can be seen on the lake; everything around feels placid.</p>
-                            <p>The importance and beauty of this holy place in India can only be felt when you visit the Golden Temple in Amritsar. That being said, the city has a charm of its own – there are various sightseeing places within its periphery
-                                and nearby like the Wagah Border.</p>
-                            <p>Amritsar is the spiritual and cultural centre of the Sikh Religion. Baisakhi festival brings out Amritsar's resplendent face with its finest food, clothes and merry-making. This place is also famous for its Jallianwala Bagh
-                                massacre and its proximity to Wagah Border. The satiating food and generous dollops of legendary Punjabi hospitality further connive to cast a spell upon the visitor. From the Operation Blue Star in the Golden Temple to
-                                the tragedy of the Jallianwala Bagh massacre, Amritsar has seen the worst of situations and yet emerged like a phoenix through testing times. </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
                         </div>
                     </div>
+                    <p>‘Wahe guru ji ka khalsa; wahe guru ji ki fateh’</p>
+                    <p id="description5">This phrase resonates with every Indian regardless of his/her religious beliefs. One of the best religious places in India, the Golden Temple is where divinity is in the air. As soon as you gaze at this majestic gurudwara, your head
+                        will bow down in respect. It is a beautiful sight especially in the evening and at night when the reflection of the moon can be seen on the lake; everything around feels placid.</p>
+                    <div class="im">
+                        <br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">The importance and beauty of this holy place in India can only be felt when you visit the Golden Temple in Amritsar. That being said, the city has a charm of its own – there are various sightseeing places within its periphery
+                                and nearby like the Wagah Border.<br><br> Amritsar is the spiritual and cultural centre of the Sikh Religion. Baisakhi festival brings out Amritsar's resplendent face with its finest food, clothes and merry-making. This
+                                place is also famous for its Jallianwala Bagh massacre and its proximity to Wagah Border. The satiating food and generous dollops of legendary Punjabi hospitality further connive to cast a spell upon the visitor. From the
+                                Operation Blue Star in the Golden Temple to the tragedy of the Jallianwala Bagh massacre, Amritsar has seen the worst of situations and yet emerged like a phoenix through testing times. </p>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=lYT1SDbWC70" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/Religious/Rishikesh/RISHIKESH.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Rishikesh</h4>
-                            <img src="../../places/Religious/Rishikesh/RISHIKESH.jpg">
-                            <p>"Yoga Capital of the World"</p>
-                            <p>Located in the foothills of the Himalayas along the convergence of Ganga and Chandrabhaga River, Rishikesh is a small town in the Dehradun district, located close to Haridwar in Uttarakhand. Rishikesh (also called as Hrishikesh)
-                                is known for its adventure activities, ancient temples, popular cafes and as the "Yoga Capital of the World". Gateway to Garhwal Himalayas, Rishikesh is also a pilgrimage town and one of the holiest places for Hindus.</p>
-                            <p>Rishikesh became known worldwide in the 1960s after The Beatles visited the ashram of Maharishi Mahesh Yogi here. Today, the place is popular as The Beatles Ashram which beckons tourists globally. The tranquil town has long
-                                been a spiritual centre but is equally popular for the whitewater rafting, bungee jumping, mountain biking and camping along the fast-flowing Holy Ganges. It also serves as the gateway to many Himalayan treks.</p>
-                            <p>As it lies on the holy banks of river Ganga, Rishikesh has been a hub of Sadhus (saints) with numerous ashrams teaching spirituality, yoga, meditation and Ayurveda springing up. Since it is a religious town, non-vegetarian
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+
+                    <p id="description6">Located in the foothills of the Himalayas along the convergence of Ganga and Chandrabhaga River, Rishikesh is a small town in the Dehradun district, located close to Haridwar in Uttarakhand. Rishikesh (also called as Hrishikesh) is
+                        known for its adventure activities, ancient temples, popular cafes and as the "Yoga Capital of the World". Gateway to Garhwal Himalayas, Rishikesh is also a pilgrimage town and one of the holiest places for Hindus.</p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Rishikesh became known worldwide in the 1960s after The Beatles visited the ashram of Maharishi Mahesh Yogi here. Today, the place is popular as The Beatles Ashram which beckons tourists globally. The tranquil town has long
+                                been a spiritual centre but is equally popular for the whitewater rafting, bungee jumping, mountain biking and camping along the fast-flowing Holy Ganges. It also serves as the gateway to many Himalayan treks.<br><br> As
+                                it lies on the holy banks of river Ganga, Rishikesh has been a hub of Sadhus (saints) with numerous ashrams teaching spirituality, yoga, meditation and Ayurveda springing up. Since it is a religious town, non-vegetarian
                                 food and alcohol are strictly prohibited here. Rishikesh sees the most beautiful evening aarti on the banks of the river Ganga, which is not too crowded unlike its contemporaries in Varanasi, and Haridwar. The International
-                                Yoga Festival is organised here in the first week of March which sees yoga enthusiasts from all over the globe.</p>
-                            <p>
-                                Rishikesh is divided into two main areas - the downtown area known as Rishikesh town which is where the popular Triveni Ghat is situated. 2 km upstream from the popular Ram Jhula and Lakshman Jhula is the other side of Rishikesh where most of the popular
-                                ashrams, cafes, accommodation and tourists can be found. Haridwar and Rishikesh are the first Indian cities to be given the title of "twin national heritage cities".
+                                Yoga Festival is organised here in the first week of March which sees yoga enthusiasts from all over the globe.<br><br> Rishikesh is divided into two main areas - the downtown area known as Rishikesh town which is where
+                                the popular Triveni Ghat is situated. 2 km upstream from the popular Ram Jhula and Lakshman Jhula is the other side of Rishikesh where most of the popular ashrams, cafes, accommodation and tourists can be found. Haridwar
+                                and Rishikesh are the first Indian cities to be given the title of "twin national heritage cities".
                             </p>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=kSKNK23puGU" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/Religious/Prayagraj.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Prayagraj</h4>
-                            <img src="../../places/Religious/Prayagraj.jpg">
-                            <p>Allahabad, now officially known as Prayagraj, is a city located in the Indian state of Uttar Pradesh. Reminiscent of all that is spiritual and sacred in Hinduism, Allahabad is famous for Triveni Sangam or the meeting point
-                                of three rivers - the Ganga, the Yamuna, and the Saraswati. Built on the site of the ancient town of Prayag, Allahabad has, since time immemorial, held the largest Hindu gathering on the banks of the Sangam - the Maha Kumbh
-                                Mela. While the Sangam city is often passed over for more travel-friendly cities, there is a lot to Allahabad besides just its religion.</p>
-                            <p>Prayag or Prayagraj had been the ancient name of the city of Allahabad. Pra means “first” and Yag means “devotion”. Prayag also signifies the coming together of rivers Ganga, Yamuna and Saraswati. After the Mughal invasion,
-                                Emperor Akbar, impressed by the location named the city Ilahabas which meant “Abode of God”. Emperor Shah Jahan, his grandson, renamed the city to Allahabad.
-                            </p>
-                            <p>One of the top places to visit in Allahabad, if you’re spiritually inclined (and even if you’re not because this place deserves a visit), Triveni Sangam is a place bustling with tourists and locals all year round. The Maha
-                                Kumbh Mela is a religious occasion that is held here every twelve years and is attended by millions of pilgrims from all across the globe. The Allahabad Fort is another monument of historical significance and is a heritage
-                                site recognized by the UNESCO. Built during the reign of Akbar, this fort is also a fine example of the curation and craftsmanship of the Mughal era. Other popular places to visit in Allahabad include the Anand Bhavan,
-                                All Saints Cathedral, Chandra Shekhar Azad Park, and Allahabad Museum. </p>
-                            <p>Allahabad finds its mention in Hindu Scripture Mahabharata as Kaushambi, the place which Kuru rulers of Hastinapur made their capital. It was also a provincial capital of Mughals under the rule of Jahangir. The places ooze
-                                heritage, history, and stories galore, and once you visit, you will definitely have seen Allahabad differently for having travelled to and through it.</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
                         </div>
                     </div>
+                    <p id="description7">Allahabad, now officially known as Prayagraj, is a city located in the Indian state of Uttar Pradesh. Reminiscent of all that is spiritual and sacred in Hinduism, Allahabad is famous for Triveni Sangam or the meeting point of three
+                        rivers - the Ganga, the Yamuna, and the Saraswati. Built on the site of the ancient town of Prayag, Allahabad has, since time immemorial, held the largest Hindu gathering on the banks of the Sangam - the Maha Kumbh Mela. While
+                        the Sangam city is often passed over for more travel-friendly cities, there is a lot to Allahabad besides just its religion.
+                    </p>
+                    <div class="im">
+                        <br><br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Prayag or Prayagraj had been the ancient name of the city of Allahabad. Pra means “first” and Yag means “devotion”. Prayag also signifies the coming together of rivers Ganga, Yamuna and Saraswati. After the Mughal invasion,
+                                Emperor Akbar, impressed by the location named the city Ilahabas which meant “Abode of God”. Emperor Shah Jahan, his grandson, renamed the city to Allahabad.
+                                <br><br> One of the top places to visit in Allahabad, if you’re spiritually inclined (and even if you’re not because this place deserves a visit), Triveni Sangam is a place bustling with tourists and locals all year round.
+                                The Maha Kumbh Mela is a religious occasion that is held here every twelve years and is attended by millions of pilgrims from all across the globe. The Allahabad Fort is another monument of historical significance and is
+                                a heritage site recognized by the UNESCO. Built during the reign of Akbar, this fort is also a fine example of the curation and craftsmanship of the Mughal era. Other popular places to visit in Allahabad include the Anand
+                                Bhavan, All Saints Cathedral, Chandra Shekhar Azad Park, and Allahabad Museum. <br><br> Allahabad finds its mention in Hindu Scripture Mahabharata as Kaushambi, the place which Kuru rulers of Hastinapur made their capital.
+                                It was also a provincial capital of Mughals under the rule of Jahangir. The places ooze heritage, history, and stories galore, and once you visit, you will definitely have seen Allahabad differently for having travelled
+                                to and through it.</p>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=WgAuRYL7FrM" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/Religious/BADRINATH.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Badrinath</h4>
-                            <img src="../../places/Religious/BADRINATH.jpg">
-                            <p>"A mountain for Lord Shiva"</p>
-                            <p>Perched on the Garhwal hill tracks, near Alaknanda River, Badrinath is situated in the Chamoli district of Uttarakhand. Badrinath is known for the sacred Badrinath Temple dedicated to Lord Vishnu. It is one of the four Char
-                                Dham and Chota Char Dham pilgrimage yatras and is one of the most visited pilgrimages in India. Placed between Nar and Narayan mountain ranges, Badrinath Temple is situated in the backdrop of the mighty Neelkanth mountain
-                                and is known for stunning natural beauty. Situated at the height of 10,279 feet, the Badrinath Temple is believed to be originally established by the saint, Adi Shankaracharya. The temple houses a black stone idol of Lord
-                                Vishnu which is 1m tall and is considered to be one of the 8 swayam vyakta kshetras or self-manifested statues of Vishnu. It also finds its mention in the 108 Divya Desams devoted to Lord Vishnu in India.</p>
-                            <p>Badrinath Temple remains closed for six months from November to April each year. The temple is closed for worship on the auspicious day of bhatridwityia in October. On the day of the closure, an Akhanda Jyoti lamp is lit to
-                                last for six months and the image of Badrinath is transferred to Narasimha temple at Jyotirmath. Badrinath reopens on Akshaya Tritiya, an auspicious day in April every year.
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">"A mountain for Lord Shiva"</span>&emsp;
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
                             </p>
-                            <p>Badrinath Temple has a Tapt Kund, a hot sulphur spring which is considered to have medicinal values. River Alaknanda is known to originate from here. The vibrant festivals of Mata Murti Ka Mela and the Badri Kedar Festival
-                                give you another reason to visit the temple. Badrinath is accessible by road and therefore driving up to this pilgrim spot is not difficult.</p>
                         </div>
                     </div>
+
+                    <p id="description8">Perched on the Garhwal hill tracks, near Alaknanda River, Badrinath is situated in the Chamoli district of Uttarakhand. Badrinath is known for the sacred Badrinath Temple dedicated to Lord Vishnu. It is one of the four Char Dham and
+                        Chota Char Dham pilgrimage yatras and is one of the most visited pilgrimages in India. Placed between Nar and Narayan mountain ranges, Badrinath Temple is situated in the backdrop of the mighty Neelkanth mountain and is known for
+                        stunning natural beauty. Situated at the height of 10,279 feet, the Badrinath Temple is believed to be originally established by the saint, Adi Shankaracharya. The temple houses a black stone idol of Lord Vishnu which is 1m tall
+                        and is considered to be one of the 8 swayam vyakta kshetras or self-manifested statues of Vishnu. It also finds its mention in the 108 Divya Desams devoted to Lord Vishnu in India.</p>
+                    <div class="im">
+
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Badrinath Temple remains closed for six months from November to April each year. The temple is closed for worship on the auspicious day of bhatridwityia in October. On the day of the closure, an Akhanda Jyoti lamp is lit to
+                                last for six months and the image of Badrinath is transferred to Narasimha temple at Jyotirmath. Badrinath reopens on Akshaya Tritiya, an auspicious day in April every year.
+                                <br><br> Badrinath Temple has a Tapt Kund, a hot sulphur spring which is considered to have medicinal values. River Alaknanda is known to originate from here. The vibrant festivals of Mata Murti Ka Mela and the Badri Kedar
+                                Festival give you another reason to visit the temple. Badrinath is accessible by road and therefore driving up to this pilgrim spot is not difficult.</p>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=tTD57zDPeoE" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/Religious/Haridwar/haridwar--evening-iruvan-karunakaran.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Haridwar</h4>
-                            <img src="../../places/Religious/Haridwar/haridwar--evening-iruvan-karunakaran.jpg">
-                            <p>"Gateway to God"</p>
-                            <p>Haridwar, considered to be among the seven holiest cities in India, is an ancient city located on the banks of River Ganga in the Garhwal region of Uttarakhand. Dotted with temples, ashrams and narrow lanes across the city,
-                                Haridwar is a famous Hindu temple town where millions of devotees come to take a dip in the holy Ganges. It's believed that taking a dip in the holy Har Ki Pauri relieves you of all your sins.</p>
-                            <p>Every evening, Haridwar is witness to a set of rituals for the famous Ganga Aarti at the Ghats (River Banks) where thousands of devotees come together to pray to the river. Once in every twelve years, Haridwar is host to the
-                                mega-gathering during the world famous Kumbh Mela which sees millions of visitors from all over the country. Along with Prayagraj, Nashik and Ujjain, Haridwar is one of the only four cities in India which can host the Kumbh
-                                Mela.
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">"Gateway to God"</span>&emsp;&emsp;
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
                             </p>
-                            <p>Haridwar also acts as the base destination for some of the other tourist towns of Rishikesh and Devprayag as Hardwar is well connected by trains and roads. Apart from the religious angle, Haridwar is also now developing as
-                                a multifaceted cultural and spiritual centre. It's also known for its food and some of the must-try dishes include kachoris at Kashyap Kachoriwala and the aloo puri at Mohanji Puriwale.</p>
                         </div>
                     </div>
+
+                    <p id="description9">Haridwar, considered to be among the seven holiest cities in India, is an ancient city located on the banks of River Ganga in the Garhwal region of Uttarakhand. Dotted with temples, ashrams and narrow lanes across the city, Haridwar
+                        is a famous Hindu temple town where millions of devotees come to take a dip in the holy Ganges. It's believed that taking a dip in the holy Har Ki Pauri relieves you of all your sins.</p>
+                    <div class="im">
+                        <br><br><br><br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Every evening, Haridwar is witness to a set of rituals for the famous Ganga Aarti at the Ghats (River Banks) where thousands of devotees come together to pray to the river. Once in every twelve years, Haridwar is host to the
+                                mega-gathering during the world famous Kumbh Mela which sees millions of visitors from all over the country. Along with Prayagraj, Nashik and Ujjain, Haridwar is one of the only four cities in India which can host the Kumbh
+                                Mela.
+                                <br><br> Haridwar also acts as the base destination for some of the other tourist towns of Rishikesh and Devprayag as Hardwar is well connected by trains and roads. Apart from the religious angle, Haridwar is also now developing
+                                as a multifaceted cultural and spiritual centre. It's also known for its food and some of the must-try dishes include kachoris at Kashyap Kachoriwala and the aloo puri at Mohanji Puriwale.</p>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
 
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=qxnl8I5jol4" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/Religious/TIRUPATI.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Tirupati</h4>
-                            <img src="../../places/Religious/TIRUPATI.jpg">
-                            <p>"Andhra's temple town"</p>
-                            <p>Situated in the Chittoor district of Andhra Pradesh, Tirupati is known for Lord Venkateshwara Temple, one of the most visited pilgrimage centres in the country. Tirumala is one of the seven hills in Tirupati, where the main
-                                temple is located. The temple is believed to be placed where Lord Venkateshwara took the form of an idol and is hence home to the diety Govinda. Tirupati is one of the oldest cities of India and finds mention in plenty
-                                of ancient Vedas and Puranas.</p>
-                            <p>The non-stop chanting of ‘Om Namo Venkatesaya’, the mad pilgrim rush and the 8-feet tall idol of Lord Venkateshwara – everything about the Sri Venkateshwara Temple is majestic. Spread over an area of 26 kilometres and visited
-                                by nearly 50,000 pilgrims every day, the temple is also commonly referred to as the Temple of Seven Hills.</p>
-                            <p>There are other temples in Tirupati too that you can visit, including the Sri Kalahasti temple, Sri Govindarajaswami Temple, the Kondandarama Temple, the Parashurameshwara Temple, and the ISKCON temple. Tirupati is home to
-                                a unique geological wonder that you shouldn’t miss out on! The Silathoranam is a natural arch formed out of rocks and is located at the Tirumala Hills.</p>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">"Andhra's temple town"</span>&emsp;&emsp;
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
                         </div>
                     </div>
+
+                    <p id="description10">Situated in the Chittoor district of Andhra Pradesh, Tirupati is known for Lord Venkateshwara Temple, one of the most visited pilgrimage centres in the country. Tirumala is one of the seven hills in Tirupati, where the main temple
+                        is located. The temple is believed to be placed where Lord Venkateshwara took the form of an idol and is hence home to the diety Govinda. Tirupati is one of the oldest cities of India and finds mention in plenty of ancient Vedas
+                        and Puranas.</p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">The non-stop chanting of ‘Om Namo Venkatesaya’, the mad pilgrim rush and the 8-feet tall idol of Lord Venkateshwara – everything about the Sri Venkateshwara Temple is majestic. Spread over an area of 26 kilometres and visited
+                                by nearly 50,000 pilgrims every day, the temple is also commonly referred to as the Temple of Seven Hills.<br><br> There are other temples in Tirupati too that you can visit, including the Sri Kalahasti temple, Sri Govindarajaswami
+                                Temple, the Kondandarama Temple, the Parashurameshwara Temple, and the ISKCON temple. Tirupati is home to a unique geological wonder that you shouldn’t miss out on! The Silathoranam is a natural arch formed out of rocks
+                                and is located at the Tirumala Hills.</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=naqw9qxqasc" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/Religious/sabarimala.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Sabarimala</h4>
-                            <img src="../../places/Religious/sabarimala.jpg">
-                            <p>"India's own Mecca"</p>
-                            <p>More than 30 million pilgrims visit the temple in Sabarimala annually, making it the largest in India and second largest in the world, after Hajj Pilgrimage of Mecca in Saudi Arabia. Located inside the Periyar Tiger Reserve,
-                                in the Pathanamthitta district of Kerala, Sabarimala is a temple town on the bank of the River Pampa. Named after the mythological character, Sabarimala shelters the famous Ayyapa temple. The temple is also known as Dharma
-                                Sashta and is believed to be the son of Shiva and Mohini, the feminine incarnation of Lord Vishnu. People believe that Vishnu's incarnate, Parasurama, placed the Ayyappa Idol at the top of the mountain.</p>
-                            <p>One can notice that the traditions of Sabarimala are a blend of Shaivism, Shaktism, Vaishnavism and other Sramana traditions. Women of age 12-50 years, during an active menstrual cycle, weren't allowed inside the temple until
-                                the supreme court overturned the restriction on 28th September 2018.</p>
-                            <p>The temple is situated amidst eighteen hills and dense forest surrounding the temple, which is known as Poongavanam. People trek up the mountains from Plapalli, proceeding to Aangaamuzhi, and then to Muzhiyaar and finally to
-                                Sabarigiri road. The temple is open on the first five days of each Malayalam month with it being most crowded during Mandalapooja, Makaravilakku or Makar Sankranti.</p>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">"India's own Mecca"</span>&emsp;&emsp;
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
                         </div>
                     </div>
+
+                    <p id="description11">More than 30 million pilgrims visit the temple in Sabarimala annually, making it the largest in India and second largest in the world, after Hajj Pilgrimage of Mecca in Saudi Arabia. Located inside the Periyar Tiger Reserve, in the
+                        Pathanamthitta district of Kerala, Sabarimala is a temple town on the bank of the River Pampa. Named after the mythological character, Sabarimala shelters the famous Ayyapa temple. The temple is also known as Dharma Sashta and
+                        is believed to be the son of Shiva and Mohini, the feminine incarnation of Lord Vishnu. People believe that Vishnu's incarnate, Parasurama, placed the Ayyappa Idol at the top of the mountain.</p>
+                    <div class="im">
+                        <br><br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">One can notice that the traditions of Sabarimala are a blend of Shaivism, Shaktism, Vaishnavism and other Sramana traditions. Women of age 12-50 years, during an active menstrual cycle, weren't allowed inside the temple until
+                                the supreme court overturned the restriction on 28th September 2018.
+                                <br><br>The temple is situated amidst eighteen hills and dense forest surrounding the temple, which is known as Poongavanam. People trek up the mountains from Plapalli, proceeding to Aangaamuzhi, and then to Muzhiyaar and
+                                finally to Sabarigiri road. The temple is open on the first five days of each Malayalam month with it being most crowded during Mandalapooja, Makaravilakku or Makar Sankranti.</p>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=RIpsiEAAFb0" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/Religious/AjmerSharif.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Ajmer Sharif Dargah</h4>
-                            <img src="../../places/Religious/AjmerSharif.jpg">
-                            <p>Ajmer Sharif Dargah, also known as Ajmer Dargah, is the tomb of Moinuddin Chishti is one of the holiest places of worship in India not only for the Muslims but followers of every faith. Being the final resting place of the
-                                Khwaja Moin-ud-din Chisti, it has had an enormous contribution in spreading the ethical and spiritual values of Islam amongst masses.</p>
-                            <p>Khwaja Moin-ud-din Chisti was a great Sufi Saint and dedicated his entire life for the upliftment of the poor and downtrodden. The shrine is visited by millions of people every year, as it is considered very sacred by people
-                                of all the religions. Ajmer Sharif was built by the Mughal Emperor Humayun, hence justifying the rich Mughal Architecture. The Dargah has various constituents like tombs, courtyards and Daalaans. The major among these structures
-                                are- Nizam Gate, Buland Darwaza, Jama Masjid, Aulia Masjid, Dargah Shrine, Mehfilkhana and about a dozen of other prominent establishments.
-                            </p>
-                            <p>One can spot two huge cauldrons in the inner courtyard of the shrine. These containers have a capacity of 2240 kg and 4480 kg and are used during special occasions to cook sweet delicacies like Kheer. </p>
-
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
                         </div>
                     </div>
+                    <p id="description12">Ajmer Sharif Dargah, also known as Ajmer Dargah, is the tomb of Moinuddin Chishti is one of the holiest places of worship in India not only for the Muslims but followers of every faith. Being the final resting place of the Khwaja Moin-ud-din
+                        Chisti, it has had an enormous contribution in spreading the ethical and spiritual values of Islam amongst masses.</p>
+                    <div class="im">
+                        <br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Khwaja Moin-ud-din Chisti was a great Sufi Saint and dedicated his entire life for the upliftment of the poor and downtrodden. The shrine is visited by millions of people every year, as it is considered very sacred by people
+                                of all the religions. Ajmer Sharif was built by the Mughal Emperor Humayun, hence justifying the rich Mughal Architecture. The Dargah has various constituents like tombs, courtyards and Daalaans. The major among these structures
+                                are- Nizam Gate, Buland Darwaza, Jama Masjid, Aulia Masjid, Dargah Shrine, Mehfilkhana and about a dozen of other prominent establishments.
+                                <br><br> One can spot two huge cauldrons in the inner courtyard of the shrine. These containers have a capacity of 2240 kg and 4480 kg and are used during special occasions to cook sweet delicacies like Kheer. </p>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
 
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=ePb0yGKFqLM" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/Religious/Bodh gaya.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Bodh Gaya</h4>
-                            <img src="../../places/Religious/Bodh gaya.jpg">
-                            <p>"Buddha, Mahabodhi Tree and the land of Nirvana"</p>
-                            <p>Bodh Gaya is a Buddhist pilgrimage site in Gaya District of Bihar. Famous for the Mahabodhi Temple, It was here under the Bodhi tree that Gautama Buddha attained enlightenment.</p>
-                            <p>It is now one of the UNESCO World Heritage Sites, and a lot of foreign countries, including Japan and China, have helped the Indian government in building facilities for the Buddhist pilgrims. The place is bustling with pilgrims
-                                all through the year from India and abroad who come to pay their homage in monasteries, temples and remnants of Bodhi Tree.</p>
-                            <p>Located near the river Neranjana, Bodh Gaya was earlier known as Uruwela. It was also known as Sambodhi, Vajrasana or Mahabodhi until the 18th century CE. It is one of the four important Buddhist sites that include: Kushinagar,
-                                Lumbini and Sarnath.
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">"Buddha, Mahabodhi Tree and the land of Nirvana"</span>&emsp;&emsp;
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <p id="description13">Bodh Gaya is a Buddhist pilgrimage site in Gaya District of Bihar. Famous for the Mahabodhi Temple, It was here under the Bodhi tree that Gautama Buddha attained enlightenment.</p>
+                    <div class="im">
+                        <br>
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">It is now one of the UNESCO World Heritage Sites, and a lot of foreign countries, including Japan and China, have helped the Indian government in building facilities for the Buddhist pilgrims. The place is bustling with pilgrims
+                                all through the year from India and abroad who come to pay their homage in monasteries, temples and remnants of Bodhi Tree.<br><br> Located near the river Neranjana, Bodh Gaya was earlier known as Uruwela. It was also known
+                                as Sambodhi, Vajrasana or Mahabodhi until the 18th century CE. It is one of the four important Buddhist sites that include: Kushinagar, Lumbini and Sarnath.
 
                             </p>
                         </div>
                     </div>
+                    <br>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="col-md-4">
                 <div class="my-panel">
                     <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=MphyPkv1E9c" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../../places/Historical/Pushkar/images/Pushkar.jpg" style="width:100% ">
+                        </a>
                         <div class="caption">
 
                             <h4>Pushkar</h4>
-                            <img src="../../places/Religious/Pushkar.jpg">
-                            <p>"The Only Dedicated Brahma Temple and the Mesmerising Cattle Fair"</p>
-                            <p>Pushkar, a small temple town, is located around 15 km from Ajmer in Rajasthan. Every November, Pushkar is host to the Pushkar Mela, one of the biggest camel fairs in the country. Perfect choice for a weekend getaway from Jaipur,
-                                Pushkar is located amid Aravali ranges. Known for the world's only dedicated Brahma temple, Pushkar is primarily a pilgrimage site for Hindus.</p>
-                            <p>Spend some evenings sitting at the ghats while sipping chai or taking a stroll through narrow alleys while listening to the chants from temples surrounding the ghats. A delight for street-shopping lovers, Pushkar has shops
-                                in the main street selling everything from silver oxidised jewellery to merchandise swaddled in various colours.</p>
-                            <p>The Pushkar Mela attracts millions of visitors from around the world. With folk performances, rides, stalls and even magic shows, the entire town is lit up, music blares from every house, and everyone is in a festive mood.
-                                Pushkar has slowly evolved from a religious destination to a multi-cultural hotspot with travellers from all over the world.</p>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">"The Only Dedicated Brahma Temple and the Mesmerising Cattle Fair"</span>&emsp;&emsp;
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
 
                         </div>
                     </div>
+
+                    <p id="description14">Pushkar, a small temple town, is located around 15 km from Ajmer in Rajasthan. Every November, Pushkar is host to the Pushkar Mela, one of the biggest camel fairs in the country. Perfect choice for a weekend getaway from Jaipur, Pushkar
+                        is located amid Aravali ranges. Known for the world's only dedicated Brahma temple, Pushkar is primarily a pilgrimage site for Hindus.</p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Spend some evenings sitting at the ghats while sipping chai or taking a stroll through narrow alleys while listening to the chants from temples surrounding the ghats. A delight for street-shopping lovers, Pushkar has shops
+                                in the main street selling everything from silver oxidised jewellery to merchandise swaddled in various colours.<br><br> The Pushkar Mela attracts millions of visitors from around the world. With folk performances, rides,
+                                stalls and even magic shows, the entire town is lit up, music blares from every house, and everyone is in a festive mood. Pushkar has slowly evolved from a religious destination to a multi-cultural hotspot with travellers
+                                from all over the world.</p>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
 
@@ -378,6 +664,53 @@
         </div>
 
     </div>
+    <div style="margin-bottom: 2rem;"></div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("../footer1.html");
+
+        });
+    </script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        var myDiv1 = $('#description1');
+        myDiv1.text(myDiv1.text().substring(0, 500) + "......");
+        var myDiv2 = $('#description2');
+        myDiv2.text(myDiv2.text().substring(0, 480) + "......");
+        var myDiv3 = $('#description3');
+        myDiv3.text(myDiv3.text().substring(0, 500) + "......");
+        var myDiv4 = $('#description4');
+        myDiv4.text(myDiv4.text().substring(0, 500) + "......");
+        var myDiv5 = $('#description5');
+        myDiv5.text(myDiv5.text().substring(0, 500) + "......");
+        var myDiv6 = $('#description6');
+        myDiv6.text(myDiv6.text().substring(0, 500) + "......");
+        var myDiv7 = $('#description7');
+        myDiv7.text(myDiv7.text().substring(0, 500) + "......");
+        var myDiv8 = $('#description8');
+        myDiv8.text(myDiv8.text().substring(0, 530) + "......");
+        var myDiv9 = $('#description9');
+        myDiv9.text(myDiv9.text().substring(0, 500) + "......");
+        var myDiv10 = $('#description10');
+        myDiv10.text(myDiv10.text().substring(0, 500) + "......");
+        var myDiv11 = $('#description11');
+        myDiv11.text(myDiv11.text().substring(0, 500) + "......");
+        var myDiv12 = $('#description12');
+        myDiv12.text(myDiv12.text().substring(0, 500) + "......");
+        var myDiv13 = $('#description13');
+        myDiv13.text(myDiv13.text().substring(0, 500) + "......");
+        var myDiv14 = $('#description14');
+        myDiv14.text(myDiv14.text().substring(0, 500) + "......");
+
+        function logout() {
+            alert("you are about to logout. Click OK to continue. ");
+        }
+    </script>
 </body>
 
 </html>
