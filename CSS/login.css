@@ -50,7 +50,7 @@
     
     .login-account-wall {
         padding: 10px 10px;
-        background-color: rgba(89, 223, 140, 0.4);
+        background-color: rgba(37, 196, 207, 0.8);
         box-shadow: 0 2px 2px rgb(26, 25, 25, 0.5);
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -61,9 +61,9 @@
     }
     
     .login-login-title {
-        color: white;
+        color: rgb(210, 244, 245);
         font-size: 25px !important;
-        font-weight: 400;
+        font-weight: 800;
         /* display: block; */
     }
     
@@ -104,13 +104,14 @@
     
     #login-intro {
         /* background-image: url(../Images/login/side.jpg); */
-        padding: 0px 10px 10px;
+        padding: 30px 10px 10px;
         border-radius: 0px 5px 5px 0px;
         -webkit-border-radius: 0px 5px 5px 0px;
         -moz-border-radius: 0px 5px 5px 0px;
         -ms-border-radius: 0px 5px 5px 0px;
         -o-border-radius: 0px 5px 5px 0px;
         color: white;
+        background-image: url(../Images/login/side.jpg);
     }
     
     @media(max-width:768px) {
@@ -129,6 +130,7 @@
         -o-border-radius: 5px 0px 0px 5px;
         -webkit-border-radius: 5px 0px 0px 5px;
         color: black;
+        background-image: url(../Images/login/side.jpg);
     }
     
     #add-background {

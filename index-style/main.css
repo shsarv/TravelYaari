@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 .slider .btn {
     margin-top: 20px;
 }
@@ -7,6 +8,10 @@
     font-size: 18px !important;
     width: 90%;
     border: #f4f4f4 3px solid !important;
+}
+
+.brand-logo {
+    font-family: 'Piedra', cursive;
 }
 
 .autocomplete-content {

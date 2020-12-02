@@ -18,14 +18,26 @@
 </head>
 
 <body>
-    <div id="navigation"></div>
-    <script>
-        $(document).ready(function() {
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                   
+          </button>
+                <a class="navbar-brand" href="home.html" style="font-weight: bold;font-family: 'Piedra', cursive;">TravelYaari</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="w" href="home.html">Home</a></li>
+                    <li><a class="w" href="Gallery.html">Gallery</a></li>
+                    <li><a class="w" href="../index.html" onclick="alert('you are about to logout.click OK to Continue')">Logout <span class="glyphicon glyphicon-log-out"></span></a></li>
+                </ul>
 
-            $('#navigation').load("nav1.html");
-
-        });
-    </script>
+            </div>
+        </div>
+    </nav>
     <div class="team-container">
         <div class="team-heading"></div>
 
@@ -78,7 +90,7 @@
     <script>
         $(document).ready(function() {
 
-            $('#foot').load("footer.html");
+            $('#foot').load("footer1.html");
 
         });
     </script>

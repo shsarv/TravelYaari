@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300">
+    <title>Photo Gallery | TravelYaari</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../index-style/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../index-style/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="green">
+            <div class="container">
+                <a href="#home" class="brand-logo">TravelYaari</a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="HTML\contact.html">Contact</a>
+                    </li>
+                    <li><button type="button" class="btn green waves-effect waves-light" onclick="history.back();">Return</button>
+                        <!-- <a href="#" onclick="history.back();">Return</a> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- we put the sidebar li elements outside the div because its fixed div and we wont be able to access these links -->
+    <ul class="side-nav" id="mobile-nav">
+        <li>
+            <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+            <a href="HTML\contact.html">Contact</a>
+        </li>
+        <li class="text-center"><button type="button" class="btn green lighten-3 waves-effect waves-light" onclick="history.back();">Return</button>
+            <!-- <a href="#" onclick="history.back();">Return</a> -->
+        </li>
+    </ul>
+
+    <section id="gallery" class="section section-gallery scrollspy ">
+        <div class="container">
+            <h4 class="center">
+                <span class="green-text">Photo</span> Gallery
+            </h4>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?beach" alt=" ">
+                </div>
+                <div class="col s12 m3">
+                    <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?travel " alt=" ">
+                </div>
+                <div class="col s12 m3">
+                    <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?nature " alt=" ">
+                </div>
+                <div class="col s12 m3">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?beach,travel " alt=" ">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col s12 m3">
+                    <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?water " alt=" ">
+                </div>
+                <div class="col s12 m3">
+                    <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?building " alt=" ">
+                </div>
+                <div class="col s12 m3">
+                    <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?trees " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?cruise " alt=" ">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?hills,snow " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?traveling " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?bridge " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?boat,travel " alt=" ">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?park " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?road,valley " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?nature,forest " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?beach,travel,fog " alt=" ">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?water,river" alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?building,city " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?trees,house " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?cruise,sunset " alt=" ">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?mountains " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?traveling,bike " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?bridge,wood " alt=" ">
+                </div>
+                <div class="col s12 m3 ">
+                    <img class="materialboxed responsive-img " src="https://source.unsplash.com/1600x900/?boat,travel,waterfall " alt=" ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section green darken-1 white-text center ">
+        <p class="flow-text ">TravelYaari &copy; 2020</p>
+    </footer>
+    <script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="..\index-style\materialize.min.js "></script>
+    <script>
+        $(document).ready(function() {
+            // INIT sidebar
+            $(".button-collapse ").sidebar();
+        });
+    </script>
+</body>
+
+</html>

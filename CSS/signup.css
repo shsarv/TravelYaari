@@ -149,9 +149,15 @@ h2 {
     flex-direction: column;
 }
 
-#signup-container-shadow {
+
+/* #signup-container-shadow {
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.3);
-}
+} */
+
+
+/* #signup-container-shadow {
+    text-align: center !important;
+} */
 
 .login {
     text-decoration: none;
