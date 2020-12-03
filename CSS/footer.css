@@ -7,6 +7,15 @@
     color: pink;
 }
 
+#footer-anchorto {
+    color: rgb(10, 25, 94);
+    text-decoration: none;
+}
+
+#footer-anchorto:hover {
+    color: rgb(190, 13, 152);
+}
+
 #footer-p-up {
     background-color: #4caf50;
     color: white;

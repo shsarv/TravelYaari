@@ -36,6 +36,10 @@
         #matter p {
             font-size: larger;
         }
+        
+        body {
+            padding-top: 12rem;
+        }
     </style>
 
 </head>
@@ -50,20 +54,24 @@
         });
     </script>
     <!-- The sidebar -->
-    <div class="sidebar">
-        <ul type="none">
-            <li><a class="glyphicon glyphicon-home" href="#intro">&nbspIndia Unrevealed</a></li>
+    <div class="sidebar" style="margin-top: 3rem;">
+        <ul style="list-style-type: none;">
+            <li><a class="glyphicon glyphicon-home" href="india.html">&nbspIndia Unrevealed</a></li>
             <li><a class="glyphicon glyphicon-hand-right" href="#matter">&nbspMust Visit</a></li>
-            <li><a class="glyphicon glyphicon-star-empty" href="Places.html"> More Places</a></li>
-            <li><a href="type/beaches.html">Beaches</a></li>
-            <li><a href="type/historical.html">Historical Destinations</a></li>
-            <li><a href="type/honeymoon.html">Honeymoon Destinations</a></li>
-            <li> <a href="type/parks.html">National Parks</a></li>
-            <li> <a href="type/religious.html">Religious Heritage</a></li>
-            <li><a href="type/hill-station.html">Nature At its Best</a></li>
+            <li>
+                <a href="Agra.html">Agra</a>
+            </li>
+            <li><a href="Delhi.html">Delhi</a></li>
+            <li><a href="Jaipur.html">Jaipur</a></li>
+            <li> <a href="Haridwar.html">Haridwar</a></li>
+            <li> <a href="Mathura.html">Mathura</a></li>
+            <li><a href="Varanasi.html">Varanasi</a></li>
+            <li>
+                <a href="Vrindawan.html">Vrindavan</a>
+            </li>
         </ul>
     </div>
-    <div class="content">
+    <div class="content" style="margin-top: 3rem;">
         <div class="introduction" id="intro">
             <h2 style="display: block;text-align: center;">Haridwar</h2>
 
@@ -101,14 +109,13 @@
 
     </div>
 
-    <div id="foot"></div>
-    <script>
-        $(document).ready(function() {
-
-            $('#foot').load("../footer.html");
-
-        });
-    </script>
+    <nav class="footer-copyright">
+        <div class="container-fluid" id="footer-p-down">
+            <p style="text-align:center;">
+                Copyright © TravelYaari. All Rights Reserved | Contact Us: +91 8800000000 | Developed with ❤️ | <a id="footer-anchor" href="mailto:shsarv@gmail.com"><b>travelYaari@gmail.com</b></a>
+            </p>
+        </div>
+    </nav>
 
 </body>
 
