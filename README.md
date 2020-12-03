@@ -1,17 +1,12 @@
 # Travel-Yaari
 This Repo contains Fullstack mini project using Front end technologies.
 
-https://img.shields.io/github/license/shsarv/Travelyaari?style=for-the-badge
-
+![](https://img.shields.io/github/license/shsarv/Travelyaari?style=for-the-badge)
 ![Jekyll site CI](https://github.com/shsarv/TravelYaari/workflows/Jekyll%20site%20CI/badge.svg)
-
 ![GitHub language count](https://img.shields.io/github/languages/count/shsarv/TravelYaari)
-
-https://img.shields.io/github/repo-size/shsarv/TravelYaari
-
-https://img.shields.io/tokei/lines/github/shsarv/TravelYaari
-
-https://img.shields.io/github/issues-pr-closed/shsarv/TravelYaari
+![](https://img.shields.io/github/repo-size/shsarv/TravelYaari)
+![](https://img.shields.io/tokei/lines/github/shsarv/TravelYaari)
+![](https://img.shields.io/github/issues-pr-closed/shsarv/TravelYaari)
 
 This Project is Live at -----> https://shsarv.github.io/TravelYaari/
 
