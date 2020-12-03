@@ -7,11 +7,13 @@
 ![](https://img.shields.io/github/issues-pr-closed/shsarv/TravelYaari)
 ![](https://img.shields.io/github/license/shsarv/Travelyaari)
 
-This Repo contains Fullstack mini project using Front end technologies and <br>
+
+<br>
 This Project is Live at -----> https://shsarv.github.io/TravelYaari/
 
 <hr>
 
+This Repo contains Fullstack mini project using Front end technologies
   ### Overview
   
    This project is based on how an effective travel website will make us feel. It is based on a  travelling  website  with  front-end only  that  will  activate  the travelling bug with  vibrant  imagery.This  website  contains highlights  of  some  important  places  along with  high  quality photography.
