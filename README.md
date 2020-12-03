@@ -14,22 +14,22 @@ This Project is Live at -----> https://shsarv.github.io/TravelYaari/
 <hr>
 
 This Repo contains Fullstack mini project using Front end technologies
-  ### Overview  <img src ="https://www.flaticon.com/svg/static/icons/svg/2328/2328966.svg" width="40px">
+  ### Overview  <img src ="https://www.flaticon.com/svg/static/icons/svg/2328/2328966.svg" width="25px">
   
    This project is based on how an effective travel website will make us feel. It is based on a  travelling  website  with  front-end only  that  will  activate  the travelling bug with  vibrant  imagery.This  website  contains highlights  of  some  important  places  along with  high  quality photography.
   
-  ### Motivation  <img src ="https://www.flaticon.com/svg/static/icons/svg/1083/1083498.svg" width="40px">
+  ### Motivation  <img src ="https://www.flaticon.com/svg/static/icons/svg/1083/1083498.svg" width="25px">
  
   
   
   People all over the world are fond of travel and tourism.People often find it difficult to search for the best places .To address the issue,we adopt the travelling website which will offer best places among others.
  
-  ### Objective <img src ="https://www.flaticon.com/svg/static/icons/svg/2620/2620445.svg" width="40px">
+  ### Objective <img src ="https://www.flaticon.com/svg/static/icons/svg/2620/2620445.svg" width="25px">
   
   
   The main objective of the projectis to create a website using  front-end  technologies to  continuously  provide enjoyable quality excursions/trips on time and on budget.It will also develop enthusiastically satisfied customers all of the time. 
  
-  ### Technologies  <img src ="https://www.flaticon.com/svg/static/icons/svg/3662/3662817.svg" width="40px">
+  ### Technologies  <img src ="https://www.flaticon.com/svg/static/icons/svg/3662/3662817.svg" width="25px">
   
   * The technologies that we have used in making this project are :
   
@@ -47,7 +47,7 @@ This Repo contains Fullstack mini project using Front end technologies
  </table>
  
   
-  ### Contributors <img src ="https://www.flaticon.com/svg/static/icons/svg/2917/2917641.svg" width="40px">
+  ### Contributors <img src ="https://www.flaticon.com/svg/static/icons/svg/2917/2917641.svg" width="25px">
   
   
    <table>
@@ -60,7 +60,7 @@ This Repo contains Fullstack mini project using Front end technologies
     <table>
    
   
-  ### License    <img src ="https://www.flaticon.com/svg/static/icons/svg/3076/3076368.svg" width="40px">
+  ### License    <img src ="https://www.flaticon.com/svg/static/icons/svg/3076/3076368.svg" width="25px">
   
   * Apache-2.0 License copyright &copy; 2020 Sarvesh Kumar Sharma
       
