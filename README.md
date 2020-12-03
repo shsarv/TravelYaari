@@ -1,77 +1,35 @@
 # Travel-Yaari
 This Repo contains Fullstack mini project using Front end technologies.
 
-### Table of Content
-  * [Overview](#overview)
-  * [Motivation](#motivation)
-  * [Demo](#demo)
-  * [Objective](#Objective)
-  * [Technical Aspect](#technical-aspect)
-  * [Technologies Used](#technologies-used)
-  * [To Do](#to-do)
-  * [Installation](#installation)
-  * [Run](#run)
-  * [Bug / Feature Request](#bug-feature-request)
-  * [Team members](#team)
-  * [License](#license)
-  * [Credits](#credits)
-  
-  
-  <hr>
-  
-  <br>
-  
-  
-  
-  
+https://img.shields.io/github/license/shsarv/Travelyaari?style=for-the-badge
+
+![Jekyll site CI](https://github.com/shsarv/TravelYaari/workflows/Jekyll%20site%20CI/badge.svg)
+
+![GitHub language count](https://img.shields.io/github/languages/count/shsarv/TravelYaari)
+
+https://img.shields.io/github/repo-size/shsarv/TravelYaari
+
+https://img.shields.io/tokei/lines/github/shsarv/TravelYaari
+
+https://img.shields.io/github/issues-pr-closed/shsarv/TravelYaari
+
+This Project is Live at -----> https://shsarv.github.io/TravelYaari/
+
+<hr>
+
   ### Overview
   
    This project is based on how an effective travel website will make us feel. It is based on a  travelling  website  with  front-end only  that  will  activate  the travelling bug with  vibrant  imagery.This  website  contains highlights  of  some  important  places  along with  high  quality photography.
   
-  
-  
-  
-  
-  
-  
   ### Motivation
   
   People all over the world are fond of travel and tourism.People often find it difficult to search for the best places .To address the issue,we adopt the travelling website which will offer best places among others.
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ### Demo
-  
-  _Coming soon_
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+ 
   ### Objective
   
   
   The main objective of the projectis to create a website using  front-end  technologies to  continuously  provide enjoyable quality excursions/trips on time and on budget.It will also develop enthusiastically satisfied customers all of the time. 
-  
-  
-  
-  
-  
-  
-  
-  
+ 
   ### Technologies Used
   
   * The technologies that we have used in making this project are :
@@ -86,80 +44,11 @@ This Repo contains Fullstack mini project using Front end technologies.
   <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"><img src="resources/boot.jpg" width="80px;" height="80px;"  alt=""/><br /><sub><b>Bootstrap</b></sub></a></td>
    <td align="center">
   <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="resources/js.jpg" width="80px;" height="80px;"  alt=""/><br /><sub><b>JAVASCRIPT</b></sub></a></td>
-      <td align="center">
-   <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code"><img src="resources/vs.jpg" width="80px;" height="80px;" alt=""/><br /><sub><b>VSCODE</b></sub></a></td>
  </tr>
  </table>
-   
-   
-   
-   
-   
-   
-   
-   
-   
+ 
   
-  ### To Do
-  
-  
-   _Coming Soon_
-   
-   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ### Installation
-  
-  
-   _Coming Soon_
-   
-  
-  
-  
-  
-  
-  
-  
-  
-  #### Run
-  
-  
-   _Coming Soon_
-   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ### Bug feature request
-  
-  
-   _Coming Soon_
-   
-   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ### Team
+  ### Contributors
   
   
    <table>
@@ -171,33 +60,12 @@ This Repo contains Fullstack mini project using Front end technologies.
    <tr>
     <table>
    
-   
-  
-  
-  
-  
-  
-  
-  
-  
   
   ### License
   
   * Apache-2.0 License copyright &copy; 2020 Sarvesh Kumar Sharma
-    
-   
-   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ### Credit
+      
+  ### References
   
   <table>
   <tr>
