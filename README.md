@@ -14,7 +14,7 @@ This Project is Live at -----> https://shsarv.github.io/TravelYaari/
 <hr>
 
 This Repo contains Fullstack mini project using Front end technologies
-  ### Overview  
+  ### Overview  <img src ="https://www.flaticon.com/svg/static/icons/svg/2328/2328966.svg" width="40px">
   
    This project is based on how an effective travel website will make us feel. It is based on a  travelling  website  with  front-end only  that  will  activate  the travelling bug with  vibrant  imagery.This  website  contains highlights  of  some  important  places  along with  high  quality photography.
   
@@ -29,7 +29,7 @@ This Repo contains Fullstack mini project using Front end technologies
   
   The main objective of the projectis to create a website using  front-end  technologies to  continuously  provide enjoyable quality excursions/trips on time and on budget.It will also develop enthusiastically satisfied customers all of the time. 
  
-  ### Technologies Used
+  ### Technologies  <img src ="https://www.flaticon.com/svg/static/icons/svg/3662/3662817.svg" width="40px">
   
   * The technologies that we have used in making this project are :
   
@@ -47,7 +47,7 @@ This Repo contains Fullstack mini project using Front end technologies
  </table>
  
   
-  ### Contributors
+  ### Contributors <img src ="https://www.flaticon.com/svg/static/icons/svg/2917/2917641.svg" width="40px">
   
   
    <table>
@@ -60,11 +60,11 @@ This Repo contains Fullstack mini project using Front end technologies
     <table>
    
   
-  ### License
+  ### License    <img src ="https://www.flaticon.com/svg/static/icons/svg/3076/3076368.svg" width="40px">
   
   * Apache-2.0 License copyright &copy; 2020 Sarvesh Kumar Sharma
       
-  ### References
+  ### References   <img src ="https://www.flaticon.com/svg/static/icons/svg/2806/2806879.svg" width="40px">
   
   <table>
   <tr>
