@@ -4,243 +4,657 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../CSS/nav2.css">
-    <link rel="stylesheet" href="../../CSS/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>historical places in India</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <title>Historical places in India</title>
+    <script>
+    </script>
     <style>
-        #content h2 {
-            text-align: center;
-            font-weight: bolder;
-            font-style: normal;
-            text-decoration: underline;
+        /* * {
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        
+        .col-md-4 {
+            margin-top: 2rem;
         }
         
-        .row {
-            margin: 50px;
+        .my-panel {
+            /* height: 85vh; */
+            overflow: hidden;
+            border: 1px solid rgb(218, 217, 217);
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 0px rgba(122, 185, 114, 0.75);
+            text-align: justify;
+            text-overflow: ellipsis;
+            padding: 1rem;
         }
+        
+        .my-panel:hover {
+            box-shadow: 4px 3px 5px 0px rgba(86, 148, 83, 0.97);
+        }
+        /* .my-panel p {
+            margin: 0.7rem;
+        } */
+        
+        h4 {
+            color: #4caf50;
+            font-weight: bolder;
+        }
+        
+        .fa-star {
+            display: inline-flex;
+            align-items: center;
+            text-align: right;
+            justify-content: center;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(119, 216, 119, 0.9);
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transition: .3s ease;
+            border-radius: 10px;
+        }
+        
+        .im:hover .overlay {
+            transform: scale(1);
+        }
+        
+        .text {
+            color: rgb(249, 252, 248);
+            font-size: 15px;
+            position: absolute;
+            top: 11%;
+            left: 10%;
+            transform: translate(-10%, -10%);
+            text-align: justify;
+            margin: 1rem 0 1rem 1rem;
+        }
+        
+        .im {
+            float: right;
+        }
+        
+        .book {
+            color: white;
+        }
+        
+        .book:hover {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .type-destination {
+            text-align: center;
+            padding: 2rem;
+            font-weight: bolder;
+            color: rebeccapurple;
+            font-size: 32px;
+            text-shadow: rgb(83, 218, 228) 2px 2px 1px 2px;
+        }
+        
+        #intro {
+            text-align: justify;
+        }
+        
+        #choose-place {
+            font-size: 24px;
+            color: rgb(74, 236, 109);
+            text-align: center;
+            font-weight: bolder;
+        }
+        /* #fixing-width {
+            margin: auto rem;
+        } */
     </style>
 </head>
 
 <body>
     <div id="navigation"></div>
     <script>
-        $(document).ready(function() {
+        jQuery(document).ready(function($) {
 
             $('#navigation').load("../nav2.html");
 
         });
     </script>
-    <ul class="list-group list-group-horizontal-sm">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-    </ul>
-    <main class="row responsive-img">
-
-
-
-
-        <section id="content">
-            <h2>Please Select the City you are looking for</h2>
-            <!-- <p>The .thumbnail class can be used to display an image gallery.</p>
-        <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
-        <p>Click on the images to enlarge them.</p> -->
-            <div class="row responsive-img">
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Agra">
-                        <img src="../../places/Historical/Agra_c/images/india-agra-top-attractions-agra-old-city.jpg" alt="Lights" style="width:100%">
-                        <div class="caption">
-                            <h4>Agra</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Jaipur">
-                        <img src="../../places/Historical/Jaipur_c/images/india-jaipur-top-attractions-amber-fort.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Jaipur</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Delhi">
-                        <img src="../../places/Historical/Delhi/images/india-delhi-rajpath-rashtrapati-bhavan.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Delhi</h4>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <div class="container" id="fixing-width">
+        <h2 class="type-destination"> Best Historical places in India</h2>
+        <div class="row" id="intro">
+            <div class="col-xs-12">
+                India has abundant historical places spread all over the country that makes for an interesrting, knowledgeable and picturesque destination for tourists. Uttar Pradesh has some of the most beautiful historical places in India which include Agra, Ayodhya, Lucknow and Jhansi. In Rajasthan
+                also tourists can be spotted for choices which include Jaipur, Udaipur, Chittorgarh and Jaisalmer. Delhi and Ahmedabad are among the most popular historical cities in north India. Hyderabad, Chennai and Mysore are the most popular ones in South India.
+                Daman & Diu, Sikkim, Meghamalai, Gangtok, and many south indian cities among others are the lesser crowded historical cities in India.<br>
             </div>
-            <div class="row responsive-img">
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Jaisalmer">
-                        <img src="../../places/Historical/Jaisalmer/images/india-in-pictures-beautiful-places-to-photograph-bada-bagh-jaisalmer.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Jaisalmer</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Hampi">
-                        <img src="../../places/Historical/Hampi/images/Hampi-1.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Hampi</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="Jodhpur">
+        </div>
+        <h6 id="choose-place">Select your Dream Destination.</h6>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Historical/Jodhpur/images/india-in-pictures-beautiful-places-to-photograph-mehrangarh-fort.jpg" alt="Nature" style="width:100%">
+                        <a href="https://www.youtube.com/watch?v=yCnEJf3n_as" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Taj Mahal.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Jodhpur</h4>
+                            <h4>Taj Mahal, Agra</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">One of the Seven Wonders</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
                         </div>
                     </div>
+                    <p id="description1">
+                        Taj Mahal is one of the main reasons why India is famous. Many people even associate India with Taj Mahal. However, to me, more than the splendid architecture, 
+                        it is the story behind it that appeals to me the most. This magnificent beauty stands strong as a symbol of the love of a husband to his wife. Moreover, it reminds us of the power of love and 
+                        how it can set an example for generations to come. Taj Mahal is one of the main reasons why India is famous. Many people even associate India with Taj Mahal. However, to me, more than the splendid architecture, it is the story behind it that appeals to me the most. This magnificent beauty stands strong as a symbol of the love of a husband to his wife. 
+                        Moreover, it reminds us of the power of love and how it can set an example for generations to come.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">To honor the memory of his loving wife, Shah Jahan ordered the finest artisans from all over the world to build it. He wanted to make something that had never been done before for anyone. The emperor wished to give the last
+                                 gift to his wife whom he loved very much.Even till date, people sing praises about Shah Jahan’s grand gesture. It makes you believe in love and appreciate it like never before. We also see how under the tomb lies the body of the eternal lovers. 
+                                 Shah Jahan and Mumtaz Mahal are buried next to each other and even after death, they remained side by side.  Taj Mahal was declared as a Heritage Site by UNSECO in 1983. What makes this monument so special? Why do people come from all walks of life to witness its magnificence?
+                                 Taj Mahal is made from white marble. Subsequently, this marble was exported from various countries from all over the world. They began constructing it in 1630 and it finally got completed in a time span of almost 20 years. Shah Jahan rejected numerous designs before finally 
+                                 settling on the present structure of the Taj Mahal. The walls of the monument are engraved with quite expensive stones.Taj Mahal involves a lot of smart architecture. The four pillars that stand in the corners are inclined a little. This was done to prevent the monument from any kind of natural disaster. Shah Jahan spent a hefty amount of money in
+                                 the making of Taj Mahal.In addition, we see how the building of this structure required 20,000 workers approximately to get the work completed. Moreover, the architecture of Taj Mahal was inspired by several architecture styles like India, Turkish, Persian and more. In conclusion, every Indian takes pride in the beauty of the Taj Mahal and its heritage. This monument is famous all over the world. Around 2 to 4 million people come to visit the Taj Mahal every year.
+                                 The beauty and history of the monument attract people the most and makes it famous all over the world.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="row responsive-img">
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Ayodhya">
-                        <img src="../../places/Historical/Ayodhya/images/Ayodhya.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Ayodhya</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Dwarka">
-                        <img src="../../places/Historical/Dwarka/images/Temple-in-Dwarka.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Dwarka</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="Gwalior">
+            <div class="col-md-4">
+                <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Historical/Gwalior/images/Gwalior-Fort.jpg" alt="Nature" style="width:100%">
+                        <a href="https://www.youtube.com/watch?v=VbD-bnnAjRs" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Agra Fort.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Gwalior</h4>
+                            <h4>Agra Fort, Agra</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">A beautiful Qila</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
                         </div>
                     </div>
+                    <p id="description2">
+                        Agra Fort is a historical fort in the city of Agra in India. It was the main residence of the emperors of the Mughal Dynasty till 1638, when the capital was shifted from Agra to Delhi. 
+                        The Agra fort is a UNESCO World Heritage site.It is about 2.5 km northwest of its more famous sister monument, the Taj Mahal. The fort can be more accurately described as a walled city. After the First Battle of Panipat in 1526, the victorious
+                        Babur stayed in the fort, in the palace of Ibrahim Lodi. He later built a baoli in it. His successor, Humayun, was crowned in the fort in 1530. He was defeated at Bilgram in 1540 by Sher Shah Suri. The fort remained with the Suris till 1555,
+                         when Humayun recaptured it. Adil Shah Suri’s general, Hemu, recaptured Agra in 1556 and pursued its fleeing governor to Delhi where he met the Mughals in the Battle of Tughlaqabad. Sheesh Mahal, Agra Fort:The effect produced by lighting candles in Sheesh Mahal, Agra Fort.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Realising the importance of its central situation, Akbar made it his capital and arrived in Agra in 1558. His historian, Abul Fazl, recorded that this was a brick fort known as ‘Badalgarh’. It was in a ruined condition and Akbar had it 
+                                rebuilt with red sandstone from Barauli area Dhaulpur district, in Rajasthan. Architects laid the foundation and it was built with bricks in the inner core with sandstone on external surfaces. Some 4,000 builders worked on it daily for eight years,
+                                completing it in 1573. It was only during the reign of Akbar’s grandson, Shah Jahan, that the site took on its current state. Shah Jahan built the beautiful Taj Mahal in the memory of his wife, Mumtaz Mahal. Unlike his grandfather, Shah Jahan 
+                                tended to have buildings made from white marble. He destroyed some of the earlier buildings inside the fort to make his own. At the end of his life, Shah Jahan was deposed and restrained by his son, Aurangzeb, in the fort. It is rumoured that Shah Jahan 
+                                died in Muasamman Burj, a tower with a marble balcony with a view of the Taj Mahal. The fort was invaded and captured by the Maratha Empire in the early 18th century. Thereafter, it changed hands between the Marathas and their foes many times. After their
+                                catastrophic defeat at Third Battle of Panipat by Ahmad Shah Abdali in 1761, Marathas remained out of the region for the next decade. Finally Mahadji Shinde took the fort in 1785.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="row responsive-img">
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Kannauj">
-                        <img src="../../places/Historical/Kannauj/images/Kannauj.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Kannauj</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Kollam">
-                        <img src="../../places/Historical/Kollam/images/Kollam.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Kollam</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Madurai">
-                        <img src="../../places/Historical/Madurai/images/Madurai.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Madurai</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row responsive-img">
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Patna">
-                        <img src="../../places/Historical/Patna/images/Patna.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Patna</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="Puri">
+            <div class="col-md-4">
+                <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Historical/Puri/images/Jagannath-Temple-Puri.jpg" alt="Nature" style="width:100%">
+                        <a href="https://www.youtube.com/watch?v=fD2zF4OwHCw" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Jhansi Fort.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Puri</h4>
+                            <h4>Jhansi Fort, Jhansi</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">India's pride Mharani Lakshmi Bai's place</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
                         </div>
                     </div>
+                    <p id="description3">
+                        The historic fort at Jhansi, popularly known as 'Rani Jhansi ka Quila', has turned 400 years old in the year 2013. It has been a mute spectator to the turns of events in the Indian history and withstood heavy bombardment of British forces during the First War Of Independence.Jhansi Fort was built by Bir Singh Ju Deo, the Raja of Orchha, in 1613. It is situated
+                        on a rocky hill called Bangra in the town of Balwantnagar, known today as Jhansi. The fort has ten gates including the Khandero Gate, Datia Darwaza, Unnao Gate, Jharna Gate, Laxmi Gate, Sagar Gate, Orcha Gate, Sainyar Gate, and Chand Gate. Spread across 49 acres, the fort stands in the heart of the city and is reflects the architecture of Bundelas and Marathas. 
+                        The fort withstood the heavy attack of British forces led by Hugh Rose on Rani Laxmi Bai. The fort has a fine collection of sculptures which provide an excellent insight into the eventful history of Bundelkhand. Among places of interest within the main fort area are the Karak Bijli Toup (Tank), Rani Jhansi Garden, Shiv temple and a Mazar of Ghulam Gaus Khan, 
+                        Moti Bai and Khuda Baksh.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Rani of Jhansi or Rani Lakshmi Bai’s maiden was Manu Bai. Manu Bai or Manikarnika was born to Moropant Tambe and Bhagirathi Tambe on 19th November 1828 at Kashi (Varanasi). At the small age of about 3-4 years, she lost her mother and was thus, brought up by her father alone. After the death of her mother, Manu Bai and her father shifted to Bithoor and started
+                                living with Peshwa Baji Rao. Since childhood, Manu was inclined towards the use of weapons. She thus learned horse-riding, sword fighting, and martial arts and mastered these. She was a beautiful, intelligent and brave girl. Manu spent her childhood in the company of Nana Sahib, the son of Peshwa Baji Rao II. She had great courage and presence of mind which she
+                                proved once while saving Nana Sahib from getting crushed by the horse’s feet. In May 1842, Manu got married to Raja Gangadhar Rao Newalkar, Maharaja of Jhansi, and was now known as Rani Lakshmi Bai. In 1851, she gave birth to Damodar Rao who died when he was just 4 months old. Thus, in 1853, Gangadhar Rao adopted a child and named him after his son, Damodar Rao.
+                                But, unfortunately, Gangadhar Rao died soon due to illness and Lord Dalhousie, the then Governor-General of India denied this adoption. Scindia asked the British for help and they willingly extended their support. In the battle, she fought bravely and with gallantry heroism. She was wounded by one of the English horsemen and collapsed. She fought with her son tied
+                                on her back and died with a sword in her hand. Ramachandra Rao, her loyal attendant immediately removed her body and lit the funeral pyre. Thus, the British could not even touch her. She martyred on 18th June 1858 at Kotah-ki-Serai in Gwalior. Indian history has not yet witnessed a woman warrior as brave and powerful as the Rani of Jhansi, Rani Lakshmi Bai. She 
+                                martyred herself in a struggle to attain Swaraj and liberate the Indians from the British rule. Rani Lakshmi Bai is a glorious example of patriotism and national pride. She is an inspiration and an admiration for a lot of people. Her name is thus written in golden letters in the history of India and will always stay in the heart of every Indian. The fort standing 
+                                in the hilly area shows how the North Indian style of fort construction differs from that of the South. In the South, most of the forts were built on the sea beds like the Bekal Fort in Kerala. The granite walls of the fort are between 16 and 20 feet thick and on the south side, the city walls meet. The south face of the fort is almost perpendicular. There are 10 
+                                gates giving access to the fort. These are Khanderao Gate, Datia Gate, Bhanderi Gate(Rani laxmi bai escaped from this gate in 1857 battle), Unnao Gate, BadaGaon Gate, Laxmi Gate, Sagar Gate, Orchha Gate, Saiyar Gate and Chand Gate. Notable sights in the fort are the Shiva temple, Ganesh temple at the entrance, and the Kadak Bijli cannon used in the uprising of 1857. 
+                                The memorial board reminds one of the hair-raising feat of the Rani Lakshmibai in jumping on horseback from the fort. Nearby is the Rani Mahal, built in the later half of the 19th century where there is now an archaeological museum.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
-                <div class="col-md-4" id="Pushkar">
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Historical/Pushkar/images/Pushkar.jpg" alt="Nature" style="width:100%">
+                        <a href="https://www.youtube.com/watch?v=riDju7ggDv4" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Red Fort.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Pushkar</h4>
+                            <h4>Red Fort, Delhi</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Most historic Fort in India</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
                         </div>
                     </div>
+                    <p id="description4">
+                        The Red Fort is also known as the Red Fort and it is located in the middle of the city. It is a masterpiece of historical architecture and is an attractive tourist destination for many people. To make it as natural and safe as the country's historical property, it has been monitored by the Government of India from time to time. It was built by the Mughal emperor Shah Jahan, in the 17th century in the year 1648, on the banks of Yamuna river. It is located near
+                        the fort of Salimgarh in New Delhi. On Independence Day of India, the Prime Minister hoists the national flag here. 
+                        The Red Fort itself has many beautiful structures (such as the Palace of palaces or colors, Mumtaz Mahal, the special palace, Harem, Shah Burj, Diwan-e-Khas, Diwan-i-Aam, Canal-e-Bahshat (of Paradise) Section) etc.). It was manufactured using red stones and is designed by highly skilled and professional artisans. War Memorial Museum has been kept on the first floor. Sheesh Mahal (Sheesh means - Shisha and palace means - Rajmahal) is located in northern and southern regions. A well-built special palace (the palace of the emperor) as a special room for personal purposes; 
+                        Like - Made for worship or gold etc. Using a white marble, a very good box is prepared on the side of the Yamuna. There is also a well-prepared Peacock Throne. It has been written on its walls that, "If there is a paradise on earth then it is here, it is here, it is here." Within the palace, the Shahar turaz prepared well for the personal purposes of the emperor and the rest is. The Moti Masjid is also called the Pearl Mosque, which has been twisted by the emperor Aurangzeb in the palace. There are three domes and those which look very eloquent. In the north of the Moti Masjid, 
+                        the Hyatt Bukkha, i.e. Mughal Gardens, was built by Shah Jahan.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">There is also the Majesty Tower of a Shah Burj in order to organize live ceremonies and banquets. The Red Fort of Delhi is considered as the great Mughal palace and is known as the heart of Shah Jahan's empire. Red Fort is a great and attractive place for tourists as well as for the people of India as well. Last year, I went to see the Red Fort with my parents, where I had a lot of fun and got lots of knowledge about 
+                                the history along with the fort. 'Red Fort' was built by the Mughal Emperor Shah Jahan. It is built of Stonewalls over 30 meters high in places. It was built on the right bank of river Yamuna . The foundation stone of the Fort was laid in 1639 and it was completed after about nine years 
+                                Red Fort (Lal Qila) is one of those monuments which enhance the grace of Delhi. The architecture of this building has a splendid impact of red stone and marble works. It has delicate carving on every possible surface.
+                                The Red Fort was originally referred to as "Qila-i-Mubarak" (the blessed fort), because it was the residence of the royal family. The layout of the Red Fort was organised to retain and integrate this site with the Salimgarh Fort. 
+                                The planning and aesthetics of the Red Fort represent the zenith of Mughal creativity which prevailed during the reign of Emperor Shah Jahan. This Fort has had many developments added on after its construction by Emperor Shahjahan. 
+                                The fort, which is spread over 255 acres, features a mix of architectural styles such as Islamic, Hindi, Timurid, and Persian. Its massive, 2.5-km-long enclosing walls are made of red sandstone and that's where the monument got its name from.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
-            <div class="row responsive-img">
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Thanjavur">
-                        <img src="../../places/Historical/Thanjavur/images/Thanjavur.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Thanjavur</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Ujjain">
-                        <img src="../../places/Historical/Ujjain/images/Ujjain.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Ujjain</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Vadodara">
-                        <img src="../../places/Historical/Vadodra/images/Vadodara.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Vadodara</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row responsive-img">
-                <div class="col-md-4">
-                    <div class="thumbnail" id="Varanasi">
-                        <img src="../../places/Historical/Varanasi_c/images/india-varanasi-best-places-to-visit-ramnagar-fort.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <h4>Varanasi_c</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="Vrindawan">
+            <div class="col-md-4">
+                <div class="my-panel">
                     <div class="thumbnail">
-                        <img src="../../places/Historical/Vrindawan/images/Sri-Krishna-Balaram-Mandir-Vrindavan.jpg" alt="Nature" style="width:100%">
+                        <a href="https://www.youtube.com/watch?v=jh31Ko1cax0" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Qutub Minar.jpg " style="width:100% ">
+                        </a>
                         <div class="caption">
-                            <h4>Vrindawan</h4>
+                            <h4>Qutub Minar, Delhi</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Emperor's dominance in Delhi in historical period</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
                         </div>
                     </div>
+                    <p id="description5">
+                        Inspired by the Minaret of Jam in Western Afghanistan, the Qutub Minar, at 73 meters, is the tallest minaret which is built entirely of bricks. Commissioned by Qutub-ud-Din Aibak in 1193, the Minar was built to commemorate the Muslim dominance in Delhi after the last Hindu emperor died. The tower is the highest of such towers in India and has projecting balconies to
+                        add to its illusory magnificence. Out of the total five storeys, the first three storeys are made of red sandstone and the last two are constructed of marble and sandstone. The entire structure has a tapering conical shape which ranges from 15 metre diameter at the base to just 2.5 metre at the top. A second tower was also commissioned near the first one, the base of
+                        which is till today evident. However, it never quite took off beyond the base of the tower. Though Qutub-ud-Din Aibak is regarded as the one who commissioned this construction in 1200 AD, it is also true that he managed to just construct the basement.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">The next threestoreys were done by his successor Illtutmish and the last two storeys were added by Firoz Shah Tughlaq in 1398. Each of these imperial figures brought their own touch of art and perfection to the grandeur of this imposing tower. Apart from the MainTower, the complex comprises of the Quwwat-us-Islam Mosque, which is considered to be
+                                 the first Mosque built on Indian soil and quite provocatively proclaims that the material was gathered from the ruins of 27 Hindu temples, which is evident in the typical Hindu ornamentation used to design this staunch Muslim mosque. A 7 meter highly resistant to rust Iron Pillar is situated close to the mosque replete with Sanskrit inscriptions and a 
+                                 legendary myth surrounding it that if you can encircle it with your hands with your back touching it, your wish may be granted fulfilment. The walls of the Minar have intricate stone carvings which are a true example of Muslim craftsmanship. Overall the intricate detailing, the towering Minaret and the ancientness of this epic structure makes it an 
+                                 incredible tourist attraction, from a historical perspective. The origins of this Minar is shrouded in controversial mire. While some suggest that it may have epitomized the ultimate dominance of the Muslims over Delhi Empire, others suggest that the minaret was used to call the faithful for prayer. Whatever be the legend, the fact remains that in sheer 
+                                 artistic glory and architectural brilliance, this is one of the prime monuments in India. The Qutub Minar remains relevant to the Indian culture in modern times with the Qutub festival of Indian Classical music and dance which takes place on the premises every year in the month of October/November. It is a major tourist attraction for its spiral staircases, 
+                                 ruined tombs and monuments.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=BnHLysRIjbE" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Hawa Mahal.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Hawa Mahal, Jaipur</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">of Rich Colonial History</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p id="description6">
+                        Situated at Badi Choupad, Pink City of Jaipur, Hawa Mahal was built in 1799. It has 953 windows on the outside walls. The honeycomb shaped and beautifully carved windows allow breeze to blow through the palace and makes it a perfect summer palace. It was built as an extension to the City Palace nearby. See below for more information about Hawa Mahal.
+                        In 1799, the Kachhwaha Rajput ruler, Sawai Pratap Singh, grandson of Maharaja Sawai Jai Singh ordered Lal Chand Usta to construct an extension to the Royal City Palace. The Purdah system at the time was strictly followed. Rajput royal ladies should not be seen by strangers or appear in any public area. The construction of Hawa Mahal allows the royal ladies to enjoy from every day
+                        street scenes to royal processions on the street without being seen. The inspiration for the structure comes from the Khetri Mahal in Jhunjhunu. Hawa Mahal means the palace of breeze.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                The five-stores palace was built in the form of Krishna’s crown because Sarai Pratap Singh was devoted to Krishna, the Hindu god. The mahal has a total of 953 small casements each with small lattice worked pink window, balconies and arched roofs with hanging cornices. This allows cool breeze blow through the mahal and keep it cool and airy in summer. Despite the large 
+                                number of windows, each of them are size of a peep hole such that the royal ladies were not to be seen by the public. The top three storeys are a single room thick, namely Vichitra Mandir, Prakash Mandir and Hawa Mandir. The Maharaja worshipped the Krishna at the Vichitra Mandir. while the Prakash Mandir provides an open terrace to both sides. Worth noting is that there are 
+                                no steps to the upper floors but ramps. They are for the palanquin of the royal ladies. The autumn celebrations took place on the Sharad Mandir on the first floor. Don’t miss out on the colourful glassworks on Ratan Mandir on the second floor. Contrast to the rich decoration of the exterior, the interiors of the mahal is much simpler. But it is also where you will find the best view 
+                                of the city of Jaipur. The best time to visit Hawa Mahal is in the early morning when the sun enters the rooms from the windows. The mahal is illuminated with golden sun lights.
+                                The Hawa Mahal is on one side of the courtyard in the Palace, the three other sides having their own wings of the palace. The inner side of the structure is relatively plain. The exterior of the structure which is visible from the road is actually the rear side of the palace. It resembles a honeycomb structure for all the little lattice-worked windows, 953 to be precise. 
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
                 </div>
             </div>
 
 
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=Qb2JYJ6xaMM" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Amer Fort.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Amer Fort, Rajasthan</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Pride of Rajasthan</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p id="description7">
+                        Amer Fort also known as Amber fort is a Fort situated in Amer, Rajasthan, India. Amer is a town with a location of 4 square kilometers (1.5 sq mi) located 11 kilometers (6.8 mi) from Jaipur, the capital of Rajasthan. Located high up on a hill, it is the tourist attraction destination in Jaipur. The town of Amer was originally built by 
+                        Meenas, and later it was ruled by Raja Man Singh (December 21, 1550– July 6, 1614). Amer Fort is known for its imaginative Hindu design elements. With its large ramparts and collection of gates and cobbled paths, the Fort overlooks Maota Lake, which is the major source of water for the Amer Palace. Constructed of red sandstone and marble, 
+                        the appealing, luxurious place is laid out on 4 levels, each with a courtyard. It consists of the Diwan-i-Aam, or “Hall of Public Audience”, the Diwan-i-Khas, or “Hall of Private Audience”, the Sheesh Mahal (mirror palace), or Jai Mandir, and also the Sukh Niwas where a trendy environment is synthetically produced by winds that blow over a water waterfall within the royal palace.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Thus, the Amer Fort is also popularly known as the Amer Palace. The palace was the residence of the Rajput Maharajas as well as their families. At the entryway to the palace near the fort’s Ganesh Gate, there is a temple dedicated to Shila Devi, a goddess of the Chaitanya cult, which was provided to Raja Man Singh when he beat the Raja of Jessore, 
+                                Bengal in 1604. (Jessore is currently in Bangladesh). This Palace, along with Jaigarh Fort, is located immediately above on the Cheel ka Teela (Hillside of Eagles) of the very same Aravalli range of hills. The palace and also Jaigarh Fort is considered one complex, as both are attached by a subterranean passage. This passage was indicated as an escape path in times of war to allow 
+                                the royal family members and others in the Amer Fort to shift to the much more redoubtable Jaigarh Fort. Annual tourist visitation to the Amer Palace was reported by the Superintendent of the Department of Archaeology as well as Museums as 5000 visitors a day, with 1.4 million visitors during 2007. At the 37th session of the World Heritage Board kept in Phnom Penh, Cambodia, in 2013, Amer Fort, 
+                                together with 5 various other forms of Rajasthan, was declared a UNESCO World Heritage Site as part of the group Hill Forts of Rajasthan. A view of the fort at Amer in Rajasthan; a watercolor by William Simpson, c.1860 The settlement at Amer was founded by Raja Alan Singh, a ruler from the Chanda clan of Meenas in 967 CE. The Amer Fort, as it stands now, was built over the remnants of this earlier 
+                                structure during the reign of Raja Man Singh, the Kachwaha King of Amer. The structure was fully expanded by his descendant, Jai Singh I. Even later, Amer Fort underwent improvements and additions by successive rulers over the next 150 years, until the Kachwahas shifted their capital to Jaipur during the time of Sawai Jai Singh II, in 1727.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=ZrZtiP5_jUk" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Sanchi Stupa.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Sanchi Stupa, Madhya Pradesh</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">A great Stupa</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p id="description8">
+                        Sanchi Stupa is located on a hill top at Sanchi in Raisen district state of Madhya Pradesh. It is located 46 miles north east of Bhopal which is the capital of Madhya Pradesh. The city of Vidisha was on the trade route which connected the plains of the Ganga to The Western coast. It was also a great market place in the center of the vast Plains of Central India. At Sanchi Airtel Hill close to Vidisha 
+                        are the earliest surviving Buddhist Stupas. Halfway up the hill is a stupa containing the remains of the prominent buddhists teachers of the Maurya period. The Vedica are made around the stupa dates to around 1000 BC. Buddhism grow rapidly while and after Lord Buddha’s time. It’s ideas and practices emerged through interaction with other traditions. Some of these interactions to form the generation of 
+                        certain secret places which were attached with small shrines. Besides these places associated with Lord Buddha’s life and stupa’s containing his relics where also worshiped. 
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">Sanchi Stupa was built by Ashoka during the Mauryan Empire to spread the message of love and peace. It is the first built Stupas of all at Sanchi. Sanchi stupa is now a historic monument. It houses the relics of Buddha. It is situated on a hillock. There are many other stupas in the vicinity. But maximum of them are now in dilapidated condition. Our lion emblem has been taken from the ‘Ashoka Stambha’ 
+                                located near the entry of the stupa. The entry gates are aligned in the four cardinal directions. It is made of sandstone blocks and some amount of bricks. Ashoka wanted to spread the message of love and peace far and wide. He became a follower of Buddhism. Hence he ordered the erection of such structures. It has an ornamented gateway called the ‘Torana’. The stupa cannot be entered. You can only walk around it. 
+                                It is one of the biggest landmarks of Buddhism in India. The monument is placed on so high a hill that the top of the dome can be seen even from a distance. It is still standing in the same way fighting the test of time. The relics of budha are located in the nucleus of the hemispherical brick structure. The form has been given a round shape purposefully signifying the dust mound poured on a Buddha’s relics. 
+                                The hemispherical dome is called the ‘anda’ – This structure was built to exemplify and illustrate the heap of soil that was used to bury the lifeless body of Lord Buddha. The ‘anda’ is a solid structure but contains the relics and actual remains of Lord Buddha. However, it is believed that different last remaining mortal relics of Lord Buddha are present in many of these Stupas inside their respective andas. 
+                                The remains of lord Buddha present inside the andas have been archaeologically verified and corroborated by scientific methods. These remains are indeed of the great Buddist scholar Siddhartha Buddha. It is however believed that a few of them might have been misplaced or stolen due to exploitation over thousands of years by the followers of Buddha. 
+                                Many of them have stolen relics because of their immense loging to be in contact with the mortal remains of their beloved teacher Buddha. 
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=Zh6H0Vijlrk" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Gwalior Fort.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Gwalior Fort, Madhya Pradesh</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">A historical Fort</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p id="description9">
+                        Gwalior Fort, situated on top of a hill, finds its place among the best fortresses of India. It is also considered to be one of the most impenetrable forts in the country. Known for its great architecture and rich past, Gwalior Fort is a must-visit attraction when visiting Central India. Read about the history of the fort here, and find out what makes it such a wonder. According to historians, there isn’t any 
+                        concrete proof to indicate exactly when the fort was constructed. However, a local legend tells us that it was built in 3 CE by a local king called Suraj Sen. A saint named Gwalipa came wandering to the fort and met the king, who was suffering from leprosy. When Gwalipa offered him some water from a sacred pond (now called Suraj Kund and located within the fort complex), he immediately became healthy again.
+                        As a thankful gesture to the saint, the king named the fort and the town after him.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                The saint then gave the king the title of ‘Pal’ (protector) and told him that as long as he and his family continue to bear this title, the fort would remain in their possession. Following this, 83 successors of Suraj Sen controlled the fort. But the 84th king, Tej Karan, did not bear the title and lost the fort. Certain monuments and inscriptions inside the fort explain to visitors that it has been existent 
+                                since the 6th century. A Huna emperor called Mihirakula used to rule the fort during that time. Later in the 9th century, Gurjara-Pratiharas captured the fort, governed, and also built the Teli Ka Mandir. After being attacked and ruled by a couple of Muslim dynasties for three centuries, the Tomars captured the fort in 1398. Maan Singh was the last and the most distinguished Tomar ruler, and he constructed 
+                                several monuments inside the fort complex. The beautiful turquoise blue-tiled Man Mandir Palace was built during his reign. And he also had a separate palace built for his wife Mrignayani; this structure is called the Gujari Mahal and is now a state archaeological museum. When Ibrahim Lodi attacked the fort in 1516, he defeated Maan Singh, who died, and the Tomars lost the fort. The Gwalior Fort then 
+                                witnessed a brief period of rule by the Mughals, until the Marathas captured it and soon lost it to the East India Company. After this, there were many recurrent shifts between the rule of the Marathas and the Britishers. Finally, in 1844, the Maratha Scindia family of Gwalior, as the British government’s protectorate, occupied the fort. During the rebellion of 1857, the fort saw great warfare – 
+                                Rani Lakshmibai (the Queen of Jhansi) came fighting from Jhansi to Gwalior and sought shelter inside the fort. After fighting for days with the Britishers, she jumped from the fort on her horse and sacrificed her life. Until India gained independence in 1947, the Scindias continued ruling the city and constructed a number of monuments.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
 
 
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=5lGXtnMggaY" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/Konark.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Konark Temple, Odisha</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Sun Temple</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                    </div>
 
+                    <p id="description10">
+                        Everyone has the interest of visiting new places. Pilgrimage maintain the same idea. Today we have many places of historical geographical and religious importance. I got an opportunity to visit konark the temple of the sun god the black Pagoda. Sun temples are not found everywhere. So this can be one in every of the distinctive sun temple in Bharat. Its architecture is awesome. Ruins of the main 
+                        temple and different little structures tell the story of India's wonderful past however our ancestors designed such big structures perfect and with nice arithmetic ! Hats off ! This place is important both mythologically and historically. shambhu the son of Lord Sri Krishna was advised to come to this place and pray the sun god to come round from leprosy. This is a holy spot as the river chandrabhaga 
+                        falls into the Bay of Bengal at this place. This temple was built in the 13th century by Langula Narasingha Dev the king of Ganga dynasty.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">This temple was built by 1200 persons under the direct supervision of the minister of the King Narsingh Dev. It is said that one-third of the revenue expenditure for making the temple. Bisu maharana was the head Man of the masons. The prestige of the temple was kept by Dharma the only son of Bishu Maharana who cared not to sacrifice his life for the sake of his race. King Narasimhadeva ordered the Konark temple to be inbuilt twelve years and vulnerable them with death if they exceeded the deadline.12 hundred men worked under the chief architect Bisu Maharana .Stones were brought from Udayagiri and Khandagiri 
+                                ,carved and held interlocked by metal strips which in turn was held together by a giant magnet. However on the penultimate day there was everything was over aside from the inserting of the crown stone.Out of nowhere appeared Dharmpada,the lost son of Bisu Maharana who fixed the problem. The Chief designer was still unhappy because the King would still penalize the 1200 employees with death as they were inefficient. it was obvious that Dharmpada did what the workers couldn't manage to do. Dharmpada was distressed at this and concluded his life by jumping into the Chandrabhaga stream from the temple. Considered unholy 
+                                thanks to his death that saved the lifetime of 1200 employees ,the ashtadhatu (alloy of 8 metals) statue of Surya stands till date without being worshipped!! The temple of konark is made of black stones. One cannot believe that it is built by men. The temple looks like a Chariot with 24 wheels. All The wheels are artistically carved and it inspired the visitor's today. Sun God has seven horses - signifying the VIBGYOR. The chariot of the sun has twenty four wheels - signifying the twenty four fortnights in a very year. Each wheel representing a day. It has eight spokes - every representing a Prahar. 1 prahar is 3 hours. 
+                                Each prahar has sixty dots every representing three minutes time span. The lower half of the chariot wheel represents the day - 4 prahars (4 x3) = 12 hours. The upper half represents the night. We have now got a sun-watch. The sun rays incident on the wheel will denote time of day. The characteristic in the building of the temple are found nowhere in the world.
 
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=mygwVmDETRo" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/charminar.jpg" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Char Minar, Hyderabad</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Beautiful minaret</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
+                        </div>
+                    </div>
 
-        </section>
-    </main>
+                    <p id="description11">
+                        Charminar is a monument that means four minarets. It was constructed in 1591 located in Hyderabad, Telangana, India. The name itself reflects charm. It is one of the oldest and famous historical monuments in India which was built by Muhammad Quli Qutb Shah. Moreover, it is also known as “Arc De Triumph of the East”. Charminar has been listed the most recognized structures in India and has also earned the title as the Emblem of Telangana. It is a structure standing amidst the busy local market and is the most frequented tourist attractions in Hyderabad. Charminar was erected more than four centuries ago by the fifth Sultan 
+                        Quli Qutb Shah of the Qutb Shahi dynasty of Golconda. He was the one who founded the city of Hyderabad. It is a 425-year-old monument. There is a beautiful story associated with the history of Hyderabad. Many have criticised the stories validation, but several historians have claimed it to be true. During his years as a Prince, Muhammad Quli met a girl named Bhagmati in Chichlan village who was visiting the place to establish a new city. She was beautiful and had a charming personality which captivated Prince’s attention, and his eyes were fixated on this beauty. He fell madly in love with her and wished to marry. However, their caste was different, 
+                        he is Muslim and she a Hindu which created a strict opposition from both the ends.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">He had crossed the Musi River during storm and flood just to meet Bhagmati. On hearing this, his father ordered his men to build a bridge now known as Purana-pul. He married Bhagmati after 11 years of waiting. She converted to Islam and hence she was named Hydermahal. Therefore later the city was called Hyderabad. As a ruler, Quli Qutb was an able administrator and a passionate builder. He did not believe in war and maintained good relations with Persia and extended trading between Golconda and Persia. Goods like tobacco, gun powder, rubies, textile, and wooden furniture were exported, and ceramics, carpets, glass silver, pearls 
+                                and horses were imported. People admired his peaceful and calm nature. His engagement was more towards poetry, art, architecture, town-planning and literature than war. There are other theories regarding the objective for building the Charminar. It was believed that Charminar was built to commemorate the eradication of cholera which sabotaged the city. According to French traveller Jean de Thevenot narration, it was constructed to mark the beginning of the second millennium year. It is a square-shaped structure with each side being 20 meters long. The designer was an Iranian architect named Mr Momin Astarawadi. The grand edifice displays 
+                                the Indo-Islamic style influenced by Persian style. The entire monument is made up of limestone, granite, pulverized marble, and mortar and weighs around 14,000 tons. There are four grand arches, and four minarets places at four corners provide a distinctive look. Each of the four minarets is four-storied, has a double balcony, 56 meters long and exhibits a dome-shaped structure on its top. One hundred forty-nine steps lead the upper floor of the monument from where the whole surrounding and marketplace is visible. The building is adorned with lavish balustrades and balconies. Also, one part of the Charminar’s roof consists of a mosque. 
+                                As per the legend, there is a secret underground tunnel constructed to connect Golconda Fort so that during a siege the king would escape quickly. The location is of the tunnel is still a mystery. It is the very first multi-storey building in Hyderabad. The monument represents how different religion can co-exist peacefully. It showcases both Masjid and Bhagyalakshmi Temple to convey the message of religious and cultural harmony. Though the monument is old, it is still standing tall because of its marvellous craftsmanship. Lindt chocolatier Adelbert Boucher created Charminar’s replica using chocolate in 2010, which weighed about fifty 
+                                kilograms to pay tribute to the fantastic monument. Furthermore, a train named ‘The Charminar Express’ operates between Chennai and Hyderabad.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=xveoKgCtU1Q" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../../places/Historical1/hampi.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>The Ruins of Hampi, Karnataka </h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Heritage Ruins</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p id="description12">
+                        The history of Hampi and its beautiful monuments are two of the many reasons why you must visit this historically rich temple town. Hampi, a village and a temple town in Karnataka is one of the most historically rich places. Listed under the UNESCO World Heritage Site as the Group of monuments at Hampi, this city was also at one point one of the richest cities in the world when it was at its peak. Located inside the Vijayanagara city, Hampi has been one of the most significant tourist places of attraction. People from all over the country visit Hampi for its beautiful monuments and history. As per statistics of the year 2014, 
+                        Hampi is said to be the most searched places of Karnataka online. People who visit Hampi are mostly people who love history and architecture. It is no surprise that Hampi is such a famous place for tourists that visit from all over the globe. Visit Hampi at any time of the year and you will see the place swarming with people. We will take you through the fascinating history of the city of Hampi and also the Vijayanagara Empire. First, let us tell you a little about Hampi. Hampi is also known as Pampa Kshetra, Kishkindha kshetra and even Bhaskara kshetra. These names were derived from the famous Tungabhadra River Pampa. 
+                        According to mythology, it is said that Pampa was Brahmas daughter who was later married off to Shiva. It was here where the city was built. Hampi word in is another version of Hampe, a Kannada name.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Today, Hampi is also known as Vijayanagara who used to rule the city. As you walk through the remains of Hampi’s magnificent forts, palaces and gateways, you will get a glimpse of the excellent architecture of those times. The monuments speak volumes about the history of Hampi that used to be a prosperous and rich kingdom in the 14th century which was eventually ruined owing to the attacks made by the Moghuls. The history of Hampi dates back to the 2nd and also the 3rd century that is the Neolithic and Chalcolithic era. This fact has been established from the ceramic potteries that have been found here from those centuries.
+                                The popular folklore is that two local chiefs called Hakka and Bukka one on a hunting expedition report of an unusual sighting to their guru Vidyaranya. And the fascinating sight was that of a hare who was being chased by their hound. The hare suddenly becomes all brave and powerful and turns around to chase the hound. This made the Guru believe that the place where they found this unusually beautiful sight is very special and hence decided to shift their local capital to this very place. This was the start of an empire that went on to become one of the richest. In a span of over 200 years, a total of four dynasties ruled 
+                                Vijayanagar that is also called the City of Victory. At one point Hampi was also one of the biggest trading centers of the world. Vijayanagar brought a lot of wealth, fame and splendor to Hampi. In those times, most markets in Hampi were always crowded and swarming with buyers and also merchants. These merchants were not just Indians, but also people from various parts of the world. In no time, the markets grew tremendously and goods were exchanged for spices and cotton. In ancient times, the currencies were all silver and gold. Hampi was also rich in art and architecture. The rulers who ruled the region were great lovers of religion and art and hence most Kings put in a lot of effort to set up magnificent empires using one of the best architectural designs, 
+                                which is for you to see now. Hampi had reached its prime during the rule of Krishna Deva Raya who ruled this city between 1509 and 1529. This was the same period when international trading had flourished and reached great heights under the progressive trading practices and also several international trade agreements that were carried out. During this era, Vijayanagara Empire had almost taken up most of South India and also beyond. However, Hampi succumbed to the attacks carried out by five Deccan Sultans called Bidar, Bijapur, Ahmednagar, Golconda and also Berar. They attacked Hampi in 1565 and looted them for a long period, 
+                                approximately six months. An attack of six months long definitely had to bring such massive destruction that it would have taken them forever to rise again. The temples of Hampi were damaged and most of the markets were robbed. This was one of the biggest attacks that Hampi witnessed and their golden era with this came to an end. After the attacks, the empire was ruled by different Kings; however, nobody really could bring back the lost glory.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom: 2rem;"></div>
     <div id="foot"></div>
     <script>
         $(document).ready(function() {
 
-            $('#foot').load("../footer.html");
+            $('#foot').load("../footer1.html");
 
         });
     </script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        var myDiv1 = $('#description1');
+        myDiv1.text(myDiv1.text().substring(0, 500) + "......");
+        var myDiv2 = $('#description2');
+        myDiv2.text(myDiv2.text().substring(0, 480) + "......");
+        var myDiv3 = $('#description3');
+        myDiv3.text(myDiv3.text().substring(0, 500) + "......");
+        var myDiv4 = $('#description4');
+        myDiv4.text(myDiv4.text().substring(0, 500) + "......");
+        var myDiv5 = $('#description5');
+        myDiv5.text(myDiv5.text().substring(0, 500) + "......");
+        var myDiv6 = $('#description6');
+        myDiv6.text(myDiv6.text().substring(0, 500) + "......");
+        var myDiv7 = $('#description7');
+        myDiv7.text(myDiv7.text().substring(0, 500) + "......");
+        var myDiv8 = $('#description8');
+        myDiv8.text(myDiv8.text().substring(0, 530) + "......");
+        var myDiv9 = $('#description9');
+        myDiv9.text(myDiv9.text().substring(0, 500) + "......");
+        var myDiv10 = $('#description10');
+        myDiv10.text(myDiv10.text().substring(0, 500) + "......");
+        var myDiv11 = $('#description11');
+        myDiv11.text(myDiv11.text().substring(0, 500) + "......");
+        var myDiv12 = $('#description12');
+        myDiv12.text(myDiv12.text().substring(0, 500) + "......");
 
+        function logout() {
+            alert("you are about to logout. Click OK to continue. ");
+        }
+    </script>
 </body>
 
 </html>
