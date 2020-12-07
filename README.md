@@ -99,7 +99,7 @@ The technologies that we have used in making this project are :
 ### Contributors <img src ="https://www.flaticon.com/svg/static/icons/svg/2917/2917641.svg" width="25px">
   
   
-   <table align="center">
+   <table>
   <tr>
     <td align="center"><a href="https://github.com/shsarv"><img src="https://avatars2.githubusercontent.com/u/55739302?s=400&u=1e7714cb1cbe3437a527a877486c94611f0e7ab0&v=4" width="100px;" alt=""/><br /><sub><b>Sarvesh Kumar Sharma</b></sub></a></td>
    <td align="center"><a href="https://github.com/sachi42"><img src="https://avatars1.githubusercontent.com/u/61285008?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Sachi Tripathi</b></sub></a></td>
