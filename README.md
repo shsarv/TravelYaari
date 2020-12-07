@@ -32,7 +32,7 @@ This Repo contains Fullstack mini project using Front end technologies
   
   ### Project Flow <img src ="https://www.flaticon.com/svg/static/icons/svg/2620/2620445.svg" width="25px">
   
-  This project was divided in to there phases
+  This project was divided in to Five phases
   
   #### phase -1 : 
   
@@ -64,7 +64,7 @@ This Repo contains Fullstack mini project using Front end technologies
 
 #### phase 5:
 
-* Deployment to github pages.
+* Deployment of fully working website to github pages.
  
   ### Technologies  <img src ="https://www.flaticon.com/svg/static/icons/svg/3662/3662817.svg" width="25px">
   
