@@ -1,14 +1,13 @@
 # Travel-Yaari  <img src ="https://www.flaticon.com/svg/static/icons/svg/744/744502.svg" width="50px">
 
 <center>
-
+  
 ![Jekyll site CI](https://github.com/shsarv/TravelYaari/workflows/Jekyll%20site%20CI/badge.svg)
 ![GitHub language count](https://img.shields.io/github/languages/count/shsarv/TravelYaari)
 ![](https://img.shields.io/github/repo-size/shsarv/TravelYaari)
 ![](https://img.shields.io/tokei/lines/github/shsarv/TravelYaari)
 ![](https://img.shields.io/github/issues-pr-closed/shsarv/TravelYaari)
 ![](https://img.shields.io/github/license/shsarv/Travelyaari)
-
 
 </center>
 
@@ -78,7 +77,6 @@ This Repo contains Fullstack mini project using Front end technologies
   
 The technologies that we have used in making this project are :
   
-  </center>
    <table>
   <tr>
     <td align="center">
@@ -93,12 +91,14 @@ The technologies that we have used in making this project are :
   <a href="https://jquery.com/"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jquery/jquery.png" width="80px;" height="80px;"  alt=""/><br /><sub><b>JQuery</b></sub></a></td>
  </tr>
  </table>
- </center>
  
+ 
+  <br>
+  
   
 ### Contributors <img src ="https://www.flaticon.com/svg/static/icons/svg/2917/2917641.svg" width="25px">
   
-  <center>
+  
    <table align="center">
   <tr>
     <td align="center"><a href="https://github.com/shsarv"><img src="https://avatars2.githubusercontent.com/u/55739302?s=400&u=1e7714cb1cbe3437a527a877486c94611f0e7ab0&v=4" width="100px;" alt=""/><br /><sub><b>Sarvesh Kumar Sharma</b></sub></a></td>
@@ -107,12 +107,17 @@ The technologies that we have used in making this project are :
    
    <tr>
     <table>
-      </center>
+     
    
+  <br>
   
 ### License    <img src ="https://www.flaticon.com/svg/static/icons/svg/3076/3076368.svg" width="20px">
   
   * Apache-2.0 License copyright &copy; 2020 Sarvesh Kumar Sharma
+  
+  
+  <br>
+  
       
 ### References   <img src ="https://www.flaticon.com/svg/static/icons/svg/2806/2806879.svg" width="20px">
   
