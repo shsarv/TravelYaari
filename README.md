@@ -28,6 +28,43 @@ This Repo contains Fullstack mini project using Front end technologies
   
   
   The main objective of the projectis to create a website using  front-end  technologies to  continuously  provide enjoyable quality excursions/trips on time and on budget.It will also develop enthusiastically satisfied customers all of the time. 
+  
+  
+  ### Project Flow <img src ="https://www.flaticon.com/svg/static/icons/svg/2620/2620445.svg" width="25px">
+  
+  This project was divided in to there phases
+  
+  #### phase -1 : 
+  
+* Motive Declaration and resource gathering
+* Analyzing Different travelling Blogs
+* Understanding working of a tour and travel Website.
+
+#### phase-2 :
+
+* Basic Skelton making of the project
+* index page designing
+* user validation and access generation (login signup)
+* designing pages for authorised and non authorised user.
+
+### plase -3 :
+
+* Creating all the type of places.
+* creating cities page
+* Styling each pages.
+* linking videolink to each destination
+* add overlay to each place for more details.
+
+#### phase 4:
+
+* Adding setting service to the user.
+* adding details about us.
+* adding contact page to reach us and booking service.
+* linking each page and making final touch up to each page
+
+#### phase 5:
+
+* Deployment to github pages.
  
   ### Technologies  <img src ="https://www.flaticon.com/svg/static/icons/svg/3662/3662817.svg" width="25px">
   
