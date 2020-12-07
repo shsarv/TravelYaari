@@ -32,6 +32,8 @@ This Repo contains Fullstack mini project using Front end technologies
   
   ### Project Flow <img src ="https://www.flaticon.com/svg/static/icons/svg/2620/2620445.svg" width="25px">
   
+  ![](https://github.com/shsarv/TravelYaari/blob/master/TravelYaari%20development%20%20Flow.png)
+  
   This project was divided in to Five phases
   
   #### phase -1 : 
