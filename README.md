@@ -1,5 +1,7 @@
 # Travel-Yaari  <img src ="https://www.flaticon.com/svg/static/icons/svg/744/744502.svg" width="50px">
 
+<center>
+
 ![Jekyll site CI](https://github.com/shsarv/TravelYaari/workflows/Jekyll%20site%20CI/badge.svg)
 ![GitHub language count](https://img.shields.io/github/languages/count/shsarv/TravelYaari)
 ![](https://img.shields.io/github/repo-size/shsarv/TravelYaari)
@@ -7,6 +9,8 @@
 ![](https://img.shields.io/github/issues-pr-closed/shsarv/TravelYaari)
 ![](https://img.shields.io/github/license/shsarv/Travelyaari)
 
+
+</center>
 
 <br>
 This Project is Live at -----> https://shsarv.github.io/TravelYaari/
@@ -36,35 +40,35 @@ This Repo contains Fullstack mini project using Front end technologies
   
 #### phase -1 : 
   
-* Motive Declaration and resource gathering
-* Analyzing Different travelling Blogs
-* Understanding working of a tour and travel Website.
+    * Motive Declaration and resource gathering
+    * Analyzing Different travelling Blogs
+    * Understanding working of a tour and travel Website.
 
 #### phase-2 :
 
-* Basic Skelton making of the project
-* index page designing
-* user validation and access generation (login signup)
-* designing pages for authorised and non authorised user.
+    * Basic Skelton making of the project
+    * index page designing
+    * user validation and access generation (login signup)
+    * designing pages for authorised and non authorised user.
 
 #### plase -3 :
 
-* Creating all the type of places.
-* creating cities page
-* Styling each pages.
-* linking videolink to each destination
-* add overlay to each place for more details.
+    * Creating all the type of places.
+    * creating cities page
+    * Styling each pages.
+    * linking videolink to each destination
+    * add overlay to each place for more details.
 
 #### phase 4:
 
-* Adding setting service to the user.
-* adding details about us.
-* adding contact page to reach us and booking service.
-* linking each page and making final touch up to each page
+    * Adding setting service to the user.
+    * adding details about us.
+    * adding contact page to reach us and booking service.
+    * linking each page and making final touch up to each page
 
 #### phase 5:
 
-* Deployment of fully working website to github pages.
+    * Deployment of fully working website to github pages.
  
  
  <hr>
@@ -72,8 +76,9 @@ This Repo contains Fullstack mini project using Front end technologies
  
 ### Technologies  <img src ="https://www.flaticon.com/svg/static/icons/svg/3662/3662817.svg" width="25px">
   
-  * The technologies that we have used in making this project are :
+The technologies that we have used in making this project are :
   
+  </center>
    <table>
   <tr>
     <td align="center">
@@ -88,6 +93,7 @@ This Repo contains Fullstack mini project using Front end technologies
   <a href="https://jquery.com/"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jquery/jquery.png" width="80px;" height="80px;"  alt=""/><br /><sub><b>JQuery</b></sub></a></td>
  </tr>
  </table>
+ </center>
  
   
 ### Contributors <img src ="https://www.flaticon.com/svg/static/icons/svg/2917/2917641.svg" width="25px">
