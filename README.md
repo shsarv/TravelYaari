@@ -14,29 +14,27 @@ This Project is Live at -----> https://shsarv.github.io/TravelYaari/
 <hr>
 
 This Repo contains Fullstack mini project using Front end technologies
-  ### Overview  <img src ="https://www.flaticon.com/svg/static/icons/svg/2328/2328966.svg" width="25px">
+### Overview  <img src ="https://www.flaticon.com/svg/static/icons/svg/2328/2328966.svg" width="25px">
   
    This project is based on how an effective travel website will make us feel. It is based on a  travelling  website  with  front-end only  that  will  activate  the travelling bug with  vibrant  imagery.This  website  contains highlights  of  some  important  places  along with  high  quality photography.
   
-  ### Motivation  <img src ="https://www.flaticon.com/svg/static/icons/svg/1083/1083498.svg" width="25px">
+### Motivation  <img src ="https://www.flaticon.com/svg/static/icons/svg/1083/1083498.svg" width="25px">
  
-  
-  
-  People all over the world are fond of travel and tourism.People often find it difficult to search for the best places .To address the issue,we adopt the travelling website which will offer best places among others.
+ People all over the world are fond of travel and tourism.People often find it difficult to search for the best places .To address the issue,we adopt the travelling website which will offer best places among others.
  
-  ### Objective <img src ="https://www.flaticon.com/svg/static/icons/svg/2620/2620445.svg" width="25px">
+### Objective <img src ="https://www.flaticon.com/svg/static/icons/svg/2620/2620445.svg" width="25px">
   
   
   The main objective of the projectis to create a website using  front-end  technologies to  continuously  provide enjoyable quality excursions/trips on time and on budget.It will also develop enthusiastically satisfied customers all of the time. 
   
   
-  ### Project Flow <img src ="https://www.flaticon.com/svg/static/icons/svg/2620/2620445.svg" width="25px">
+### Project Flow <img src ="https://www.flaticon.com/svg/static/icons/svg/648/648917.svg" width="25px">
   
   ![](https://github.com/shsarv/TravelYaari/blob/master/TravelYaari%20development%20%20Flow.png)
   
-  This project was divided in to Five phases
+  - This project was divided in to Five phases :-
   
-  #### phase -1 : 
+#### phase -1 : 
   
 * Motive Declaration and resource gathering
 * Analyzing Different travelling Blogs
@@ -49,7 +47,7 @@ This Repo contains Fullstack mini project using Front end technologies
 * user validation and access generation (login signup)
 * designing pages for authorised and non authorised user.
 
-### plase -3 :
+#### plase -3 :
 
 * Creating all the type of places.
 * creating cities page
@@ -68,7 +66,11 @@ This Repo contains Fullstack mini project using Front end technologies
 
 * Deployment of fully working website to github pages.
  
-  ### Technologies  <img src ="https://www.flaticon.com/svg/static/icons/svg/3662/3662817.svg" width="25px">
+ 
+ <hr>
+ 
+ 
+### Technologies  <img src ="https://www.flaticon.com/svg/static/icons/svg/3662/3662817.svg" width="25px">
   
   * The technologies that we have used in making this project are :
   
@@ -81,15 +83,17 @@ This Repo contains Fullstack mini project using Front end technologies
     <td align="center">
   <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"><img src="resources/boot.jpg" width="80px;" height="80px;"  alt=""/><br /><sub><b>Bootstrap</b></sub></a></td>
    <td align="center">
-  <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="resources/js.jpg" width="80px;" height="80px;"  alt=""/><br /><sub><b>JAVASCRIPT</b></sub></a></td>
+  <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png" width="80px;" height="80px;"  alt=""/><br /><sub><b>JAVASCRIPT</b></sub></a></td>
+    <td align="center">
+  <a href="https://jquery.com/"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jquery/jquery.png" width="80px;" height="80px;"  alt=""/><br /><sub><b>JQuery</b></sub></a></td>
  </tr>
  </table>
  
   
-  ### Contributors <img src ="https://www.flaticon.com/svg/static/icons/svg/2917/2917641.svg" width="25px">
+### Contributors <img src ="https://www.flaticon.com/svg/static/icons/svg/2917/2917641.svg" width="25px">
   
-  
-   <table>
+  <center>
+   <table align="center">
   <tr>
     <td align="center"><a href="https://github.com/shsarv"><img src="https://avatars2.githubusercontent.com/u/55739302?s=400&u=1e7714cb1cbe3437a527a877486c94611f0e7ab0&v=4" width="100px;" alt=""/><br /><sub><b>Sarvesh Kumar Sharma</b></sub></a></td>
    <td align="center"><a href="https://github.com/sachi42"><img src="https://avatars1.githubusercontent.com/u/61285008?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Sachi Tripathi</b></sub></a></td>
@@ -97,13 +101,14 @@ This Repo contains Fullstack mini project using Front end technologies
    
    <tr>
     <table>
+      </center>
    
   
-  ### License    <img src ="https://www.flaticon.com/svg/static/icons/svg/3076/3076368.svg" width="25px">
+### License    <img src ="https://www.flaticon.com/svg/static/icons/svg/3076/3076368.svg" width="20px">
   
   * Apache-2.0 License copyright &copy; 2020 Sarvesh Kumar Sharma
       
-  ### References   <img src ="https://www.flaticon.com/svg/static/icons/svg/2806/2806879.svg" width="40px">
+### References   <img src ="https://www.flaticon.com/svg/static/icons/svg/2806/2806879.svg" width="20px">
   
   <table>
   <tr>
