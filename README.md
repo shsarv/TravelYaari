@@ -12,7 +12,7 @@
 </center>
 
 <br>
-This Project is Live at -----> **https://shsarv.github.io/TravelYaari/**
+This Project is Live at -----> https://shsarv.github.io/TravelYaari/
 
 #### [Mentor: Pankaj Kapoor](https://github.com/pankkap)
 
