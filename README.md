@@ -12,7 +12,7 @@
 </center>
 
 <br>
-This Project is Live at -----> https://shsarv.github.io/TravelYaari/
+This Project is Live at -----> **https://shsarv.github.io/TravelYaari/**
 
 #### [Mentor: Pankaj Kapoor](https://github.com/pankkap)
 
@@ -123,8 +123,7 @@ The technologies that we have used in making this project are :
   
 ### License    <img src ="https://www.flaticon.com/svg/static/icons/svg/3076/3076368.svg" width="20px">
   
-  * Apache-2.0 License copyright &copy; 2020 Sarvesh Kumar Sharma
-  
+    * Apache-2.0 License copyright &copy; 2020 Sarvesh Kumar Sharma
   
   <br>
   
