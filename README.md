@@ -1,4 +1,4 @@
-# Travel-Yaari  <img src ="https://www.flaticon.com/svg/static/icons/svg/744/744502.svg" width="50px">
+# [TravelYaari](https://shsarv.github.io/TravelYaari/)  <img src ="https://www.flaticon.com/svg/static/icons/svg/744/744502.svg" width="50px">
 
 <center>
   
@@ -14,9 +14,12 @@
 <br>
 This Project is Live at -----> https://shsarv.github.io/TravelYaari/
 
+#### [Mentor: Pankaj Kapoor](https://github.com/pankkap)
+
 <hr>
 
-This Repo contains Fullstack mini project using Front end technologies
+This Repository contain Fullstack mini project using Front end technologies.
+
 ### Overview  <img src ="https://www.flaticon.com/svg/static/icons/svg/2328/2328966.svg" width="25px">
   
    This project is based on how an effective travel website will make us feel. It is based on a  travelling  website  with  front-end only  that  will  activate  the travelling bug with  vibrant  imagery.This  website  contains highlights  of  some  important  places  along with  high  quality photography.
@@ -37,37 +40,45 @@ This Repo contains Fullstack mini project using Front end technologies
   
   - This project was divided in to Five phases :-
   
-#### phase -1 : 
+#### phase -1 (15 Jul 2020 - 18 Jul 2020): 
+
+- Group Meeting on 15 July
   
-    * Motive Declaration and resource gathering
-    * Analyzing Different travelling Blogs
-    * Understanding working of a tour and travel Website.
+      * Motive Declaration and resource gathering
+      * Analyzing Different travelling Blogs
+      * Understanding working of a tour and travel Website.
 
-#### phase-2 :
+#### phase-2 (18 Jul 2020 - 10 Oct 2020):
 
-    * Basic Skelton making of the project
-    * index page designing
-    * user validation and access generation (login signup)
-    * designing pages for authorised and non authorised user.
+- Group Meeting on 19 July.
 
-#### plase -3 :
+      * Basic Skelton making of the project
+      * index page designing
+      * user validation and access generation (login signup)
+      * designing pages for authorised and non authorised user.
 
-    * Creating all the type of places.
-    * creating cities page
-    * Styling each pages.
-    * linking videolink to each destination
-    * add overlay to each place for more details.
+#### plase -3 (10 Oct 2020 - 22 November 2020):
 
-#### phase 4:
+- Group Meeting on 10 Oct.
 
-    * Adding setting service to the user.
-    * adding details about us.
-    * adding contact page to reach us and booking service.
-    * linking each page and making final touch up to each page
+      * Creating all the type of places.
+      * creating cities page
+      * Styling each pages.
+      * linking videolink to each destination
+      * add overlay to each place for more details.
 
-#### phase 5:
+#### phase 4 (22 Nov 2020 - 28 Nov 2020):
 
-    * Deployment of fully working website to github pages.
+- Group Meeting on 21 Nov.
+
+      * Adding setting service to the user.
+      * adding details about us.
+      * adding contact page to reach us and booking service.
+      * linking each page and making final touch up to each page
+
+#### phase 5 (2 Dec 2020):
+
+      * Deployment of fully working website to github pages.
  
  
  <hr>
@@ -99,12 +110,11 @@ The technologies that we have used in making this project are :
 ### Contributors <img src ="https://www.flaticon.com/svg/static/icons/svg/2917/2917641.svg" width="25px">
   
   
-   <table>
+  <table>
   <tr>
-    <td align="center"><a href="https://github.com/shsarv"><img src="https://avatars2.githubusercontent.com/u/55739302?s=400&u=1e7714cb1cbe3437a527a877486c94611f0e7ab0&v=4" width="100px;" alt=""/><br /><sub><b>Sarvesh Kumar Sharma</b></sub></a></td>
-   <td align="center"><a href="https://github.com/sachi42"><img src="https://avatars1.githubusercontent.com/u/61285008?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Sachi Tripathi</b></sub></a></td>
-   <td align="center"><a href="https://github.com/satyamjha1710"><img src="https://avatars1.githubusercontent.com/u/61418608?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Satyam Kumar jha</b></sub></a></td>
-   
+    <td align="center"><a href="https://github.com/shsarv"><img src="https://avatars2.githubusercontent.com/u/55739302?s=400&u=1e7714cb1cbe3437a527a877486c94611f0e7ab0&v=4" width="100px;" alt=""/><br /><sub><b>Sarvesh Kumar Sharma</b></sub></a><br /><a href="#" title="Content">🖋</a> <a href="https://github.com/shsarv/TravelYaari/commits?author=shsarv" title="Documentation">📖</a><a href="https://github.com/shsarv/TravelYaari/commits?author=shsarv" title="Code">💻</a></td>
+   <td align="center"><a href="https://github.com/satyamjha1710"><img src="https://avatars1.githubusercontent.com/u/61418608?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Satyam Kumar jha</b></sub></a><br /><a href="https://github.com/shsarv/TravelYaari/commits?author=satyamjha1710" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/sachi42"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQG284gqwDcwKw/profile-displayphoto-shrink_800_800/0?e=1613001600&v=beta&t=ciyzyUV9JqxwQfIqCH8Q1j_VyDKbfnTWz4CAp6h-1ko" width="100px;" alt=""/><br /><sub><b>Sachi Tripathi</b></sub></a><br /><a href="https://github.com/shsarv/TravelYaari/commits?author=sachi42" title="Code">💻</a></td> 
    <tr>
     <table>
      
